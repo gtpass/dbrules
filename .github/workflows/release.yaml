@@ -70,12 +70,4 @@ jobs:
           keep_latest: 10
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Release geosite
-        if: steps.build.outputs.skip != 'true'
-        uses: softprops/action-gh-release@v1
-        with:
-          tag_name: ${{ steps.build.outputs.tag }}
-          files: |
-            geosite.db
-            sha256sum
+        
