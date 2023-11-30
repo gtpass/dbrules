@@ -25,6 +25,8 @@ jobs:
         id: build
         run: |
            go run -v .
+           
+           
 
       - name: Get geosite.dat geoip.dat files from Loyalsoldier
         run: |
@@ -42,7 +44,7 @@ jobs:
 
 
 
-      - name: Move and zip files
+      - name: Move db and geosite srs files
         run: |
           mkdir -p ./publish/
           # wget https://raw.githubusercontent.com/xishang0128/geoip/release/Country.mmdb -O ./publish/country-lite.mmdb
@@ -88,7 +90,7 @@ jobs:
           sha256sum geoip.db > geoip.db.sha256sum          
           sha256sum geosite.db > geosite.db.sha256sum      
            
-      - name: Release rule sets
+      - name: Release geosite rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
           chmod +x .github/release-rule-set.sh
@@ -98,10 +100,63 @@ jobs:
           git config --local user.email "github-action@users.noreply.github.com"
           git config --local user.name "GitHub Action"
           git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/dbrules.git
-          git branch -M rule-set
+          git branch -M geosite-rule-set
           git add .
           git commit -m "Update rule-set"
-          git push -f origin rule-set
+          git push -f origin geosite-rule-set
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Build geoip
+        id: build
+        run: |
+           cd ../../geoip
+           rm -rf ./rule-set/
+           go run -v .
+      - name: Move  geoip srs files
+        run: |
+          install -Dp ./rule-set/geoip-china-list.srs ./publish/
+          install -Dp ./rule-set/geoip-gfw.srs ./publish/
+          install -Dp ./rule-set/geoip-geolocation-!cn.srs ./publish/
+          install -Dp ./rule-set/geoip-category-ads-all.srs ./publish/
+          install -Dp ./rule-set/geoip-google.srs ./publish/
+          install -Dp ./rule-set/geoip-apple.srs ./publish/
+          install -Dp ./rule-set/geoip-telegram.srs ./publish/
+          install -Dp ./rule-set/geoip-steam.srs ./publish/
+          install -Dp ./rule-set/geoip-youku.srs ./publish/
+          install -Dp ./rule-set/geoip-cloudflare.srs ./publish/
+          install -Dp ./rule-set/geoip-cloudflare-cn.srs ./publish/
+          install -Dp ./rule-set/geoip-fastly.srs ./publish/
+          install -Dp ./rule-set/geoip-twitter.srs ./publish/
+          install -Dp ./rule-set/geoip-facebook.srs ./publish/
+          install -Dp ./rule-set/geoip-facebook-dev.srs ./publish/
+          install -Dp ./rule-set/geoip-win-spy.srs ./publish/
+          install -Dp ./rule-set/geoip-win-extra.srs ./publish/
+          install -Dp ./rule-set/geoip-win-update.srs ./publish/
+          install -Dp ./rule-set/geoip-alibabacloud.srs ./publish/
+          install -Dp ./rule-set/geoip-alibaba@!cn.srs ./publish/
+          install -Dp ./rule-set/geoip-youtube.srs ./publish/
+          install -Dp ./rule-set/geoip-youtube@cn.srs ./publish/
+          install -Dp ./rule-set/geoip-okx@cn.srs ./publish/
+          install -Dp ./rule-set/geoip-binance.srs ./publish/
+          install -Dp ./rule-set/geoip-okx.srs ./publish/
+          install -Dp ./rule-set/geoip-apple-dev.srs ./publish/
+          install -Dp ./rule-set/geoip-tencent.srs ./publish/
+          
+      - name: Release geoip rule sets
+        if: steps.build.outputs.skip != 'true'
+        run: |
+          chmod +x .github/release-rule-set.sh
+          cd rule-set
+          set -e -o pipefail
+          git init
+          git config --local user.email "github-action@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/dbrules.git
+          git branch -M geoip-rule-set
+          git add .
+          git commit -m "Update rule-set"
+          git push -f origin geoip-rule-set
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
