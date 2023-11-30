@@ -111,8 +111,9 @@ jobs:
         id: buildgeoip
         run: |
            rm -rf ./rule-set/
-           cd .geoip
+           cd .geoip  || exit 1
            go run -v .
+           
       - name: Move  geoip srs files
         run: |
           install -Dp ./rule-set/geoip-china-list.srs ./publish/
