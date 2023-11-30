@@ -1,4 +1,4 @@
-module github.com/sagernet/sing-geoip
+module github.com/gtpass/dbrules/.geoip
 
 go 1.18
 
