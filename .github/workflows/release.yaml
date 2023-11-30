@@ -40,14 +40,13 @@ jobs:
            go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
            geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
            geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
-           
       - name: Release rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
-          chmod +x .github/release-rule-set.sh
+         # chmod +x .github/release-rule-set.sh
          # git update-index --chmod=+x ../release-rule-set.sh
          # chmod +x .github/release-rule-set.sh
-          mkdir rule-set
+         # mkdir rule-set
           .github/release-rule-set.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
