@@ -252,7 +252,7 @@ func release(source string, destination string, output string, ruleSetOutput str
 }
 
 func main() {
-	err := release("Loyalsoldier/domain-list-community", "gtpass/test", "geosite.db", "rule-set")
+	err := release("Loyalsoldier/v2ray-rules-dat", "gtpass/test", "geosite.db", "rule-set")
 	if err != nil {
 		log.Fatal(err)
 	}
