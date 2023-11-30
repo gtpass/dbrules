@@ -28,22 +28,23 @@ jobs:
 
       - name: Get geosite.dat geoip.dat files from Loyalsoldier
         run: |
-          wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
-          wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+          #wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+          #wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
           #wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
           
       - name: Build db file
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-           go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
-           geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
-           geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
+           #go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
+           #geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
+           #geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
+           
       - name: Release rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
           chmod +x .github/release-rule-set.sh
-          mkdir rule-set
+          #mkdir rule-set
           cd rule-set
           set -e -o pipefail
           git init
