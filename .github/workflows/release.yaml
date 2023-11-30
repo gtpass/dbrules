@@ -78,7 +78,11 @@ jobs:
       - name: Generate sha256 hash
         if: steps.build.outputs.skip != 'true'
         run: |
-          sha256sum geosite.db > geosite.db.sha256sum
+          sha256sum geoip.dat > geoip.dat.sha256sum
+          sha256sum geosite.dat > geosite.dat.sha256sum
+ 
+          sha256sum geoip.db > geoip.db.sha256sum          
+          sha256sum geosite.db > geosite.db.sha256sum   
           
       - uses: dev-drprasad/delete-older-releases@v0.3.2
         if: steps.build.outputs.skip != 'true'
