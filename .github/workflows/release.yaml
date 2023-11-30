@@ -110,8 +110,8 @@ jobs:
       - name: Build geoip
         id: buildgeoip
         run: |
-           cd ../../geoip
            rm -rf ./rule-set/
+           cd .geoip
            go run -v .
       - name: Move  geoip srs files
         run: |
