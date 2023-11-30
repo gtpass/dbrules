@@ -171,11 +171,9 @@ func release(source string, destination string, output string, ruleSetOutput str
 	if err != nil {
 		log.Warn("missing destination latest release")
 	} else {
-		if os.Getenv("NO_SKIP") = "true" && strings.Contains(*destinationRelease.Name, *sourceRelease.Name) {
-			log.Info("already latest")
-			setActionOutput("skip", "true")
+
 			return nil
-		}
+		
 	}
 	binary, err := download(sourceRelease)
 	if err != nil {
