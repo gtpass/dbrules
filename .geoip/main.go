@@ -59,7 +59,7 @@ func get(downloadURL *string) ([]byte, error) {
 
 func download(release *github.RepositoryRelease) ([]byte, error) {
 	geoipAsset := common.Find(release.Assets, func(it *github.ReleaseAsset) bool {
-		return *it.Name == "geoip.dat"
+		return *it.Name == "Country.mmdb"
 	})
 	if geoipAsset == nil {
 		return nil, E.New("Country.mmdb not found in upstream release ", release.Name)
