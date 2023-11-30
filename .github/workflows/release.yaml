@@ -24,7 +24,7 @@ jobs:
       - name: Build geosite
         id: build
         run: |
-          # go run -v .
+           go run -v .
 
       - name: Get geosite.dat geoip.dat files from Loyalsoldier
         run: |
@@ -46,7 +46,6 @@ jobs:
           mkdir rule-set
           cd rule-set
           set -e -o pipefail
-          #cd rule-set
           git init
           git config --local user.email "github-action@users.noreply.github.com"
           git config --local user.name "GitHub Action"
