@@ -116,33 +116,7 @@ jobs:
            
       - name: Move  geoip srs files
         run: |
-          install -Dp ./rule-set/geoip-china-list.srs ./publish/
-          install -Dp ./rule-set/geoip-gfw.srs ./publish/
-          install -Dp ./rule-set/geoip-geolocation-!cn.srs ./publish/
-          install -Dp ./rule-set/geoip-category-ads-all.srs ./publish/
-          install -Dp ./rule-set/geoip-google.srs ./publish/
-          install -Dp ./rule-set/geoip-apple.srs ./publish/
-          install -Dp ./rule-set/geoip-telegram.srs ./publish/
-          install -Dp ./rule-set/geoip-steam.srs ./publish/
-          install -Dp ./rule-set/geoip-youku.srs ./publish/
-          install -Dp ./rule-set/geoip-cloudflare.srs ./publish/
-          install -Dp ./rule-set/geoip-cloudflare-cn.srs ./publish/
-          install -Dp ./rule-set/geoip-fastly.srs ./publish/
-          install -Dp ./rule-set/geoip-twitter.srs ./publish/
-          install -Dp ./rule-set/geoip-facebook.srs ./publish/
-          install -Dp ./rule-set/geoip-facebook-dev.srs ./publish/
-          install -Dp ./rule-set/geoip-win-spy.srs ./publish/
-          install -Dp ./rule-set/geoip-win-extra.srs ./publish/
-          install -Dp ./rule-set/geoip-win-update.srs ./publish/
-          install -Dp ./rule-set/geoip-alibabacloud.srs ./publish/
-          install -Dp ./rule-set/geoip-alibaba@!cn.srs ./publish/
-          install -Dp ./rule-set/geoip-youtube.srs ./publish/
-          install -Dp ./rule-set/geoip-youtube@cn.srs ./publish/
-          install -Dp ./rule-set/geoip-okx@cn.srs ./publish/
-          install -Dp ./rule-set/geoip-binance.srs ./publish/
-          install -Dp ./rule-set/geoip-okx.srs ./publish/
-          install -Dp ./rule-set/geoip-apple-dev.srs ./publish/
-          install -Dp ./rule-set/geoip-tencent.srs ./publish/
+          install -Dp ./rule-set/geoip-cn.srs ./publish/
           
       - name: Release geoip rule sets
         if: steps.build.outputs.skip != 'true'
