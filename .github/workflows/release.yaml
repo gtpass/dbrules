@@ -26,11 +26,20 @@ jobs:
         run: |
           # go run -v .
 
-      - name: Get geosite.dat relative files from Loyalsoldier
+      - name: Get geosite.dat geoip.dat files from Loyalsoldier
         run: |
           wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+          wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
           #wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
           
+      - name: Build db file
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
+          geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
+          geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
+   
       - name: Release rule sets
         if: steps.build.outputs.skip != 'true'
         run: .github/release-rule-set.sh
