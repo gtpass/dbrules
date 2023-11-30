@@ -30,7 +30,7 @@ jobs:
         run: |
           wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
           wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-          wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
+          # wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
           
       - name: Build  db file
         env:
