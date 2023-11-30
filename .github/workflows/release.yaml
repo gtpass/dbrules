@@ -28,30 +28,46 @@ jobs:
 
       - name: Get geosite.dat geoip.dat files from Loyalsoldier
         run: |
-          #wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
-          #wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-          #wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
+          wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
+          wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+          wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
           
-      - name: Build db file
+      - name: Build  db file
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-           #go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
-           #geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
-           #geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
+           go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
+           geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
+           geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
+
+
+
+     - name: Move and zip files
+        run: |
+          mkdir -p ./publish/
+         # wget https://raw.githubusercontent.com/xishang0128/geoip/release/Country.mmdb -O ./publish/country-lite.mmdb
+         # wget https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O ./publish/country.mmdb
+          install -Dp ./geoip.dat ./publish/
+          install -Dp ./geosite.dat ./publish/
+          install -Dp ./geoip.db ./publish/
+          install -Dp ./geosite.db ./publish/
+          cd ./publish || exit 1
+          sha256sum geoip.dat > geoip.dat.sha256sum
+          sha256sum geosite.dat > geosite.dat.sha256sum
+ 
+          sha256sum geoip.db > geoip.db.sha256sum          
+          sha256sum geosite.db > geosite.db.sha256sum      
            
       - name: Release rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
           chmod +x .github/release-rule-set.sh
-          #mkdir rule-set
           cd rule-set
           set -e -o pipefail
           git init
           git config --local user.email "github-action@users.noreply.github.com"
           git config --local user.name "GitHub Action"
-          #git remote add origin https://github-action:$GITHUB_TOKEN@github.com/SagerNet/sing-geosite.git
-          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/test.git
+          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/dbrules.git
           git branch -M rule-set
           git add .
           git commit -m "Update rule-set"
@@ -71,11 +87,32 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Release geosite
-        if: steps.build.outputs.skip != 'true'
-        uses: softprops/action-gh-release@v1
+      - name: Create and Upload Release
+        id: upload_release
+        uses: svenstaro/upload-release-action@v2
         with:
-          tag_name: ${{ steps.build.outputs.tag }}
-          files: |
-            geosite.db
-            sha256sum
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          release_name: Release ${{ env.BUILDTIME }}
+          tag: latest
+          file_glob: true
+          overwrite: true
+          file: ./publish/*
+
+      - name: Git push assets to "release" branch
+        run: |
+          cd publish || exit 1
+          git init
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b release
+          git add .
+          git commit -m "Released on ${{ env.BUILDTIME }}"
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          git push -f -u origin release
+
+      - name: Purge jsdelivr CDN
+        run: |
+          cd publish || exit 1
+          for file in $(ls); do
+            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
+          done
