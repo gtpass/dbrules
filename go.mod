@@ -1,4 +1,4 @@
-module github.com/sagernet/sing-geosite
+module github.com/gtpass/test
 
 go 1.18
 
