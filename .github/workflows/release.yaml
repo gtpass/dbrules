@@ -24,7 +24,6 @@ jobs:
       - name: Build geosite
         id: build
         run: |
-            git update-index --chmod=+x .github/release-rule-set.sh
           # go run -v .
 
       - name: Get geosite.dat geoip.dat files from Loyalsoldier
@@ -43,10 +42,9 @@ jobs:
       - name: Release rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
-         # chmod +x .github/release-rule-set.sh
-         # git update-index --chmod=+x ../release-rule-set.sh
-         # chmod +x .github/release-rule-set.sh
-         # mkdir rule-set
+         chmod +x .github/release-rule-set.sh
+         mkdir rule-set
+         cd rule-set
           .github/release-rule-set.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
