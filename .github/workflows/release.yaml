@@ -116,7 +116,7 @@ jobs:
            
       - name: Move  geoip srs files
         run: |
-          install -Dp ./rule-set/geoip-cn.srs ./publish/
+          #install -Dp ./rule-set/geoip-cn.srs ./publish/
           
       - name: Release geoip rule sets
         if: steps.build.outputs.skip != 'true'
