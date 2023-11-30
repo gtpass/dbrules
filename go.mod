@@ -1,4 +1,4 @@
-module github.com/gtpass/test
+module github.com/gtpass/dbrules
 
 go 1.18
 
