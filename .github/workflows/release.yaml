@@ -51,6 +51,36 @@ jobs:
           install -Dp ./geosite.dat ./publish/
           install -Dp ./geoip.db ./publish/
           install -Dp ./geosite.db ./publish/
+          
+          install -Dp ./rule-set/geosite-china-list.srs ./publish/
+          install -Dp ./rule-set/geosite-gfw.srs ./publish/
+          install -Dp ./rule-set/geosite-geolocation-!cn.srs ./publish/
+          install -Dp ./rule-set/geosite-category-ads-all.srs ./publish/
+          install -Dp ./rule-set/geosite-google.srs ./publish/
+          install -Dp ./rule-set/geosite-apple.srs ./publish/
+          install -Dp ./rule-set/geosite-telegram.srs ./publish/
+          install -Dp ./rule-set/geosite-steam.srs ./publish/
+          install -Dp ./rule-set/geosite-youku.srs ./publish/
+          install -Dp ./rule-set/geosite-cloudflare.srs ./publish/
+          install -Dp ./rule-set/geosite-cloudflare-cn.srs ./publish/
+          install -Dp ./rule-set/geosite-fastly.srs ./publish/
+          install -Dp ./rule-set/geosite-twitter.srs ./publish/
+          install -Dp ./rule-set/geosite-facebook.srs ./publish/
+          install -Dp ./rule-set/geosite-facebook-dev.srs ./publish/
+          install -Dp ./rule-set/geosite-win-spy.srs ./publish/
+          install -Dp ./rule-set/geosite-win-extra.srs ./publish/
+          install -Dp ./rule-set/geosite-win-update.srs ./publish/
+          install -Dp ./rule-set/geosite-alibabacloud.srs ./publish/
+          install -Dp ./rule-set/geosite-alibaba@!cn.srs ./publish/
+          install -Dp ./rule-set/geosite-youtube.srs ./publish/
+          install -Dp ./rule-set/geosite-youtube@cn.srs ./publish/
+          install -Dp ./rule-set/geosite-okx@cn.srs ./publish/
+          install -Dp ./rule-set/geosite-binance.srs ./publish/
+          install -Dp ./rule-set/geosite-okx.srs ./publish/
+          install -Dp ./rule-set/geosite-apple-dev.srs ./publish/
+          install -Dp ./rule-set/geosite-tencent.srs ./publish/
+          
+          
           cd ./publish || exit 1
           sha256sum geoip.dat > geoip.dat.sha256sum
           sha256sum geosite.dat > geosite.dat.sha256sum
