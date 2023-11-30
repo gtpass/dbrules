@@ -108,7 +108,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Build geoip
-        id: build
+        id: buildgeoip
         run: |
            cd ../../geoip
            rm -rf ./rule-set/
