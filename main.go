@@ -252,7 +252,7 @@ func release(source string, destination string, output string, ruleSetOutput str
 }
 
 func main() {
-	err := release("v2fly/domain-list-community", "sagernet/sing-geosite", "geosite.db", "rule-set")
+	err := release("v2fly/domain-list-community", "gtpass/test", "geosite.db", "rule-set")
 	if err != nil {
 		log.Fatal(err)
 	}
