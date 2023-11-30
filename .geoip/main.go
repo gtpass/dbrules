@@ -170,10 +170,12 @@ func release(source string, destination string, output string, ruleSetOutput str
 	destinationRelease, err := fetch(destination)
 	if err != nil {
 		log.Warn("missing destination latest release")
-	} else {
-
+	} else {	
+		if strings.Contains(*destinationRelease.Name, *sourceRelease.Name) {
+			log.Info("already latest")
+			setActionOutput("skip", "true")
 			return nil
-		
+		}
 	}
 	binary, err := download(sourceRelease)
 	if err != nil {
