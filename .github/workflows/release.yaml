@@ -42,10 +42,20 @@ jobs:
       - name: Release rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
-         chmod +x .github/release-rule-set.sh
-         mkdir rule-set
-         cd rule-set
-          .github/release-rule-set.sh
+          chmod +x .github/release-rule-set.sh
+          mkdir rule-set
+          cd rule-set
+          set -e -o pipefail
+          #cd rule-set
+          git init
+          git config --local user.email "github-action@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          #git remote add origin https://github-action:$GITHUB_TOKEN@github.com/SagerNet/sing-geosite.git
+          git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/test.git
+          git branch -M rule-set
+          git add .
+          git commit -m "Update rule-set"
+          git push -f origin rule-set
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
