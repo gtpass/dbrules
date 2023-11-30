@@ -47,6 +47,7 @@ jobs:
           chmod +x .github/release-rule-set.sh
           git update-index --chmod=+x .github/release-rule-set.sh
           chmod +x .github/release-rule-set.sh
+          mkdir rule-set
           .github/release-rule-set.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
