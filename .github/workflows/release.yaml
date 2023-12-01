@@ -86,7 +86,8 @@ jobs:
           
           install -Dp ./rule-set/geosite-china-list.srs ./publish/
           install -Dp ./rule-set/geosite-gfw.srs ./publish/
-          install -Dp ./rule-set/geosite-geolocation-!cn.srs ./publish/
+          install -Dp ./rule-set/geosite-geolocation-cn.srs ./publish/geosite-geolocation-cn.srs
+          install -Dp ./rule-set/geosite-geolocation-!cn.srs ./publish/geosite-geolocation-!cn.srs
           install -Dp ./rule-set/geosite-category-ads-all.srs ./publish/
           install -Dp ./rule-set/geosite-google.srs ./publish/
           install -Dp ./rule-set/geosite-apple.srs ./publish/
@@ -123,9 +124,9 @@ jobs:
       - name: mv default geosite rules  to singdefault
         if: steps.build.outputs.skip != 'true'
         run: |
-          mkdir -p ./singdefault/geosite
-          cp -rf ./rule-set/*.* ./singdefault/geosite/
-          cd ./singdefault/geosite
+          mkdir -p ./singdefault/sites
+          cp -rf ./rule-set/*.* ./singdefault/sites/
+          cd ./singdefault/sites
           for file in *;do
               newfile=$(echo $file | sed 's/geosite-//g')
               mv "$file" "$newfile"
@@ -171,9 +172,9 @@ jobs:
       - name: mv default geoip rules  to singdefault
         if: steps.build.outputs.skip != 'true'
         run: |
-          mkdir -p  ./singdefault/geoip
-          cp -rf .geoip/rule-set/*.* ./singdefault/geoip/   
-          cd ./singdefault/geoip
+          mkdir -p  ./singdefault/ips
+          cp -rf .geoip/rule-set/*.* ./singdefault/ips/   
+          cd ./singdefault/ips
            for file in *;do
               newfile=$(echo $file | sed 's/geoip-//g')
               mv "$file" "$newfile"
