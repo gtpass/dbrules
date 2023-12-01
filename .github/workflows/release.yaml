@@ -71,8 +71,8 @@ jobs:
           	mv geosite-${list[i]}.json ./geosite/${list[i]}.json
           done
           
-          rm -f geoip/*.json
-          rm -f geosite/*.json
+         # rm -f geoip/*.json
+         # rm -f geosite/*.json
 
           rm LICENSE README.md config.yaml geoip.dat geoip.db geosite.db mosdns mosdns.zip sing-box sing-box.tar.gz 
 
@@ -122,6 +122,12 @@ jobs:
  
           sha256sum geoip.db > geoip.db.sha256sum          
           sha256sum geosite.db > geosite.db.sha256sum      
+          
+      - name: mv default geosite rules  to singdefault
+        if: steps.build.outputs.skip != 'true'
+        run: |
+          mkdir -p ./singdefault/geosite
+          cp -rf ./rule-set/*.* ./singdefault/geosite/
            
       - name: Release geosite rule sets
         if: steps.build.outputs.skip != 'true'
@@ -149,6 +155,7 @@ jobs:
       - name: Move  geoip srs files
         run: |
           install -Dp .geoip/rule-set/geoip-cn.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-jp.srs ./publish/
           install -Dp .geoip/rule-set/geoip-cloudflare.srs ./publish/
           install -Dp .geoip/rule-set/geoip-cloudfront.srs ./publish/
           install -Dp .geoip/rule-set/geoip-facebook.srs ./publish/
@@ -158,6 +165,12 @@ jobs:
           install -Dp .geoip/rule-set/geoip-private.srs ./publish/
           install -Dp .geoip/rule-set/geoip-telegram.srs ./publish/
           install -Dp .geoip/rule-set/geoip-twitter.srs  ./publish/
+          
+      - name: mv default geoip rules  to singdefault
+        if: steps.build.outputs.skip != 'true'
+        run: |
+          mkdir -p  ./singdefault/geoip
+          cp -rf .geoip/rule-set/*.* ./singdefault/geoip/   
           
       - name: Release geoip rule sets
         if: steps.build.outputs.skip != 'true'
@@ -215,7 +228,7 @@ jobs:
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f -u origin release
           
-      - name: Git push assets to "sing-rule" branch
+      - name: Git push assets to "sing" branch
         run: |
             cd sing-rule || exit 1
             ls
@@ -227,6 +240,20 @@ jobs:
             git commit -m "Released on ${{ env.BUILDTIME }}"
             git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
             git push -f -u origin sing
+
+      - name: Git push default assets to "singdefault" branch
+        run: |
+            cd singdefault || exit 1
+            ls
+            git init
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git checkout -b singdefault
+            git add .
+            git commit -m "Released on ${{ env.BUILDTIME }}"
+            git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+            git push -f -u origin singdefault
+            
       - name: Purge jsdelivr CDN
         run: |
           cd publish || exit 1
