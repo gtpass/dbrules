@@ -70,6 +70,9 @@ jobs:
             ./sing-box rule-set compile "geosite-${list[i]}.json" -o ./geosite/${list[i]}.srs
           	mv geosite-${list[i]}.json ./geosite/${list[i]}.json
           done
+          
+          rm -f geoip/*.json
+          rm -f geosite/*.json
 
           rm LICENSE README.md config.yaml geoip.dat geoip.db geosite.db mosdns mosdns.zip sing-box sing-box.tar.gz 
 
