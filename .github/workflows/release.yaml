@@ -116,7 +116,15 @@ jobs:
       - name: Move  geoip srs files
         run: |
           install -Dp .geoip/rule-set/geoip-cn.srs ./publish/
-          #install -Dp .geoip/rule-set/geoip-cn.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-cloudflare.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-cloudfront.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-facebook.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-fastly.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-google.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-netflix.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-private.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-telegram.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-twitter.srs  ./publish/
           
       - name: Release geoip rule sets
         if: steps.build.outputs.skip != 'true'
