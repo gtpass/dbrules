@@ -126,8 +126,7 @@ jobs:
           mkdir -p ./singdefault/geosite
           cp -rf ./rule-set/*.* ./singdefault/geosite/
           cd ./singdefault/geosite
-          for file in *;
-          do
+          for file in *;do
               newfile=$(echo $file | sed 's/geosite-//g')
               mv "$file" "$newfile"
           done
@@ -175,7 +174,7 @@ jobs:
           mkdir -p  ./singdefault/geoip
           cp -rf .geoip/rule-set/*.* ./singdefault/geoip/   
           cd ./singdefault/geoip
-          do
+           for file in *;do
               newfile=$(echo $file | sed 's/geosite-//g')
               mv "$file" "$newfile"
           done
