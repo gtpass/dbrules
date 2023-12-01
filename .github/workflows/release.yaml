@@ -110,19 +110,19 @@ jobs:
       - name: Build geoip
         id: buildgeoip
         run: |
-           rm -rf ./rule-set/
            cd .geoip  || exit 1
            go run -v .
            
       - name: Move  geoip srs files
         run: |
-          #install -Dp ./rule-set/geoip-cn.srs ./publish/
+          install -Dp .geoip/rule-set/geoip-cn.srs ./publish/
+          #install -Dp .geoip/rule-set/geoip-cn.srs ./publish/
           
       - name: Release geoip rule sets
         if: steps.build.outputs.skip != 'true'
         run: |
           chmod +x .github/release-rule-set.sh
-          cd rule-set
+          cd .geoip/rule-set
           set -e -o pipefail
           git init
           git config --local user.email "github-action@users.noreply.github.com"
