@@ -175,7 +175,7 @@ jobs:
           cp -rf .geoip/rule-set/*.* ./singdefault/geoip/   
           cd ./singdefault/geoip
            for file in *;do
-              newfile=$(echo $file | sed 's/geosite-//g')
+              newfile=$(echo $file | sed 's/geoip-//g')
               mv "$file" "$newfile"
           done
           
