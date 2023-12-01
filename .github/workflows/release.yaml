@@ -42,7 +42,36 @@ jobs:
            geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
            geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
 
+      - name: Convert geo to sing-rule-set
+        env:
+          NO_SKIP: true
+        run: |
+          mkdir -p ./sing-rule/geo
+          cd ./sing-rule/geo
+          wget https://github.com/SagerNet/sing-box/releases/download/v1.8.0-alpha.1/sing-box-1.8.0-alpha.1-linux-amd64.tar.gz -O sing-box.tar.gz && tar zxvf sing-box.tar.gz && mv sing-box-1.8.0-alpha.1-linux-amd64/sing-box ./ && rm -r sing-box-1.8.0-alpha.1-linux-amd64
+          wget https://github.com/IrineSistiana/mosdns/releases/download/v4.5.3/mosdns-linux-amd64.zip -O mosdns.zip && unzip mosdns.zip
+          cp ../../geoip.dat ./ && cp ../../geoip.db ./geoip.db && cp ../../geosite.db ./
 
+          mkdir -p geoip
+          ./mosdns v2dat unpack-ip -o ./geoip/ geoip.dat
+          list=($(ls ./geoip | sed 's/geoip_//g' | sed 's/\.txt//g'))
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          	sed -i 's/^/        "/g' geoip/geoip_${list[i]}.txt
+          	sed -i 's/$/",/g' geoip/geoip_${list[i]}.txt
+          	sed -i '1s/^/{\n  "version": 1,\n  "rules": [\n    {\n      "ip_cidr": [\n/g' geoip/geoip_${list[i]}.txt
+          	sed -i '$ s/,$/\n      ]\n    }\n  ]\n}/g' geoip/geoip_${list[i]}.txt
+          	mv geoip/geoip_${list[i]}.txt geoip/${list[i]}.json
+          	./sing-box rule-set compile "./geoip/${list[i]}.json" -o ./geoip/${list[i]}.srs
+          done
+          list=($(./sing-box geosite list | sed 's/ (.*)$//g'))
+          mkdir -p geosite
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          	./sing-box geosite export ${list[i]}
+            ./sing-box rule-set compile "geosite-${list[i]}.json" -o ./geosite/${list[i]}.srs
+          	mv geosite-${list[i]}.json ./geosite/${list[i]}.json
+          done
+
+          rm LICENSE README.md config.yaml geoip.dat geoip.db geosite.db mosdns mosdns.zip sing-box sing-box.tar.gz 
 
       - name: Move db and geosite srs files
         run: |
@@ -53,6 +82,7 @@ jobs:
           install -Dp ./geosite.dat ./publish/
           install -Dp ./geoip.db ./publish/
           install -Dp ./geosite.db ./publish/
+          
           
           install -Dp ./rule-set/geosite-china-list.srs ./publish/
           install -Dp ./rule-set/geosite-gfw.srs ./publish/
@@ -181,7 +211,19 @@ jobs:
           git commit -m "Released on ${{ env.BUILDTIME }}"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f -u origin release
-
+          
+      - name: Git push assets to "sing-rule" branch
+        run: |
+            cd sing-rule || exit 1
+            ls
+            git init
+            git config --local user.name "github-actions[bot]"
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git checkout -b sing
+            git add .
+            git commit -m "Released on ${{ env.BUILDTIME }}"
+            git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+            git push -f -u origin sing
       - name: Purge jsdelivr CDN
         run: |
           cd publish || exit 1
