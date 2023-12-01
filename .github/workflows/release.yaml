@@ -125,6 +125,12 @@ jobs:
         run: |
           mkdir -p ./singdefault/geosite
           cp -rf ./rule-set/*.* ./singdefault/geosite/
+          cd ./singdefault/geosite
+          for file in *;
+          do
+              newfile=$(echo $file | sed 's/geosite-//g')
+              mv "$file" "$newfile"
+          done
            
       - name: Release geosite rule sets
         if: steps.build.outputs.skip != 'true'
@@ -168,6 +174,11 @@ jobs:
         run: |
           mkdir -p  ./singdefault/geoip
           cp -rf .geoip/rule-set/*.* ./singdefault/geoip/   
+          cd ./singdefault/geoip
+          do
+              newfile=$(echo $file | sed 's/geosite-//g')
+              mv "$file" "$newfile"
+          done
           
       - name: Release geoip rule sets
         if: steps.build.outputs.skip != 'true'
