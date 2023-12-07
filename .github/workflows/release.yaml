@@ -81,8 +81,6 @@ jobs:
           cd ./rocket-rule
           wget https://github.com/IrineSistiana/mosdns/releases/download/v4.5.3/mosdns-linux-amd64.zip -O mosdns.zip && unzip mosdns.zip
           cp ../geoip.dat ./geoip.dat && cp ../geosite.dat ./geosite.dat
-          mkdir -p sites 
-          ./mosdns v2dat unpack-domain -o ./rocket-rule/sites/  ./geosite.dat
           mkdir -p ips
           ./mosdns v2dat unpack-ip -o ./rocket-rule/ips/  ./geoip.dat
           list=($(ls ./ips | sed 's/geoip_//g' | sed 's/\.txt//g'))
@@ -93,6 +91,8 @@ jobs:
           	# sed -i '$ s/,$/\n      ]\n    }\n  ]\n}/g' ips/geoip_${list[i]}.txt
           	mv ips/geoip_${list[i]}.txt ips/${list[i]}.list
           done
+          mkdir -p sites 
+          ./mosdns v2dat unpack-domain -o ./rocket-rule/sites/  ./geosite.dat
           list=($(ls ./sites | sed 's/geoip_//g' | sed 's/\.txt//g'))
           for ((i = 0; i < ${#list[@]}; i++)); do
             sed -i '/^regexp:/d' sites/geosite_${list[i]}.txt
