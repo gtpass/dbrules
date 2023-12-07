@@ -77,12 +77,13 @@ jobs:
         env:
           NO_SKIP: true
         run: |
-          mkdir -p ./rocket-rule/sites &&  mkdir -p ./rocket-rule/ips
-          cd ./rocket-rule/
+          mkdir -p ./rocket-rule 
+          cd ./rocket-rule
           wget https://github.com/IrineSistiana/mosdns/releases/download/v4.5.3/mosdns-linux-amd64.zip -O mosdns.zip && unzip mosdns.zip
-          cp ../geoip.dat ./ && cp ../geosite.db ./
-          ./mosdns v2dat unpack-domain -o ./sites/  ./geosite.dat
-          ./mosdns v2dat unpack-ip -o ./ips/  ./geoip.dat
+          cp ../geoip.dat ./geoip.dat && cp ../geosite.dat ./geosite.dat
+          mkdir -p ./rocket-rule/sites &&　mkdir -p ./rocket-rule/ips
+          ./mosdns v2dat unpack-domain -o ./rocket-rule/sites/  ./geosite.dat
+          ./mosdns v2dat unpack-ip -o ./rocket-rule/ips/  ./geoip.dat
           list=($(ls ./ips | sed 's/geoip_//g' | sed 's/\.txt//g'))
           for ((i = 0; i < ${#list[@]}; i++)); do
           	sed -i 's/^/IP-CIDR,/g' ips/geoip_${list[i]}.txt
