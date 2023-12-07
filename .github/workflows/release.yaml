@@ -101,7 +101,7 @@ jobs:
             sed -i 's/$/,${list[i]}/g' sites/geosite_${list[i]}.txt
           	mv sites/geosite_${list[i]}.txt sites/${list[i]}.list
           done
-          rm LICENSE README.md config.yaml geoip.dat geoip.db geosite.db mosdns mosdns.zip sing-box sing-box.tar.gz 
+          rm LICENSE README.md config.yaml geoip.dat geosite.dat  mosdns mosdns.zip  
 
       - name: Move db and geosite srs files
         run: |
