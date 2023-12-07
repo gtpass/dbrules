@@ -77,7 +77,7 @@ jobs:
         env:
           NO_SKIP: true
         run: |
-          mkdir -p ./rocket-rule 
+          mkdir -p ./rocket-rule
           cd ./rocket-rule
           wget https://github.com/IrineSistiana/mosdns/releases/download/v4.5.3/mosdns-linux-amd64.zip -O mosdns.zip && unzip mosdns.zip
           cp ../geoip.dat ./geoip.dat && cp ../geosite.dat ./geosite.dat
