@@ -86,7 +86,7 @@ jobs:
           list=($(ls ./ips | sed 's/geoip_//g' | sed 's/\.txt//g'))
           for ((i = 0; i < ${#list[@]}; i++)); do
           	sed -i 's/^/IP-CIDR,/g' ./ips/geoip_${list[i]}.txt
-          	sed -i 's/$/,${list[i]}/g' ./ips/geoip_${list[i]}.txt
+          	sed -i "s/$/,${list[i]}/g" ./ips/geoip_${list[i]}.txt
           	# sed -i '1s/^/{\n  "version": 1,\n  "rules": [\n    {\n      "ip_cidr": [\n/g' ips/geoip_${list[i]}.txt
           	# sed -i '$ s/,$/\n      ]\n    }\n  ]\n}/g' ips/geoip_${list[i]}.txt
           	mv ./ips/geoip_${list[i]}.txt ./ips/${list[i]}.list
@@ -98,8 +98,9 @@ jobs:
             sed -i '/^regexp:/d' ./sites/geosite_${list[i]}.txt
             sed -i 's/^full:|^rootDomain:/DOMAIN,/g' ./sites/geosite_${list[i]}.txt
             sed -i 's/^keyword:|^plain:/DOMAIN-KEYWORD,/g' ./sites/geosite_${list[i]}.txt
-            sed -i '/^DOMAIN,/!{ /^DOMAIN-KEYWORD,/! { /\./! s/^/DOMAIN-SUFFIX,/ } }' ./sites/geosite_${list[i]}.txt
-            sed -i 's/$/,${list[i]}/g' ./sites/geosite_${list[i]}.txt
+            # sed -i '/^DOMAIN,/!{ /^DOMAIN-KEYWORD,/! { /\./! s/^/DOMAIN-SUFFIX,/ } }' ./sites/geosite_${list[i]}.txt
+            sed -i 's/^/DOMAIN-SUFFIX,/g' ./sites/geosite_${list[i]}.txt
+            sed -i "s/$/,${list[i]}/g" ./sites/geosite_${list[i]}.txt
           	mv ./sites/geosite_${list[i]}.txt ./sites/${list[i]}.list
           done
           rm LICENSE README.md config.yaml geoip.dat geosite.dat  mosdns mosdns.zip  
