@@ -93,7 +93,7 @@ jobs:
           done
           mkdir -p sites 
           ./mosdns v2dat unpack-domain -o ./sites/  geosite.dat
-          list=($(ls ./sites | sed 's/geoip_//g' | sed 's/\.txt//g'))
+          list=($(ls ./sites | sed 's/geosite_//g' | sed 's/\.txt//g'))
           for ((i = 0; i < ${#list[@]}; i++)); do
             sed -i '/^regexp:/d' ./sites/geosite_${list[i]}.txt
             sed -i 's/^full:|^rootDomain:/DOMAIN,/g' ./sites/geosite_${list[i]}.txt
