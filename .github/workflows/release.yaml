@@ -102,7 +102,9 @@ jobs:
             sed -i 's/^plain:/DOMAIN-KEYWORD,/g' ./sites/geosite_${list[i]}.txt
             sed -i '/^DOMAIN,/!{ /^DOMAIN-KEYWORD,/! { /\./! s/^/DOMAIN-SUFFIX,/g } }' ./sites/geosite_${list[i]}.txt
             sed -i '/^DOMAIN,/!{ /^DOMAIN-KEYWORD,/! { /^DOMAIN-SUFFIX/! s/^/DOMAIN-SUFFIX,/g } }' ./sites/geosite_${list[i]}.txt
+            # cat ./sites/geosite_${list[i]}.txt | grep -Ev "^(DOMAIN,|DOMAIN-KEYWORD,):" | grep -v "\." | sed 's/^DOMAIN-SUFFIX,/DOMAIN-KEYWORD,/g' >> ./sites/geosite_${list[i]}.txt
             # sed -i 's/^/DOMAIN-SUFFIX,/g' ./sites/geosite_${list[i]}.txt
+            
             sed -i "s/$/,${list[i]}/g" ./sites/geosite_${list[i]}.txt
           	mv ./sites/geosite_${list[i]}.txt ./sites/${list[i]}.list
           done
