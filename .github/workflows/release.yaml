@@ -2,8 +2,8 @@ name: Release
 on:
   workflow_dispatch:
   schedule:
-   # - cron: "30 22 * * *"
-     - cron: "30 22 */90 * *"
+    #- cron: "30 22 * * *"
+    - cron: "30 22 */90 * *"
 jobs:
   build:
     name: Build
