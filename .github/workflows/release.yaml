@@ -1,250 +1,522 @@
-name: Release
+name: Build V2Ray and sing rules dat files
+
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: "30 21 */3 * *"
-    #- cron: "30 22 */90 * *"
+    - cron: "0 22 * * *"
+
+  push:
+    branches:
+      - main
+
+    paths-ignore:
+      - "**/README.md"
+
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Get latest go version
-        id: version
+      - name: Set variables
+
         run: |
-          echo ::set-output name=go_version::$(curl -s https://raw.githubusercontent.com/actions/go-versions/main/versions-manifest.json | grep -oE '"version": "[0-9]{1}.[0-9]{1,}(.[0-9]{1,})?"' | head -1 | cut -d':' -f2 | sed 's/ //g; s/"//g')
+          # export GOPATH=$HOME/go
+
+          # echo ::set-output name=go_version::$(curl -s https://raw.githubusercontent.com/actions/go-versions/main/versions-manifest.json | grep -oE '"version": "[0-9]{1}.[0-9]{1,}(.[0-9]{1,})?"' | head -1 | cut -d':' -f2 | sed 's/ //g; s/"//g')
+
+          echo "RELEASE_NAME=Released on $(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+
+          echo "DBRULES_TOKEN=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" >> $GITHUB_ENV
+
+          echo "TAG_NAME=$(date +%Y%m%d%H%M)" >> $GITHUB_ENV
+
+          echo "CHINA_DOMAINS_URL=https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf" >> $GITHUB_ENV
+
+          echo "GOOGLE_DOMAINS_URL=https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/google.china.conf" >> $GITHUB_ENV
+
+          echo "APPLE_DOMAINS_URL=https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/apple.china.conf" >> $GITHUB_ENV
+
+          echo "EASYLISTCHINA_EASYLIST_REJECT_URL=https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt" >> $GITHUB_ENV
+
+          echo "PETERLOWE_REJECT_URL=https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext" >> $GITHUB_ENV
+
+          echo "ADGUARD_DNS_REJECT_URL=https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt" >> $GITHUB_ENV
+
+          echo "DANPOLLOCK_REJECT_URL=https://someonewhocares.org/hosts/hosts" >> $GITHUB_ENV
+
+          # echo "CUSTOM_DIRECT=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/cn.txt" >> $GITHUB_ENV
+
+          # echo "CUSTOM_PROXY=https://raw.githubusercontent.com/Loyalsoldier/domain-list-custom/release/geolocation-!cn.txt" >> $GITHUB_ENV
+
+          echo "WIN_SPY=https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt" >> $GITHUB_ENV
+
+          echo "WIN_UPDATE=https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/update.txt" >> $GITHUB_ENV
+
+          echo "WIN_EXTRA=https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/extra.txt" >> $GITHUB_ENV
+
+        shell: bash
+
+      - name: Checkout the "hidden" branch of this repo
+
+        uses: actions/checkout@v4
+
+        with:
+          ref: hidden
+
+      # - name: Checkout Loyalsoldier/domain-list-custom
+
+      #   uses: actions/checkout@v4
+
+      #   with:
+      #     repository: Loyalsoldier/domain-list-custom
+
+      #     path: custom
+
+      - name: Checkout gtpass/dbrules repository
+        uses: actions/checkout@v4
+        with:
+        repository: gtpass/dbrules
+        ref : release
+        path: dbrules
+        
+      - name: Checkout v2fly/domain-list-community
+
+        uses: actions/checkout@v4
+
+        with:
+          repository: v2fly/domain-list-community
+
+          path: community
+
+      - name: Checkout cokebar/gfwlist2dnsmasq
+
+        uses: actions/checkout@v4
+
+        with:
+          repository: cokebar/gfwlist2dnsmasq
+
+          path: gfwlist2dnsmasq
+
       - name: Setup Go
-        uses: actions/setup-go@v2
+
+        uses: actions/setup-go@v5
+
         with:
+          go-version-file:   ./community/go.mod
+
+          cache-dependency-path: ./community/go.sum
+
           go-version: ${{ steps.version.outputs.go_version }}
-          
-      - name: Build geosite
-        id: build
-        run: |
-           go run -v .
-           
-      - name: Get geosite.dat geoip.dat files from Loyalsoldier
-        run: |
-          wget -O geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
-          wget -O geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
-          # wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
-          
-      - name: Build  db file
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-           go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
-           geo convert site -i v2ray -o sing -f geosite.db ./geosite.dat
-           geo convert ip -i v2ray -o sing -f geoip.db ./geoip.dat
-           
-      - name: Convert geo to sing-rule-set
-        env:
-          NO_SKIP: true
-        run: |
-          mkdir -p ./sing-rule/geo
-          cd ./sing-rule/geo
-          wget https://github.com/SagerNet/sing-box/releases/download/v1.8.0-rc.6/sing-box-1.8.0-rc.6-linux-amd64.tar.gz -O sing-box.tar.gz && tar zxvf sing-box.tar.gz && mv sing-box-1.8.0-rc.6-linux-amd64/sing-box ./ && rm -r sing-box-1.8.0-rc.6-linux-amd64
-          wget https://github.com/IrineSistiana/mosdns/releases/download/v4.5.3/mosdns-linux-amd64.zip -O mosdns.zip && unzip mosdns.zip
-          cp ../../geoip.dat ./ && cp ../../geoip.db ./geoip.db && cp ../../geosite.db ./
 
-          mkdir -p geoip
-          ./mosdns v2dat unpack-ip -o ./geoip/ geoip.dat
-          list=($(ls ./geoip | sed 's/geoip_//g' | sed 's/\.txt//g'))
+      - name: convert data to txt
+
+        run: |
+          
+          mkdir -p ./customdata
+          #mkdir -p ./singdata
+          cd ./community || exit 1
+          list=($(ls ./data ))
+          lists=""
           for ((i = 0; i < ${#list[@]}; i++)); do
-          	sed -i 's/^/        "/g' geoip/geoip_${list[i]}.txt
-          	sed -i 's/$/",/g' geoip/geoip_${list[i]}.txt
-          	sed -i '1s/^/{\n  "version": 1,\n  "rules": [\n    {\n      "ip_cidr": [\n/g' geoip/geoip_${list[i]}.txt
-          	sed -i '$ s/,$/\n      ]\n    }\n  ]\n}/g' geoip/geoip_${list[i]}.txt
-          	mv geoip/geoip_${list[i]}.txt geoip/${list[i]}.json
-          	./sing-box rule-set compile "./geoip/${list[i]}.json" -o ./geoip/${list[i]}.srs
+          lists="${lists},$(IFS=,; echo "${list[i]}")"
           done
-          list=($(./sing-box geosite list | sed 's/ (.*)$//g'))
-          mkdir -p geosite
+          go run ./ -outputname ../geosite.dat  -outputdir ../customdata    -datapath ./data  -exportlists ${lists}
+          rm -f ../customdata/geosite.dat
+          mkdir -p ./txtemp
+          list=($(ls ../customdata | sed 's/\.txt//g')) 
           for ((i = 0; i < ${#list[@]}; i++)); do
-          	./sing-box geosite export ${list[i]}
-            ./sing-box rule-set compile "geosite-${list[i]}.json" -o ./geosite/${list[i]}.srs
-          	mv geosite-${list[i]}.json ./geosite/${list[i]}.json
+          #all :@ads
+          sed -n '/\:@ads$/p'  ../customdata/${list[i]}.txt >> ./txtemp/category-ads-all-temp.txt
+          sed -n '/\:@ads$/p'  ../customdata/${list[i]}.txt > ../customdata/${list[i]}@ads.txt
+          #all :@cn
+          sed -n '/\:@cn$/p'   ../customdata/${list[i]}.txt >>  ./txtemp/@cn-temp.txt
+          sed -n '/\:@cn$/p'   ../customdata/${list[i]}.txt >  ../customdata/${list[i]}@cn.txt
+          #all :@!cn
+          sed -n '/\:@\!cn$/p'  ../customdata/${list[i]}.txt >> ./txtemp/@\!cn-temp.txt
+          sed -n '/\:@\!cn$/p' ../customdata/${list[i]}.txt > ../customdata/${list[i]}@\!cn.txt
+
+          #delete :@ads row
+          sed -i '/\:@ads$/d'  ../customdata/${list[i]}.txt
+          sed -i 's/\:@ads$//'  ../customdata/${list[i]}@ads.txt
+          #delete :@cn row contains -cn
+          sed -i '/\:@cn$/d'  ../customdata/${list[i]}.txt
+          sed -i 's/\:@cn$//'  ../customdata/${list[i]}@cn.txt
+          #delete :@!cn row
+          sed -i '/\:@\!cn$/d' ../customdata/${list[i]}.txt
+          # chang
+          sed -i 's/\:@\!cn$//' ../customdata/${list[i]}@\!cn.txt
           done
 
-          rm LICENSE README.md config.yaml geoip.dat geoip.db geosite.db mosdns mosdns.zip sing-box sing-box.tar.gz 
+          sort -u ./txtemp/category-ads-all-temp.txt | sed '/^\s*$/d' > ./txtemp/category-ads-all-temp-sort.txt
+          sort -u ./txtemp/@cn-temp.txt | sed '/^\s*$/d' > ./txtemp/@cn-temp-sort.txt
+          sort -u ./txtemp/@\!cn-temp.txt | sed '/^\s*$/d' > ./txtemp/@\!cn-temp-sort.txt
+        
+          sed -n '/\.cn\:@cn$/p' ./txtemp/@cn-temp-sort.txt >  ./txtemp/@cn-cn.txt
 
-      - name: Convert geo to rocket-rule-set
-        env:
-          NO_SKIP: true
+          sed -n '/\.cn\$\:@cn$/p' ./txtemp/@cn-temp-sort.txt >>  ./txtemp/@cn-cn.txt
+        
+          sed -n '/\-cn.*\:@cn$/p' ./txtemp/@cn-temp-sort.txt >  ./txtemp/@cn-cdn.txt
+
+          sed -n '/\.cn\:@cn$/!{/\.cn\$\:@cn$/!{/\-cn.*\:@cn$/!p}}'  ./txtemp/@cn-temp-sort.txt > ./txtemp/@cn-\!cn.txt
+          #
+          sed -i 's/\:@\!cn$//'  ./txtemp/@\!cn-temp-sort.txt 
+          sed -i 's/\:@\!cn$//' ./txtemp/@cn-\!cn.txt
+          #
+          sed -i 's/\:@cn$//' ./txtemp/@cn-cdn.txt 
+          sed -i 's/\:@cn$//' ./txtemp/@cn-cn.txt
+          sed -i 's/\:@cn$//' ./txtemp/@cn-\!cn.txt
+          #
+          sed -i 's/\:@ads$//' ./txtemp/category-ads-all-temp-sort.txt
+          # 
+          # #sed -n '/\:@ads$/p' ./txtemp/category-ads-all-temp-sort.txt
+          cat ./txtemp/category-ads-all-temp-sort.txt >> ../customdata/category-ads-all.txt
+          # #sed -n '/\:@ads$/p' ../customdata/category-ads-all.txt
+          #
+          mkdir -p ./customfiles
+          cp  ../customdata/category-ads-all.txt ./customfiles/custom-category-ads-all.txt
+          cp  ../customdata/cn.txt ./customfiles/custom-cn.txt
+          cp  ../customdata/geolocation-\!cn.txt ./customfiles/custom-geolocation-\!cn.txt
+          cp  ../customdata/tld-\!cn.txt ./customfiles/custom-tld-\!cn.txt
+          cp  ../customdata/geolocation-cn.txt ./customfiles/custom-geolocation-cn.txt
+          cp  ../customdata/tld-cn.txt ./customfiles/custom-tld-cn.txt
+          #
+          cat ./txtemp/@cn-cn.txt >> ./customfiles/custom-cn.txt
+          cat ./txtemp/@cn-cn.txt >> ./customfiles/custom-geolocation-cn.txt
+          cat ./txtemp/@cn-cdn.txt >> ./customfiles/custom-cn.txt
+          cat ./txtemp/@cn-cdn.txt >> ./customfiles/custom-geolocation-cn.txt
+          cat ./txtemp/@cn-cdn.txt > ./customfiles/custom-proxy-direct-cn-cdn.txt
+          #
+          cat ./txtemp/@\!cn-temp-sort.txt >> ./customfiles/custom-geolocation-\!cn.txt
+          cat ./txtemp/@cn-\!cn.txt >> ./customfiles/custom-geolocation-\!cn.txt
+          cat ./txtemp/@cn-\!cn.txt > ./customfiles/custom-proxy-direct-\!cn.txt
+
+      - name: Get geoip.dat relative files
+
         run: |
-          mkdir -p ./rocket-rule
-          cd ./rocket-rule
+
+          wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat
+
+          wget https://github.com/Loyalsoldier/geoip/raw/release/geoip.dat.sha256sum
+
+      - name: Generate GFWList domains
+
+        run: |
+          
+          cd gfwlist2dnsmasq || exit 1
+
+          chmod +x ./gfwlist2dnsmasq.sh
+
+          ./gfwlist2dnsmasq.sh -l -o ./temp-gfwlist.txt
+
+      - name: Get china-list.txt file
+
+        run: |
+
+          mkdir -p ./otherfiles
+
+          curl -sSL $CHINA_DOMAINS_URL | perl -ne '/^server=\/([^\/]+)\// && print "$1\n"' > ./otherfiles/china-list.txt
+
+          # curl -sSL ${CUSTOM_DIRECT} | perl -ne '/^(domain):([^:]+)(\n$|:@.+)/ && print "$2\n"' >> china-list.txt
+
+      - name: Get google-cn apple-cn  gfw.txt file
+
+        run: |
+
+          cat ./gfwlist2dnsmasq/temp-gfwlist.txt | perl -ne '/^((?=^.{3,255})[a-zA-Z0-9][-_a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-_a-zA-Z0-9]{0,62})+)/ && print "$1\n"' > ./otherfiles/gfw.txt
+
+          curl -sSL $GOOGLE_DOMAINS_URL | perl -ne '/^server=\/([^\/]+)\// && print "$1\n"' > ./otherfiles/google-cn.txt
+
+          curl -sSL $APPLE_DOMAINS_URL | perl -ne '/^server=\/([^\/]+)\// && print "$1\n"' > ./otherfiles/apple-cn.txt
+
+          # curl -sSL ${CUSTOM_PROXY} | grep -Ev ":@cn" | perl -ne '/^(domain):([^:]+)(\n$|:@.+)/ && print "$2\n"' >> gfw.txt
+
+      - name: Get and  custom-ads win-spy win-extra win-update txt file
+
+        run: |
+          
+          curl -sSL $EASYLISTCHINA_EASYLIST_REJECT_URL | perl -ne '/^\|\|([-_0-9a-zA-Z]+(\.[-_0-9a-zA-Z]+){1,64})\^$/ && print "$1\n"' | perl -ne 'print if not /^[0-9]{1,3}(\.[0-9]{1,3}){3}$/' > ./otherfiles/custom-ads.txt
+
+          curl -sSL $ADGUARD_DNS_REJECT_URL | perl -ne '/^\|\|([-_0-9a-zA-Z]+(\.[-_0-9a-zA-Z]+){1,64})\^$/ && print "$1\n"' | perl -ne 'print if not /^[0-9]{1,3}(\.[0-9]{1,3}){3}$/' >> ./otherfiles/custom-ads.txt
+
+          curl -sSL $PETERLOWE_REJECT_URL | perl -ne '/^127\.0\.0\.1\s([-_0-9a-zA-Z]+(\.[-_0-9a-zA-Z]+){1,64})$/ && print "$1\n"' >> ./otherfiles/custom-ads.txt
+
+          curl -sSL $DANPOLLOCK_REJECT_URL | perl -ne '/^127\.0\.0\.1\s([-_0-9a-zA-Z]+(\.[-_0-9a-zA-Z]+){1,64})/ && print "$1\n"' | sed '1d' >> ./otherfiles/custom-ads.txt
+
+          curl -sSL $WIN_SPY | grep "0.0.0.0" | awk '{print $2}' > ./otherfiles/win-spy.txt
+
+          curl -sSL $WIN_UPDATE | grep "0.0.0.0" | awk '{print $2}' > ./otherfiles/win-update.txt
+
+          curl -sSL $WIN_EXTRA | grep "0.0.0.0" | awk '{print $2}' > ./otherfiles/win-extra.txt
+
+      - name: test
+
+        run: |
+
+          # curl -sSL ${CUSTOM_DIRECT} | perl -ne '/^((full|regexp|keyword):[^:]+)(\n$|:@.+)/ && print "$1\n"' | sort --ignore-case -u > direct-reserve.txt
+
+          # curl -sSL ${CUSTOM_PROXY} | grep -Ev ":@cn" | perl -ne '/^((full|regexp|keyword):[^:]+)(\n$|:@.+)/ && print "$1\n"' | sort --ignore-case -u > proxy-reserve.txt
+
+      - name: Add proxy, direct and reject domains from "hidden" branch to txt files
+
+        run: |
+
+          cat proxy.txt >> ./otherfiles/gfw.txt
+
+          cat direct.txt >> ./otherfiles/china-list.txt
+
+          cat reject.txt >> ./otherfiles/custom-ads.txt
+
+      - name: Sort and remove redundant  customfiles  otherfiles
+
+        run: |
+
+          list=($(ls ./community/customfiles | sed 's/geosite_//g' | sed 's/\.txt//g' )) 
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          ####################################################################################################################
+          sort -u ./community/customfiles/${list[i]}.txt | sed '/^\s*$/d' > ./community/customfiles/${list[i]}.txt.tmp
+          mv -f ./community/customfiles/${list[i]}.txt.tmp ./community/customfiles/${list[i]}.txt
+          ####################################################################################################################
+          done
+
+          list=($(ls ./otherfiles | sed 's/geosite_//g' | sed 's/\.txt//g' )) 
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          ####################################################################################################################
+          sort -u ./otherfiles/${list[i]}.txt | sed '/^\s*$/d' > ./otherfiles/${list[i]}.txt.tmp
+          mv -f ./otherfiles/${list[i]}.txt.tmp ./otherfiles/${list[i]}.txt
+          ####################################################################################################################
+          sed -i '/^\(full\:\|domain\:\|regexp\:\|keyword\:\)/!s/^/domain\:/p' ./otherfiles/${list[i]}.txt
+          done
+
+      - name: mv otherfiles data to customfiles and to customdata
+
+        run: |
+          cat ./otherfiles/custom-ads.txt >> ./community/customfiles/custom-category-ads-all.txt
+          ####################################################################################################################
+          sort -u ./community/customfiles/custom-category-ads-all.txt | sed '/^\s*$/d' > ./community/customfiles/custom-category-ads-all.txt.tmp
+          mv -f ./community/customfiles/custom-category-ads-all.txt.tmp ./community/customfiles/custom-category-ads-all.txt
+          ####################################################################################################################
+          cp -f  ./otherfiles/win-spy.txt   ./community/customfiles/win-spy.txt
+          cp -f ./otherfiles/win-update.txt ./community/customfiles/win-update.txt 
+          cp -f  ./otherfiles/win-extra.txt  ./community/customfiles/win-extra.txt
+          cp -f  ./otherfiles/google-cn.txt  ./community/customfiles/google-cn.txt
+          cp -f  ./otherfiles/apple-cn.txt  ./community/customfiles/apple-cn.txt
+          cp -f  ./otherfiles/gfw.txt  ./community/customfiles/gfw.txt
+          cp -f  ./otherfiles/china-list.txt  ./community/customfiles/china-list.txt
+          cp -rf ./community/customfiles/*.* ./customdata/
+          find  ./customdata/ -size 0 -delete
+          # find ./customdata/  -size 0 -exec bash -c 'sed -n "/./q1" "$0" || rm "$0"' {} \;
+          find ./customdata/ -size 0 -exec bash -c '
+              for file do
+                  if [ ! -s "$file" ]; then
+                      rm "$file"
+                  fi
+              done
+          ' bash {} +
+          # sort
+          list=($(ls ./customdata |  sed 's/\.txt//g' )) 
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          ####################################################################################################################
+          sort -u ./customdata/${list[i]}.txt | sed '/^\s*$/d' > ./customdata/${list[i]}.txt.tmp
+          mv -f ./customdata/${list[i]}.txt.tmp ./customdata/${list[i]}.txt
+          ####################################################################################################################
+          done
+          mkdir -p ./defaultdata
+          cp -rf ./customdata/*.*  ./defaultdata/
+          #cp -rf ./customdata/*.*  ./singdata/
+
+      - name: customdata remove .txt
+
+        run: |
+          list=($(ls ./customdata | sed 's/\.txt//g' )) 
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          mv ./customdata/${list[i]}.txt ./customdata/${list[i]}
+          done
+
+      - name: Build geosite.dat file
+
+        run: |
+
+          cd community || exit 1
+          go run ./ -outputname ../geosite.dat  -outputdir ../    -datapath ../customdata
+
+      - name: Build sing geodb  file
+
+        run: |
+          go env
+
+      - name: Convert geosite.dat to sing geodb and metadb file
+
+        run: |
+          go install -trimpath -ldflags="-s -w -buildid=" github.com/metacubex/geo/cmd/geo@master
+          geo convert site -i v2ray -o sing -f ./geosite-convert.db ./geosite.dat
+          geo convert ip -i v2ray -o sing -f ./geoip-convert.db ./geoip.dat
+
+      - name: Convert geodb to sing-ruleset geoconvert-sites mosdnsconvert-ips
+
+        run: |
+          mkdir -p ./geoconvert/ips
+          mkdir -p ./geoconvert/sites
+          #geoip.db
+          cd ./geoconvert/ || exit 1
+          wget https://github.com/SagerNet/sing-box/releases/download/v1.8.0-rc.5/sing-box-1.8.0-rc.5-linux-amd64.tar.gz -O sing-box.tar.gz && tar zxvf sing-box.tar.gz && mv sing-box-1.8.0-rc.5-linux-amd64/sing-box ./ && rm -r sing-box-1.8.0-rc.5-linux-amd64
           wget https://github.com/IrineSistiana/mosdns/releases/download/v4.5.3/mosdns-linux-amd64.zip -O mosdns.zip && unzip mosdns.zip
-          cp ../geoip.dat ./geoip.dat && cp ../geosite.dat ./geosite.dat
-          mkdir -p ips
-          ./mosdns v2dat unpack-ip -o  ./ips/  geoip.dat
+          chmod 755 mosdns sing-box 
+          cp ./sing-box ../sing-box
+          ./mosdns v2dat unpack-ip -o ./ips/ ../geoip.dat
           list=($(ls ./ips | sed 's/geoip_//g' | sed 's/\.txt//g'))
           for ((i = 0; i < ${#list[@]}; i++)); do
-          	sed -i 's/^/IP-CIDR,/g' ./ips/geoip_${list[i]}.txt
-          	sed -i "s/$/,${list[i]}/g" ./ips/geoip_${list[i]}.txt
-          	# sed -i '1s/^/{\n  "version": 1,\n  "rules": [\n    {\n      "ip_cidr": [\n/g' ips/geoip_${list[i]}.txt
-          	# sed -i '$ s/,$/\n      ]\n    }\n  ]\n}/g' ips/geoip_${list[i]}.txt
-          	mv ./ips/geoip_${list[i]}.txt ./ips/${list[i]}.list
+            sed -i 's/^/        "/g' ./ips/geoip_${list[i]}.txt
+            sed -i 's/$/",/g' ./ips/geoip_${list[i]}.txt
+            sed -i '1s/^/{\n  "version": 1,\n  "rules": [\n    {\n      "ip_cidr": [\n/g' ./ips/geoip_${list[i]}.txt
+            sed -i '$ s/,$/\n      ]\n    }\n  ]\n}/g' ./ips/geoip_${list[i]}.txt
+            mv ./ips/geoip_${list[i]}.txt ./ips/${list[i]}.json
+            ./sing-box rule-set compile "./ips/${list[i]}.json" -o ./ips/${list[i]}.srs
           done
-          mkdir -p sites 
-          ./mosdns v2dat unpack-domain -o ./sites/  geosite.dat
-          list=($(ls ./sites | sed 's/geosite_//g' | sed 's/\.txt//g'))
+
+          #default geosite-convert.db convert to sing ruleset
+          list=($(./sing-box geosite list -f ../geosite-convert.db | sed 's/ (.*)$//g'))
           for ((i = 0; i < ${#list[@]}; i++)); do
-            sed -i '/^regexp:/d' ./sites/geosite_${list[i]}.txt
-            sed -i 's/^full:/DOMAIN,/g' ./sites/geosite_${list[i]}.txt
-            sed -i 's/^rootdomain:/DOMAIN,/g' ./sites/geosite_${list[i]}.txt
-            sed -i 's/^keyword:/DOMAIN-KEYWORD,/g' ./sites/geosite_${list[i]}.txt
-            sed -i 's/^plain:/DOMAIN-KEYWORD,/g' ./sites/geosite_${list[i]}.txt
-            sed -i '/^DOMAIN,/!{ /^DOMAIN-KEYWORD,/! { /\./! s/^/DOMAIN-SUFFIX,/g } }' ./sites/geosite_${list[i]}.txt
-            sed -i '/^DOMAIN,/!{ /^DOMAIN-KEYWORD,/! { /^DOMAIN-SUFFIX/! s/^/DOMAIN-SUFFIX,/g } }' ./sites/geosite_${list[i]}.txt
-            # cat ./sites/geosite_${list[i]}.txt | grep -Ev "^(DOMAIN,|DOMAIN-KEYWORD,):" | grep -v "\." | sed 's/^DOMAIN-SUFFIX,/DOMAIN-KEYWORD,/g' >> ./sites/geosite_${list[i]}.txt
-            # sed -i 's/^/DOMAIN-SUFFIX,/g' ./sites/geosite_${list[i]}.txt
-            
-            sed -i "s/$/,${list[i]}/g" ./sites/geosite_${list[i]}.txt
-          	mv ./sites/geosite_${list[i]}.txt ./sites/${list[i]}.list
+            ./sing-box geosite export ${list[i]} -f ../geosite-convert.db -o ./sites/${list[i]}.json
+            ./sing-box rule-set compile ./sites/${list[i]}.json -o ./sites/${list[i]}.srs
           done
-          rm LICENSE README.md config.yaml geoip.dat geosite.dat  mosdns mosdns.zip  
+          rm mosdns* sing-box*  LICENSE README.md config.yaml   
 
-      - name: Move db and geosite srs files
+      - name: Convert custom defaultdata txt to sing-rule json and custom sing-rule .srs
+
         run: |
-          mkdir -p ./publish/
-          # wget https://raw.githubusercontent.com/xishang0128/geoip/release/Country.mmdb -O ./publish/country-lite.mmdb
-          # wget https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb -O ./publish/country.mmdb
-          install -Dp ./geoip.dat ./publish/
-          install -Dp ./geosite.dat ./publish/
-          install -Dp ./geoip.db ./publish/
-          install -Dp ./geosite.db ./publish/
-          
-          
-          # install -Dp ./rule-set/geosite-china-list.srs ./publish/
-          # install -Dp ./rule-set/geosite-gfw.srs ./publish/
-          # install -Dp ./rule-set/geosite-geolocation-cn.srs ./publish/geosite-geolocation-cn.srs
-          # install -Dp ./rule-set/geosite-geolocation-!cn.srs ./publish/geosite-geolocation-!cn.srs
-          # install -Dp ./rule-set/geosite-category-ads-all.srs ./publish/
-          # install -Dp ./rule-set/geosite-google.srs ./publish/
-          # install -Dp ./rule-set/geosite-apple.srs ./publish/
-          # install -Dp ./rule-set/geosite-telegram.srs ./publish/
-          # install -Dp ./rule-set/geosite-steam.srs ./publish/
-          # install -Dp ./rule-set/geosite-youku.srs ./publish/
-          # install -Dp ./rule-set/geosite-cloudflare.srs ./publish/
-          # install -Dp ./rule-set/geosite-cloudflare-cn.srs ./publish/
-          # install -Dp ./rule-set/geosite-fastly.srs ./publish/
-          # install -Dp ./rule-set/geosite-twitter.srs ./publish/
-          # install -Dp ./rule-set/geosite-facebook.srs ./publish/
-          # install -Dp ./rule-set/geosite-facebook-dev.srs ./publish/
-          # install -Dp ./rule-set/geosite-win-spy.srs ./publish/
-          # install -Dp ./rule-set/geosite-win-extra.srs ./publish/
-          # install -Dp ./rule-set/geosite-win-update.srs ./publish/
-          # install -Dp ./rule-set/geosite-alibabacloud.srs ./publish/
-          # install -Dp ./rule-set/geosite-alibaba@!cn.srs ./publish/
-          # install -Dp ./rule-set/geosite-youtube.srs ./publish/
-          # install -Dp ./rule-set/geosite-youtube@cn.srs ./publish/
-          # install -Dp ./rule-set/geosite-okx@cn.srs ./publish/
-          # install -Dp ./rule-set/geosite-binance.srs ./publish/
-          # install -Dp ./rule-set/geosite-okx.srs ./publish/
-          # install -Dp ./rule-set/geosite-apple-dev.srs ./publish/
-          # install -Dp ./rule-set/geosite-tencent.srs ./publish/
-          
-          
-          cd ./publish || exit 1
-          sha256sum geoip.dat > geoip.dat.sha256sum
-          sha256sum geosite.dat > geosite.dat.sha256sum
- 
-          sha256sum geoip.db > geoip.db.sha256sum          
-          sha256sum geosite.db > geosite.db.sha256sum      
-          
-      - name: mv default geosite rules  to singdefault
-        if: steps.build.outputs.skip != 'true'
-        run: |
-          mkdir -p ./singdefault/sites
-          cp -rf ./rule-set/*.* ./singdefault/sites/
-          cd ./singdefault/sites
-          for file in *;do
-              newfile=$(echo $file | sed 's/geosite-//g')
-              mv "$file" "$newfile"
-          done
-           
-          
-      - name: Build geoip
-        id: buildgeoip
-        run: |
-           cd .geoip  || exit 1
-           go run -v .
-           
-      # - name: Move  geoip srs files
-      #   run: |
-      #     install -Dp .geoip/rule-set/geoip-cn.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-jp.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-cloudflare.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-cloudfront.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-facebook.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-fastly.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-google.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-netflix.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-private.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-telegram.srs ./publish/
-      #     install -Dp .geoip/rule-set/geoip-twitter.srs  ./publish/
-          
-      - name: mv default geoip rules  to singdefault
-        if: steps.build.outputs.skip != 'true'
-        run: |
-          mkdir -p  ./singdefault/ips
-          cp -rf .geoip/rule-set/*.* ./singdefault/ips/   
-          cd ./singdefault/ips
-           for file in *;do
-              newfile=$(echo $file | sed 's/geoip-//g')
-              mv "$file" "$newfile"
+          mkdir -p ./customsing-ruleset/sites
+          # domain: full:  regexp:  keyword:
+          # domain: domain_suffix   domain_regex:  domain_keyword 
+
+          list=($(ls ./defaultdata | sed 's/\.txt//g'))
+          for ((i = 0; i < ${#list[@]}; i++)); do
+            echo -e '{\n  "version": 1,\n  "rules": [\n    {'> ./customsing-ruleset/sites/${list[i]}.json
+            #get domain
+            sed -n '/^\(domain:\|full:\).*\./p' ./defaultdata/${list[i]}.txt | sed  's/^\(domain:\|full:\)/        "/; s/$/",/;$ s/,$//;1s/^/      "domain": [\n/;$s/$/\n      ],/' >> ./customsing-ruleset/sites/${list[i]}.json
+            #get domain_suffix
+            sed -n '/^\(domain:\|full:\)/p' ./defaultdata/${list[i]}.txt | sed  's/^\(domain:\|full:\)/        "\./; s/$/",/;$ s/,$//;1s/^/      "domain_suffix": [\n/;$s/$/\n      ],/' >> ./customsing-ruleset/sites/${list[i]}.json
+            #get domain_regex
+            sed -n '/^regexp:/p' ./defaultdata/${list[i]}.txt | sed 's/^regexp:/        "/;s/\\./\\\\./g; s/$/",/;$ s/,$//;1s/^/      "domain_regex": [\n/;$s/$/\n      ],/' >> ./customsing-ruleset/sites/${list[i]}.json
+            # get domain_keyword
+            # sed -n '/^\(keyword:\)/p' ./singdata/${list[i]}.txt | sed  's/^\(|keyword:\)/        "/; s/$/",/;$ s/,$//;1s/^/      "domain_keyword": [\n/;$s/$/\n      ],/'  >>  ./customsing-ruleset/sites/${list[i]}.json
+            # sed -n '/^\(domain:\|full:\|keyword:\)[^.]*$/p' ./singdata/${list[i]}.txt | sed  's/^\(domain:\|full:\|keyword:\)/        "\./; s/$/",/;$ s/,$//;1s/^/      "domain_keyword": [\n/;$s/$/\n      ],/' >>  ./customsing-ruleset/sites/${list[i]}.json
+            # del ,
+            sed -i '$s/,$//' ./customsing-ruleset/sites/${list[i]}.json
+            echo -e "    }\n  ]\n}" >> ./customsing-ruleset/sites/${list[i]}.json
           done
 
-
-      # - name: Release geosite rule sets
-      #   if: steps.build.outputs.skip != 'true'
-      #   run: |
-      #     chmod +x .github/release-rule-set.sh
-      #     cd rule-set
-      #     set -e -o pipefail
-      #     git init
-      #     git config --local user.email "github-action@users.noreply.github.com"
-      #     git config --local user.name "GitHub Action"
-      #     git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/dbrules.git
-      #     git branch -M geosite-rule-set
-      #     git add .
-      #     git commit -m "Update rule-set"
-      #     git push -f origin geosite-rule-set
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-      # - name: Release geoip rule sets
-      #   if: steps.build.outputs.skip != 'true'
-      #   run: |
-      #     chmod +x .github/release-rule-set.sh
-      #     cd .geoip/rule-set
-      #     set -e -o pipefail
-      #     git init
-      #     git config --local user.email "github-action@users.noreply.github.com"
-      #     git config --local user.name "GitHub Action"
-      #     git remote add origin https://github-action:$GITHUB_TOKEN@github.com/gtpass/dbrules.git
-      #     git branch -M geoip-rule-set
-      #     git add .
-      #     git commit -m "Update rule-set"
-      #     git push -f origin geoip-rule-set
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Generate sha256 hash
-        if: steps.build.outputs.skip != 'true'
+      - name: compile  customsing-ruleset/sites/json to srs  
         run: |
-          sha256sum geoip.dat > geoip.dat.sha256sum
-          sha256sum geosite.dat > geosite.dat.sha256sum
- 
-          sha256sum geoip.db > geoip.db.sha256sum          
-          sha256sum geosite.db > geosite.db.sha256sum   
-          
+          list=($(ls ./customsing-ruleset/sites/ | sed 's/\.json//g'))
+          for ((i = 0; i < ${#list[@]}; i++)); do
+          ./sing-box rule-set compile "./customsing-ruleset/sites/${list[i]}.json" -o ./customsing-ruleset/sites/${list[i]}.srs 
+          done
+          cp -rf ./geoconvert/ips ./customsing-ruleset/
+          rm ./sing-box
+
+      - name: Git push assets to "singconvert" branch
+
+        run: |
+
+          cd geoconvert || exit 1
+
+          git init
+
+          git config --local user.name "github-actions[bot]"
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b singconvert
+
+          git add .
+
+          git commit -m "${{ env.RELEASE_NAME }}"
+
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+
+          git push -f -u origin singconvert  
+
+      - name: Set up dbrules SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$GITHUBACTIONS" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts    
+
+      - name: Git push assets to "singcustom" branch
+
+        run: |
+
+          cd customsing-ruleset || exit 1
+
+          git init
+
+          git config --local user.name "github-actions[bot]"
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b singcustom
+
+          git add .
+
+          git commit -m "${{ env.RELEASE_NAME }}"
+
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          # git@github.com:gtpass/dbrules.git
+          git remote add dbrulesorigin  "https://${{ github.actor }}:$DBRULES_TOKEN@github.com/gtpass/dbrules"
+
+          git push -f -u origin singcustom 
+          git push -f -u dbrulesorigin singcustom  
+
+      - name: Git push assets to "defaultdata" branch
+
+        run: |
+
+          cd defaultdata || exit 1
+
+          git init
+
+          git config --local user.name "github-actions[bot]"
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b defaultdata
+
+          git add .
+
+          git commit -m "${{ env.RELEASE_NAME }}"
+
+          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+
+          git push -f -u origin defaultdata
+
+      - name: Move and  geosite.dat files and generate sha256 hash
+
+        run: |
+          sha256sum ./geosite.dat > ./geosite.dat.sha256sum
+          sha256sum ./geoip.dat > ./geoip.dat.sha256sum
+          sha256sum ./geosite-convert.db > ./geosite-convert.db.sha256sum
+          sha256sum ./geoip-convert.db > ./geoip-convert.db.sha256sum
+
+          install -Dp ./geoip.dat ./publish/geoip.dat
+
+          install -Dp ./geoip.dat.sha256sum ./publish/geoip.dat.sha256sum
+
+          install -Dp ./geosite.dat ./publish/geosite.dat
+
+          install -Dp ./geosite.dat.sha256sum ./publish/geosite.dat.sha256sum
+
+          install -Dp ./geoip-convert.db ./publish/geoip-convert.db
+
+          install -Dp ./geoip-convert.db.sha256sum ./publish/geoip-convert.db.sha256sum
+
+          install -Dp ./geosite-convert.db ./publish/geosite-convert.db
+
+          install -Dp ./geosite-convert.db.sha256sum ./publish/geosite-convert.db.sha256sum
+
+          # cd ./publish || exit 1
+
       - name: Delete current release assets
         uses: andreaswilli/delete-release-assets-action@v3.0.0
         with:
@@ -253,6 +525,7 @@ jobs:
           deleteOnlyFromDrafts: false
 
       - name: Create and Upload Release
+
         id: upload_release
         uses: svenstaro/upload-release-action@v2
         with:
@@ -262,61 +535,99 @@ jobs:
           file_glob: true
           overwrite: true
           file: ./publish/*
-          
+
       - name: Git push assets to "release" branch
+
         run: |
+
           cd publish || exit 1
+
           git init
+
           git config --local user.name "github-actions[bot]"
+
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
           git checkout -b release
+
           git add .
-          git commit -m "Released on ${{ env.BUILDTIME }}"
+
+          git commit -m "${{ env.RELEASE_NAME }}"
+
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          # git@github.com:gtpass/dbrules.git
+          # git remote add dbrulesorigin  "https://${{ github.actor }}:$DBRULES_TOKEN@github.com/gtpass/dbrules"
+
           git push -f -u origin release
-          
-      - name: Git push assets to "sing" branch
-        run: |
-            cd sing-rule || exit 1
-            ls
-            git init
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git checkout -b sing
-            git add .
-            git commit -m "Released on ${{ env.BUILDTIME }}"
-            git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-            git push -f -u origin sing
-
-      - name: Git push default assets to "singdefault" branch
-        run: |
-            cd singdefault || exit 1
-            ls
-            git init
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git checkout -b singdefault
-            git add .
-            git commit -m "Released on ${{ env.BUILDTIME }}"
-            git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-            git push -f -u origin singdefault
-
-      - name: Git push assets to "rocket-rule" branch
-        run: |
-            cd rocket-rule || exit 1
-            ls
-            git init
-            git config --local user.name "github-actions[bot]"
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git checkout -b rocket-rule
-            git add .
-            git commit -m "Released on ${{ env.BUILDTIME }}"
-            git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-            git push -f -u origin rocket-rule
-            
+          # git push -f -u dbrulesorigin release
+     
       - name: Purge jsdelivr CDN
+
         run: |
+
           cd publish || exit 1
+
           for file in $(ls); do
+
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
+
           done
+
+
+      - name: Delete dbrules current releases assets
+        uses: andreaswilli/delete-release-assets-action@v3.0.0
+        with:
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: $DBRULES_TOKEN
+          tag: latest
+          deleteOnlyFromDrafts: false
+
+      - name: Create and Upload dbrules Releases
+
+        id: upload_release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          # repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: $DBRULES_TOKEN
+          release_name: Releases ${{ env.BUILDTIME }}
+          tag: latest
+          file_glob: true
+          overwrite: true
+          file: ./publish/*
+
+      - name: Git push assets to dbrules "releases" branch
+
+        run: |
+
+          cd publish || exit 1
+
+          git init
+
+          git config --local user.name "github-actions[bot]"
+
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b releases
+
+          git add .
+
+          git commit -m "${{ env.RELEASE_NAME }}"
+
+          # git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          # git@github.com:gtpass/dbrules.git
+          git remote add dbrulesorigin  "https://${{ github.actor }}:$DBRULES_TOKEN@github.com/gtpass/dbrules"
+
+          # git push -f -u origin release
+          git push -f -u dbrulesorigin releases
+
+      - name: Purge dbrules jsdelivr CDN
+
+        run: |
+
+          cd publish || exit 1
+
+          for file in $(ls); do
+
+            curl -i "https://purge.jsdelivr.net/gh/gtpass/dbrules@release/${file}"
+
+          done           
