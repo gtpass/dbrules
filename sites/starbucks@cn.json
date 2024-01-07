@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "starbucks.com.cn"
+      ],
+      "domain_suffix": [
+        ".starbucks.com.cn"
+      ]
+    }
+  ]
+}

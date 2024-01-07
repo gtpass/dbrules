@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "tsquare.tv"
+      ],
+      "domain_suffix": [
+        ".tsquare.tv"
+      ]
+    }
+  ]
+}

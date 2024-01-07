@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fflogs.com",
+        "rpglogs.com"
+      ],
+      "domain_suffix": [
+        ".fflogs.com",
+        ".rpglogs.com"
+      ]
+    }
+  ]
+}

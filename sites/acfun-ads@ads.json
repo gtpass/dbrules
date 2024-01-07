@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "apilog-web.acfun.cn"
+      ],
+      "domain_suffix": [
+        ".apilog-web.acfun.cn"
+      ]
+    }
+  ]
+}

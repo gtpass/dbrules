@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "myip.la"
+      ],
+      "domain_suffix": [
+        ".myip.la"
+      ]
+    }
+  ]
+}

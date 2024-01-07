@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dtci.co",
+        "dtci.technology",
+        "espn.co.uk",
+        "espn.com",
+        "espn.net",
+        "espncdn.com",
+        "espnqa.com",
+        "espn.api.edge.bamgrid.com",
+        "espn.hb.omtrdc.net",
+        "espndotcom.tt.omtrdc.net",
+        "watchespn.com"
+      ],
+      "domain_suffix": [
+        ".dtci.co",
+        ".dtci.technology",
+        ".espn.co.uk",
+        ".espn.com",
+        ".espn.net",
+        ".espncdn.com",
+        ".espnqa.com",
+        ".espn.api.edge.bamgrid.com",
+        ".espn.hb.omtrdc.net",
+        ".espndotcom.tt.omtrdc.net",
+        ".watchespn.com"
+      ]
+    }
+  ]
+}

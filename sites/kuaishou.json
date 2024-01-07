@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "gifshow.com",
+        "ksapisrv.com",
+        "kuaishou.com",
+        "kuaishouzt.com",
+        "kwaizt.com",
+        "yximgs.com"
+      ],
+      "domain_suffix": [
+        ".gifshow.com",
+        ".ksapisrv.com",
+        ".kuaishou.com",
+        ".kuaishouzt.com",
+        ".kwaizt.com",
+        ".yximgs.com"
+      ]
+    }
+  ]
+}

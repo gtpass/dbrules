@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "asus.com"
+      ],
+      "domain_suffix": [
+        ".asus.com"
+      ]
+    }
+  ]
+}

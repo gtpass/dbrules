@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "tvbc.com.cn"
+      ],
+      "domain_suffix": [
+        ".tvbc.com.cn"
+      ]
+    }
+  ]
+}

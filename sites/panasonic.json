@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "panasonic",
+        "panasonic.com",
+        "panasonic.jp",
+        "technics.com"
+      ],
+      "domain_suffix": [
+        ".panasonic",
+        ".panasonic.com",
+        ".panasonic.jp",
+        ".technics.com"
+      ]
+    }
+  ]
+}

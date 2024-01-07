@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "farfetch-apps.com",
+        "farfetch-contents.com",
+        "farfetch.com",
+        "farfetch.net",
+        "fflnk.net"
+      ],
+      "domain_suffix": [
+        ".farfetch-apps.com",
+        ".farfetch-contents.com",
+        ".farfetch.com",
+        ".farfetch.net",
+        ".fflnk.net"
+      ]
+    }
+  ]
+}
