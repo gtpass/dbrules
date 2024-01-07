@@ -1,0 +1,9 @@
+DOMAIN-SUFFIX,azurecr.io,category-container
+DOMAIN-SUFFIX,docker.io,category-container
+DOMAIN-SUFFIX,ecr.aws,category-container
+DOMAIN-SUFFIX,gcr.io,category-container
+DOMAIN-SUFFIX,ghcr.io,category-container
+DOMAIN-SUFFIX,mcr.microsoft.com,category-container
+DOMAIN-SUFFIX,quay.io,category-container
+DOMAIN-SUFFIX,registry.gitlab.com,category-container
+DOMAIN-SUFFIX,registry.k8s.io,category-container

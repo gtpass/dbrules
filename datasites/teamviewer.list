@@ -1,0 +1,4 @@
+DOMAIN,client-teamviewer-com.trafficmanager.net,teamviewer
+DOMAIN,teamviewer.com.cdn.cloudflare.net,teamviewer
+DOMAIN-SUFFIX,teamviewer.com,teamviewer
+DOMAIN-SUFFIX,teamviewer.us,teamviewer

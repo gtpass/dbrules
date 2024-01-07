@@ -1,0 +1,3 @@
+DOMAIN-SUFFIX,exit,tor
+DOMAIN-SUFFIX,onion,tor
+DOMAIN-SUFFIX,tor,tor

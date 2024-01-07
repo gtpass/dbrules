@@ -1,0 +1,4 @@
+DOMAIN-SUFFIX,crates.io,rust
+DOMAIN-SUFFIX,docs.rs,rust
+DOMAIN-SUFFIX,rust-lang.org,rust
+DOMAIN-SUFFIX,rustup.rs,rust

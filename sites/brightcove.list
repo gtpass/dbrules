@@ -1,0 +1,14 @@
+DOMAIN,bcovlive-a.akamaihd.net,brightcove
+DOMAIN,bcsecure01-a.akamaihd.net,brightcove
+DOMAIN,brightcove.imgix.net,brightcove
+DOMAIN-SUFFIX,bcove.video,brightcove
+DOMAIN-SUFFIX,bcovlive.io,brightcove
+DOMAIN-SUFFIX,bcvp0rtal.com,brightcove
+DOMAIN-SUFFIX,boltdns.net,brightcove
+DOMAIN-SUFFIX,brightcove.com,brightcove
+DOMAIN-SUFFIX,brightcove.net,brightcove
+DOMAIN-SUFFIX,brightcove.services,brightcove
+DOMAIN-SUFFIX,brightcovecdn.com,brightcove
+DOMAIN-SUFFIX,videojs.com,brightcove
+DOMAIN-SUFFIX,zencdn.net,brightcove
+DOMAIN-SUFFIX,zencoder.com,brightcove

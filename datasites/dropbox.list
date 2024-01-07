@@ -1,0 +1,16 @@
+DOMAIN-SUFFIX,db.tt,dropbox
+DOMAIN-SUFFIX,dropbox-dns.com,dropbox
+DOMAIN-SUFFIX,dropbox.com,dropbox
+DOMAIN-SUFFIX,dropbox.tech,dropbox
+DOMAIN-SUFFIX,dropboxapi.com,dropbox
+DOMAIN-SUFFIX,dropboxbusiness.com,dropbox
+DOMAIN-SUFFIX,dropboxcaptcha.com,dropbox
+DOMAIN-SUFFIX,dropboxforum.com,dropbox
+DOMAIN-SUFFIX,dropboxforums.com,dropbox
+DOMAIN-SUFFIX,dropboxinsiders.com,dropbox
+DOMAIN-SUFFIX,dropboxmail.com,dropbox
+DOMAIN-SUFFIX,dropboxpartners.com,dropbox
+DOMAIN-SUFFIX,dropboxstatic.com,dropbox
+DOMAIN-SUFFIX,dropboxusercontent.com,dropbox
+DOMAIN,paper-attachments.s3.amazonaws.com,dropbox
+DOMAIN-SUFFIX,getdropbox.com,dropbox

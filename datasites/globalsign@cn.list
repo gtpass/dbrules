@@ -1,0 +1,7 @@
+DOMAIN,crl.alphassl.com,globalsign@cn
+DOMAIN,crl2.alphassl.com,globalsign@cn
+DOMAIN,global.prd.cdn.globalsign.com,globalsign@cn
+DOMAIN,ocsp.globalsign.com,globalsign@cn
+DOMAIN,ocsp2.globalsign.com,globalsign@cn
+DOMAIN,secure.globalsign.com,globalsign@cn
+DOMAIN,secure2.alphassl.com,globalsign@cn

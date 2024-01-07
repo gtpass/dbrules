@@ -1,0 +1,5 @@
+DOMAIN,crl.microsoft.com,microsoft-pki
+DOMAIN,mscrl.microsoft.com,microsoft-pki
+DOMAIN,ocsp.microsoft.com,microsoft-pki
+DOMAIN,oneocsp.microsoft.com,microsoft-pki
+DOMAIN-SUFFIX,msocsp.com,microsoft-pki
