@@ -103,11 +103,11 @@ jobs:
         uses: actions/setup-go@v5
 
         with:
-          go-version-file:   ./community/go.mod
+          go-version: ^1.22
 
           cache-dependency-path: ./community/go.sum
 
-          go-version: ${{ steps.version.outputs.go_version }}
+          #go-version: ${{ steps.version.outputs.go_version }}
 
       - name: convert data to txt
 
