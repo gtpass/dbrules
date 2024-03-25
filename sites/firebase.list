@@ -1,0 +1,16 @@
+DOMAIN,firebase.google.com,firebase
+DOMAIN,firebase.googleapis.com,firebase
+DOMAIN,firebaseappcheck.googleapis.com,firebase
+DOMAIN,firebasedynamiclinks-ipv4.googleapis.com,firebase
+DOMAIN,firebasedynamiclinks-ipv6.googleapis.com,firebase
+DOMAIN,firebasedynamiclinks.googleapis.com,firebase
+DOMAIN,firebaseinappmessaging.googleapis.com,firebase
+DOMAIN,firebaseinstallations.googleapis.com,firebase
+DOMAIN,firebaselogging-pa.googleapis.com,firebase
+DOMAIN,firebaselogging.googleapis.com,firebase
+DOMAIN,firebaseperusertopics-pa.googleapis.com,firebase
+DOMAIN,firebaseremoteconfig.googleapis.com,firebase
+DOMAIN-SUFFIX,firebase.com,firebase
+DOMAIN-SUFFIX,firebase.io,firebase
+DOMAIN-SUFFIX,firebaseapp.com,firebase
+DOMAIN-SUFFIX,firebaseio.com,firebase

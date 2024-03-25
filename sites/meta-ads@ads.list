@@ -1,0 +1,13 @@
+DOMAIN-SUFFIX,b-graph-fallback.facebook.com,meta-ads@ads
+DOMAIN-SUFFIX,b-graph.facebook.com,meta-ads@ads
+DOMAIN-SUFFIX,connect.facebook.com,meta-ads@ads
+DOMAIN-SUFFIX,connect.facebook.net,meta-ads@ads
+DOMAIN-SUFFIX,graph-fallback.facebook.com,meta-ads@ads
+DOMAIN-SUFFIX,graph-fallback.instagram.com,meta-ads@ads
+DOMAIN-SUFFIX,graph.facebook.com,meta-ads@ads
+DOMAIN-SUFFIX,graph.fbpigeon.com,meta-ads@ads
+DOMAIN-SUFFIX,graph.instagram.com,meta-ads@ads
+DOMAIN-SUFFIX,graph.whatsapp.com,meta-ads@ads
+DOMAIN-SUFFIX,graph.whatsapp.net,meta-ads@ads
+DOMAIN-SUFFIX,mqtt-mini.facebook.com,meta-ads@ads
+DOMAIN-SUFFIX,z-m-graph.facebook.com,meta-ads@ads

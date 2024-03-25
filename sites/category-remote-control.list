@@ -1,0 +1,7 @@
+DOMAIN,client-teamviewer-com.trafficmanager.net,category-remote-control
+DOMAIN,teamviewer.com.cdn.cloudflare.net,category-remote-control
+DOMAIN-SUFFIX,anydesk.com,category-remote-control
+DOMAIN-SUFFIX,nomachine.com,category-remote-control
+DOMAIN-SUFFIX,rustdesk.com,category-remote-control
+DOMAIN-SUFFIX,teamviewer.com,category-remote-control
+DOMAIN-SUFFIX,teamviewer.us,category-remote-control

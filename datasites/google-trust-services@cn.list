@@ -1,0 +1,4 @@
+DOMAIN,crl.pki.goog,google-trust-services@cn
+DOMAIN,crls.pki.goog,google-trust-services@cn
+DOMAIN,ocsp.pki.goog,google-trust-services@cn
+DOMAIN,pki-goog.l.google.com,google-trust-services@cn

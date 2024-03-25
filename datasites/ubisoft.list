@@ -1,0 +1,7 @@
+DOMAIN,ubisoft-orbit-savegames.s3.amazonaws.com,ubisoft
+DOMAIN,ubisoft-uplay-savegames.s3.amazonaws.com,ubisoft
+DOMAIN,ubistatic3-a.akamaihd.net,ubisoft
+DOMAIN-SUFFIX,ubi.com,ubisoft
+DOMAIN-SUFFIX,ubisoft.com,ubisoft
+DOMAIN-SUFFIX,ubisoftconnect.com,ubisoft
+DOMAIN-SUFFIX,uplay.com,ubisoft

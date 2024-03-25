@@ -1,0 +1,3 @@
+DOMAIN,clients1.google.com,google-trust-services
+DOMAIN,pki.google.com,google-trust-services
+DOMAIN-SUFFIX,pki.goog,google-trust-services

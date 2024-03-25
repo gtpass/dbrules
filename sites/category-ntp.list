@@ -1,0 +1,12 @@
+DOMAIN-SUFFIX,ntp.se,category-ntp
+DOMAIN-SUFFIX,clock.isc.org,category-ntp
+DOMAIN-SUFFIX,ntp.fiord.ru,category-ntp
+DOMAIN-SUFFIX,ntp.nat.ms,category-ntp
+DOMAIN-SUFFIX,ntp.nic.cz,category-ntp
+DOMAIN-SUFFIX,ntp.nict.jp,category-ntp
+DOMAIN-SUFFIX,ntp.ripe.net,category-ntp
+DOMAIN-SUFFIX,ntp.ufe.cz,category-ntp
+DOMAIN-SUFFIX,pool.ntp.org,category-ntp
+DOMAIN-SUFFIX,time.cloudflare.com,category-ntp
+DOMAIN-SUFFIX,time.nrc.ca,category-ntp
+DOMAIN-SUFFIX,time.windows.com,category-ntp
