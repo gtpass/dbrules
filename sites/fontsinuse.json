@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fontsinuse.com"
+      ],
+      "domain_suffix": [
+        ".fontsinuse.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "accuratead.cn",
+        "dutils.com",
+        "mob.com"
+      ],
+      "domain_suffix": [
+        ".accuratead.cn",
+        ".dutils.com",
+        ".mob.com"
+      ]
+    }
+  ]
+}

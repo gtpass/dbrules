@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "nodejs.org"
+      ],
+      "domain_suffix": [
+        ".nodejs.org"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mortein.co.in",
+        "mortein.co.nz",
+        "mortein.co.za",
+        "mortein.com",
+        "mortein.com.au",
+        "mortein.com.br",
+        "mortein.com.ng",
+        "mortein.com.pk",
+        "morteincam.com",
+        "pifpafarabia.com"
+      ],
+      "domain_suffix": [
+        ".mortein.co.in",
+        ".mortein.co.nz",
+        ".mortein.co.za",
+        ".mortein.com",
+        ".mortein.com.au",
+        ".mortein.com.br",
+        ".mortein.com.ng",
+        ".mortein.com.pk",
+        ".morteincam.com",
+        ".pifpafarabia.com"
+      ]
+    }
+  ]
+}

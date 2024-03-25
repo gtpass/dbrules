@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "acfun.cn",
+        "aixifan.com"
+      ],
+      "domain_suffix": [
+        ".acfun.cn",
+        ".aixifan.com"
+      ]
+    }
+  ]
+}

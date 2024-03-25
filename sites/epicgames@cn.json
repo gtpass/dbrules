@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_regex": [
+        "^cdn\\.-epicgames-\\.+\\.file\\.myqcloud\\.com$",
+        "^epicgames-download\\.-\\.+\\.file\\.myqcloud\\.com$"
+      ]
+    }
+  ]
+}

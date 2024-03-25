@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "manmanbuy.com"
+      ],
+      "domain_suffix": [
+        ".manmanbuy.com"
+      ]
+    }
+  ]
+}

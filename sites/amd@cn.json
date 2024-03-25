@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "www.amd.com"
+      ],
+      "domain_suffix": [
+        ".www.amd.com"
+      ]
+    }
+  ]
+}

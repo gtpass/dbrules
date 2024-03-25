@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "chinapower.csis.org"
+      ],
+      "domain_suffix": [
+        ".chinapower.csis.org"
+      ]
+    }
+  ]
+}

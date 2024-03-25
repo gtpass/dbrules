@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ztedevices.com"
+      ],
+      "domain_suffix": [
+        ".ztedevices.com"
+      ]
+    }
+  ]
+}

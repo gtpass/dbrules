@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "unity.com",
+        "unity3d.com"
+      ],
+      "domain_suffix": [
+        ".unity.com",
+        ".unity3d.com"
+      ]
+    }
+  ]
+}

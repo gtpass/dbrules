@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "inoreader.com"
+      ],
+      "domain_suffix": [
+        ".inoreader.com"
+      ]
+    }
+  ]
+}
