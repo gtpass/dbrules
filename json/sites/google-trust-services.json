@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "clients1.google.com",
+        "pki.google.com",
+        "pki.goog"
+      ],
+      "domain_suffix": ".pki.goog"
+    }
+  ]
+}

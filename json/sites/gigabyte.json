@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "aorus.com",
+        "gigabyte2.azureedge.net",
+        "sa78gs.wpc.edgecastcdn.net",
+        "sni1dcb6gl.wpc.edgecastcdn.net",
+        "gigabyte.com"
+      ],
+      "domain_suffix": [
+        ".aorus.com",
+        ".gigabyte.com"
+      ]
+    }
+  ]
+}

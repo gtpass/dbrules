@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "acer-group.com",
+        "acer.com"
+      ],
+      "domain_suffix": [
+        ".acer-group.com",
+        ".acer.com"
+      ]
+    }
+  ]
+}

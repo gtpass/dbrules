@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "clearasil.us",
+      "domain_suffix": ".clearasil.us"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dnvodcdn.me",
+        "iyf.tv"
+      ],
+      "domain_suffix": [
+        ".dnvodcdn.me",
+        ".iyf.tv"
+      ]
+    }
+  ]
+}

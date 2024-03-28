@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bluestacks.com",
+        "fflogs.com",
+        "maa.plus",
+        "playcover.io",
+        "playcover.workers.dev",
+        "poi.moe",
+        "prts.plus",
+        "rpglogs.com"
+      ],
+      "domain_suffix": [
+        ".bluestacks.com",
+        ".fflogs.com",
+        ".maa.plus",
+        ".playcover.io",
+        ".playcover.workers.dev",
+        ".poi.moe",
+        ".prts.plus",
+        ".rpglogs.com"
+      ]
+    }
+  ]
+}

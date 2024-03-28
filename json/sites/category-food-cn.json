@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "3songshu.com",
+        "517lppz.com",
+        "haidilao.com",
+        "heytea.com",
+        "lppz.com",
+        "lppzimg.com"
+      ],
+      "domain_suffix": [
+        ".3songshu.com",
+        ".517lppz.com",
+        ".haidilao.com",
+        ".heytea.com",
+        ".lppz.com",
+        ".lppzimg.com"
+      ]
+    }
+  ]
+}

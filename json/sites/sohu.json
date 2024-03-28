@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "itc.cn",
+        "sohu.com",
+        "sohucs.com"
+      ],
+      "domain_suffix": [
+        ".itc.cn",
+        ".sohu.com",
+        ".sohucs.com"
+      ]
+    }
+  ]
+}

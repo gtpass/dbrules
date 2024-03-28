@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fastly-terrarium.com",
+        "fastly.com",
+        "fastly.net",
+        "fastlylabs.com",
+        "fastlylb.net",
+        "zencdn.net"
+      ],
+      "domain_suffix": [
+        ".fastly-terrarium.com",
+        ".fastly.com",
+        ".fastly.net",
+        ".fastlylabs.com",
+        ".fastlylb.net",
+        ".zencdn.net"
+      ]
+    }
+  ]
+}

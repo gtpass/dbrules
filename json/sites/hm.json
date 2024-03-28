@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "hm.com",
+      "domain_suffix": ".hm.com"
+    }
+  ]
+}

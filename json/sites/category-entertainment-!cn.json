@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "byteoversea.com",
+        "p16-tiktokcdn-com.akamaized.net",
+        "muscdn.com",
+        "musical.ly",
+        "supercell.com",
+        "tik-tokapi.com",
+        "tiktok.com",
+        "tiktokcdn-us.com",
+        "tiktokcdn.com",
+        "tiktokd.net",
+        "tiktokd.org",
+        "tiktokv.com",
+        "tiktokv.us",
+        "tiktokw.us",
+        "ttwstatic.com"
+      ],
+      "domain_suffix": [
+        ".byteoversea.com",
+        ".muscdn.com",
+        ".musical.ly",
+        ".supercell.com",
+        ".tik-tokapi.com",
+        ".tiktok.com",
+        ".tiktokcdn-us.com",
+        ".tiktokcdn.com",
+        ".tiktokd.net",
+        ".tiktokd.org",
+        ".tiktokv.com",
+        ".tiktokv.us",
+        ".tiktokw.us",
+        ".ttwstatic.com"
+      ]
+    }
+  ]
+}
