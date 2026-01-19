@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "95588.com.cn",
+        "dccnet.com.cn",
+        "icbc.com.cn",
+        "icbccs.com.cn",
+        "icbccstz.com.cn",
+        "icbcmanila.com.cn"
+      ],
+      "domain_suffix": [
+        ".95588.com.cn",
+        ".dccnet.com.cn",
+        ".icbc.com.cn",
+        ".icbccs.com.cn",
+        ".icbccstz.com.cn",
+        ".icbcmanila.com.cn"
+      ]
+    }
+  ]
+}

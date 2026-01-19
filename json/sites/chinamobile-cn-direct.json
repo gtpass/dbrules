@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "10086.cn",
+        "andfx.cn",
+        "cmcc-cs.cn",
+        "cmft.com.cn",
+        "cmicrwx.cn",
+        "cmicvip.cn",
+        "cmvideo.cn",
+        "cytxl.com.cn",
+        "migu.cn",
+        "online-cmcc.cn"
+      ],
+      "domain_suffix": [
+        ".10086.cn",
+        ".andfx.cn",
+        ".cmcc-cs.cn",
+        ".cmft.com.cn",
+        ".cmicrwx.cn",
+        ".cmicvip.cn",
+        ".cmvideo.cn",
+        ".cytxl.com.cn",
+        ".migu.cn",
+        ".online-cmcc.cn"
+      ]
+    }
+  ]
+}

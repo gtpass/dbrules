@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "jiemian.com",
+      "domain_suffix": ".jiemian.com"
+    }
+  ]
+}

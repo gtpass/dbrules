@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "1234567.com.cn",
+        "18.cn",
+        "18.com.cn",
+        "guba.com.cn"
+      ],
+      "domain_suffix": [
+        ".1234567.com.cn",
+        ".18.cn",
+        ".18.com.cn",
+        ".guba.com.cn"
+      ]
+    }
+  ]
+}

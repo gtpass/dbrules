@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "e.kuaishou.cn",
+      "domain_suffix": ".e.kuaishou.cn"
+    }
+  ]
+}

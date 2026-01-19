@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bankofbeijing.com.cn",
+        "bosc.cn",
+        "bsb.com.cn",
+        "cgbchina.com.cn",
+        "cib.com.cn",
+        "citibank.com.cn",
+        "cmbc.com.cn",
+        "hxb.com.cn",
+        "kshbank.cn",
+        "ms-bank.cn",
+        "mybank.cn",
+        "njcb.com.cn",
+        "onebank.com.cn",
+        "spdb.com.cn",
+        "wegobank.cn"
+      ],
+      "domain_suffix": [
+        ".bankofbeijing.com.cn",
+        ".bosc.cn",
+        ".bsb.com.cn",
+        ".cgbchina.com.cn",
+        ".cib.com.cn",
+        ".citibank.com.cn",
+        ".cmbc.com.cn",
+        ".hxb.com.cn",
+        ".kshbank.cn",
+        ".ms-bank.cn",
+        ".mybank.cn",
+        ".njcb.com.cn",
+        ".onebank.com.cn",
+        ".spdb.com.cn",
+        ".wegobank.cn"
+      ]
+    }
+  ]
+}

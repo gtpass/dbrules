@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "cnki.com.cn",
+      "domain_suffix": ".cnki.com.cn"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "picself.cn",
+        "sina.cn",
+        "sina.com.cn",
+        "sinaimg.cn",
+        "sinajs.cn",
+        "t.cn",
+        "videoself.cn",
+        "wbimg.cn",
+        "wcdn.cn",
+        "weibo.cn",
+        "weibo.com.cn"
+      ],
+      "domain_suffix": [
+        ".picself.cn",
+        ".sina.cn",
+        ".sina.com.cn",
+        ".sinaimg.cn",
+        ".sinajs.cn",
+        ".t.cn",
+        ".videoself.cn",
+        ".wbimg.cn",
+        ".wcdn.cn",
+        ".weibo.cn",
+        ".weibo.com.cn"
+      ]
+    }
+  ]
+}

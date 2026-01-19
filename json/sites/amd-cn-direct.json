@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "amd.com.cn",
+      "domain_suffix": ".amd.com.cn"
+    }
+  ]
+}

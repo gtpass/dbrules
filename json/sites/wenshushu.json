@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "wenshushu.com",
+        "wenxiaozhan.com",
+        "wenxiaozhan.net",
+        "wss.cc",
+        "wss.email",
+        "wss.ink",
+        "wss.pet",
+        "wss.show",
+        "wss.zone"
+      ],
+      "domain_suffix": [
+        ".wenshushu.com",
+        ".wenxiaozhan.com",
+        ".wenxiaozhan.net",
+        ".wss.cc",
+        ".wss.email",
+        ".wss.ink",
+        ".wss.pet",
+        ".wss.show",
+        ".wss.zone"
+      ]
+    }
+  ]
+}

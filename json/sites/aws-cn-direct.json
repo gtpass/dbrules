@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "amazonaws-china.com",
+      "domain_suffix": ".amazonaws-china.com"
+    }
+  ]
+}

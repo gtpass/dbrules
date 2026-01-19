@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "moocs.unipus.cn",
+        "opencourse.pku.edu.cn",
+        "icourses.cn",
+        "icve.com.cn",
+        "mooc.cn"
+      ],
+      "domain_suffix": [
+        ".icourses.cn",
+        ".icve.com.cn",
+        ".mooc.cn"
+      ]
+    }
+  ]
+}

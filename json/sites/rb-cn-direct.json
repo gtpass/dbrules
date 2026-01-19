@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "reckittbenckiser.cn",
+        "reckittbenckiser.com.cn"
+      ],
+      "domain_suffix": [
+        ".reckittbenckiser.cn",
+        ".reckittbenckiser.com.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "oneplus.cn",
+      "domain_suffix": ".oneplus.cn"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "koowo.com",
+      "domain_suffix": ".koowo.com"
+    }
+  ]
+}

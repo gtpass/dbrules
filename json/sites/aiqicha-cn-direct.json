@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "aiqicha.cn",
+      "domain_suffix": ".aiqicha.cn"
+    }
+  ]
+}

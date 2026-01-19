@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "accxiaoheihe.com",
+        "chat.top",
+        "max-c.com",
+        "maxjia.com"
+      ],
+      "domain_suffix": [
+        ".accxiaoheihe.com",
+        ".chat.top",
+        ".max-c.com",
+        ".maxjia.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "baidu-cdn.cn",
+        "baidu.cn",
+        "baidu.com.cn",
+        "baiduyuncdn.cn",
+        "bce-cdn.cn",
+        "bdycdn.cn",
+        "bdydns.cn",
+        "duurl.cn",
+        "dwz.cn",
+        "jomocdn.cn",
+        "jomodns.cn",
+        "smartapps.cn"
+      ],
+      "domain_suffix": [
+        ".baidu-cdn.cn",
+        ".baidu.cn",
+        ".baidu.com.cn",
+        ".baiduyuncdn.cn",
+        ".bce-cdn.cn",
+        ".bdycdn.cn",
+        ".bdydns.cn",
+        ".duurl.cn",
+        ".dwz.cn",
+        ".jomocdn.cn",
+        ".jomodns.cn",
+        ".smartapps.cn"
+      ]
+    }
+  ]
+}

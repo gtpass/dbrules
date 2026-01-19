@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "51job.com",
+        "51jobcdn.com",
+        "yingjiesheng.com",
+        "yingjiesheng.net"
+      ],
+      "domain_suffix": [
+        ".51job.com",
+        ".51jobcdn.com",
+        ".yingjiesheng.com",
+        ".yingjiesheng.net"
+      ]
+    }
+  ]
+}

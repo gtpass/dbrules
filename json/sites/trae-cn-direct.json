@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "marscode.cn",
+        "marscode.com.cn",
+        "mcprev.cn",
+        "trae.cn",
+        "trae.com.cn",
+        "yoma.cn"
+      ],
+      "domain_suffix": [
+        ".marscode.cn",
+        ".marscode.com.cn",
+        ".mcprev.cn",
+        ".trae.cn",
+        ".trae.com.cn",
+        ".yoma.cn"
+      ]
+    }
+  ]
+}

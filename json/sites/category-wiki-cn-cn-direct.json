@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mcmod.cn",
+        "moegirl.org.cn",
+        "qiuwenbaike.cn"
+      ],
+      "domain_suffix": [
+        ".mcmod.cn",
+        ".moegirl.org.cn",
+        ".qiuwenbaike.cn"
+      ]
+    }
+  ]
+}

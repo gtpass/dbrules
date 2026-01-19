@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "17zuoye.cn",
+      "domain_suffix": ".17zuoye.cn"
+    }
+  ]
+}

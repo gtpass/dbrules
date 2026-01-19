@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "easytier.cn",
+        "smgv.cn",
+        "todesk.cn",
+        "woodo.cn"
+      ],
+      "domain_suffix": [
+        ".easytier.cn",
+        ".smgv.cn",
+        ".todesk.cn",
+        ".woodo.cn"
+      ]
+    }
+  ]
+}

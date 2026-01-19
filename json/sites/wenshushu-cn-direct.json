@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "wenshushu.cn",
+        "wenxiaozhan.cn",
+        "wss1.cn"
+      ],
+      "domain_suffix": [
+        ".wenshushu.cn",
+        ".wenxiaozhan.cn",
+        ".wss1.cn"
+      ]
+    }
+  ]
+}

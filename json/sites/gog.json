@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "gog-statics.com",
+        "gog.com"
+      ],
+      "domain_suffix": [
+        ".gog-statics.com",
+        ".gog.com"
+      ]
+    }
+  ]
+}

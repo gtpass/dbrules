@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "udalogistic.com",
+        "yunda56.com",
+        "yundaex.com",
+        "yundalog.com",
+        "yundaltl.com",
+        "yundasys.com"
+      ],
+      "domain_suffix": [
+        ".udalogistic.com",
+        ".yunda56.com",
+        ".yundaex.com",
+        ".yundalog.com",
+        ".yundaltl.com",
+        ".yundasys.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "asus.com",
+        "asuscloud.com",
+        "asuswebstorage.com"
+      ],
+      "domain_suffix": [
+        ".asus.com",
+        ".asuscloud.com",
+        ".asuswebstorage.com"
+      ]
+    }
+  ]
+}

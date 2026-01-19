@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "youzan.com",
+        "youzanyun.com"
+      ],
+      "domain_suffix": [
+        ".youzan.com",
+        ".youzanyun.com"
+      ]
+    }
+  ]
+}

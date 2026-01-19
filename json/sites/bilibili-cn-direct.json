@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "animetamashi.cn",
+        "anitama.cn",
+        "bigfun.cn",
+        "bigfunapp.cn",
+        "bili22.cn",
+        "bili2233.cn",
+        "bili23.cn",
+        "bili33.cn",
+        "bilibili.cn",
+        "bilibilipay.cn"
+      ],
+      "domain_suffix": [
+        ".animetamashi.cn",
+        ".anitama.cn",
+        ".bigfun.cn",
+        ".bigfunapp.cn",
+        ".bili22.cn",
+        ".bili2233.cn",
+        ".bili23.cn",
+        ".bili33.cn",
+        ".bilibili.cn",
+        ".bilibilipay.cn"
+      ]
+    }
+  ]
+}

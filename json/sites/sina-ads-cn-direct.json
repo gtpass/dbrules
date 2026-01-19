@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ad.sina.com.cn",
+        "ad.us.sinaimg.cn",
+        "adbox.sina.com.cn",
+        "adimg.mobile.sina.cn",
+        "beacon.sina.com.cn",
+        "click.uve.mobile.sina.cn",
+        "log.mix.sina.com.cn",
+        "log.sina.cn",
+        "log2.sina.cn",
+        "mixer.sina.cn",
+        "p4p.sina.com.cn",
+        "rs.sinajs.cn",
+        "sa.sina.cn",
+        "sbeacon.sina.com.cn",
+        "sdkclick.mobile.sina.cn",
+        "slog.sina.cn",
+        "slog.sina.com.cn",
+        "wapwbclick.mobile.sina.cn",
+        "wbclick.mobile.sina.cn"
+      ],
+      "domain_suffix": [
+        ".ad.sina.com.cn",
+        ".ad.us.sinaimg.cn",
+        ".adbox.sina.com.cn",
+        ".adimg.mobile.sina.cn",
+        ".beacon.sina.com.cn",
+        ".click.uve.mobile.sina.cn",
+        ".log.mix.sina.com.cn",
+        ".log.sina.cn",
+        ".log2.sina.cn",
+        ".mixer.sina.cn",
+        ".p4p.sina.com.cn",
+        ".rs.sinajs.cn",
+        ".sa.sina.cn",
+        ".sbeacon.sina.com.cn",
+        ".sdkclick.mobile.sina.cn",
+        ".slog.sina.cn",
+        ".slog.sina.com.cn",
+        ".wapwbclick.mobile.sina.cn",
+        ".wbclick.mobile.sina.cn"
+      ]
+    }
+  ]
+}

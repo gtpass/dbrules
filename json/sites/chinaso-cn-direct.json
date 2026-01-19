@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "pg0.cn",
+      "domain_suffix": ".pg0.cn"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "a-map.cn",
+      "domain_suffix": ".a-map.cn"
+    }
+  ]
+}

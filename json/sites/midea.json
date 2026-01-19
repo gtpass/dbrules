@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "irsnp.com",
+        "midea.com",
+        "mideaepayuat.com",
+        "msmartlife.com",
+        "smartmidea.net"
+      ],
+      "domain_suffix": [
+        ".irsnp.com",
+        ".midea.com",
+        ".mideaepayuat.com",
+        ".msmartlife.com",
+        ".smartmidea.net"
+      ]
+    }
+  ]
+}

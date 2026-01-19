@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "globalsign.cn",
+      "domain_suffix": ".globalsign.cn"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "vrzwk.com",
+        "vrzwk.net",
+        "vrzwk.top"
+      ],
+      "domain_suffix": [
+        ".vrzwk.com",
+        ".vrzwk.net",
+        ".vrzwk.top"
+      ]
+    }
+  ]
+}

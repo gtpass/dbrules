@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "115cloud.cn",
+        "116cd.cn"
+      ],
+      "domain_suffix": [
+        ".115cloud.cn",
+        ".116cd.cn"
+      ]
+    }
+  ]
+}

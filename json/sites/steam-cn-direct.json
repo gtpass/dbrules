@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "csgo.wmsj.cn",
+        "dota2.wmsj.cn",
+        "lv.queniujq.cn"
+      ],
+      "domain_suffix": [
+        ".csgo.wmsj.cn",
+        ".dota2.wmsj.cn"
+      ]
+    }
+  ]
+}

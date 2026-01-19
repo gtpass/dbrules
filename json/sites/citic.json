@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cfc108.com",
+        "chinaamc.com",
+        "citicbank.com",
+        "citiccapital.com",
+        "citiciam.com",
+        "citicifh.com",
+        "citicsf.com",
+        "clsa.com",
+        "csc108.com",
+        "ecitic.com"
+      ],
+      "domain_suffix": [
+        ".cfc108.com",
+        ".chinaamc.com",
+        ".citic",
+        ".citicbank.com",
+        ".citiccapital.com",
+        ".citiciam.com",
+        ".citicifh.com",
+        ".citicsf.com",
+        ".clsa.com",
+        ".csc108.com",
+        ".ecitic.com",
+        ".xn--fiq64b"
+      ]
+    }
+  ]
+}

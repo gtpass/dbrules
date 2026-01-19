@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "hupun.com",
+        "newniu.com",
+        "wanliniu.com"
+      ],
+      "domain_suffix": [
+        ".hupun.com",
+        ".newniu.com",
+        ".wanliniu.com"
+      ]
+    }
+  ]
+}

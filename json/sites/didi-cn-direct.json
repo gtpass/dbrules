@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "didi.cn",
+        "diditaxi.com.cn"
+      ],
+      "domain_suffix": [
+        ".didi.cn",
+        ".diditaxi.com.cn"
+      ]
+    }
+  ]
+}

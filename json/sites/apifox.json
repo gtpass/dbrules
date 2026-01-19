@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "apifox.com",
+      "domain_suffix": ".apifox.com"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "zoom.com.cn",
+      "domain_suffix": ".zoom.com.cn"
+    }
+  ]
+}

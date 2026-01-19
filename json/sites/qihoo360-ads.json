@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fenxi.com",
+        "mediav.com",
+        "mvad.com",
+        "qhupdate.com"
+      ],
+      "domain_suffix": [
+        ".fenxi.com",
+        ".mediav.com",
+        ".mvad.com",
+        ".qhupdate.com"
+      ]
+    }
+  ]
+}

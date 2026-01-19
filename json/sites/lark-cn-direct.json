@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bytexns.cn",
+        "okr.cn",
+        "okr.com.cn"
+      ],
+      "domain_suffix": [
+        ".bytexns.cn",
+        ".okr.cn",
+        ".okr.com.cn"
+      ]
+    }
+  ]
+}

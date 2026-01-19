@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "www.secretchina.com",
+      "domain_suffix": ".www.secretchina.com"
+    }
+  ]
+}

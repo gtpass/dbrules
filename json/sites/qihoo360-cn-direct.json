@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "360.cn",
+        "360panyun.cn",
+        "360sou.cn",
+        "360sou.com.cn",
+        "beifangsl.cn",
+        "dhsvc.cn",
+        "haosou.com.cn",
+        "n.cn",
+        "qihuapi.cn",
+        "sou.cn",
+        "urlqh.cn",
+        "yunpan.cn",
+        "zhaomi.cn"
+      ],
+      "domain_suffix": [
+        ".360.cn",
+        ".360panyun.cn",
+        ".360sou.cn",
+        ".360sou.com.cn",
+        ".beifangsl.cn",
+        ".dhsvc.cn",
+        ".haosou.com.cn",
+        ".n.cn",
+        ".qihuapi.cn",
+        ".sou.cn",
+        ".urlqh.cn",
+        ".yunpan.cn",
+        ".zhaomi.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "leetcode-cn.com",
+        "leetcode.cn",
+        "lingkou.cn",
+        "luogu.com.cn",
+        "openjudge.cn",
+        "rqnoj.cn"
+      ],
+      "domain_suffix": [
+        ".leetcode-cn.com",
+        ".leetcode.cn",
+        ".lingkou.cn",
+        ".luogu.com.cn",
+        ".openjudge.cn",
+        ".rqnoj.cn"
+      ]
+    }
+  ]
+}

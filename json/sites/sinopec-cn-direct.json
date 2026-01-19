@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "sinopecnews.com.cn",
+      "domain_suffix": ".sinopecnews.com.cn"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "pingan.com.cn",
+      "domain_suffix": ".pingan.com.cn"
+    }
+  ]
+}

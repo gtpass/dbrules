@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "2mdn-cn.net",
+        "admob-cn.com",
+        "app-measurement-cn.com",
+        "doubleclick-cn.net",
+        "doubleclick.cn",
+        "google-analytics-cn.com",
+        "googleads-cn.com",
+        "googleadservices-cn.com",
+        "googleadsserving.cn",
+        "googleoptimize-cn.com",
+        "googlesyndication-cn.com",
+        "googletagmanager-cn.com",
+        "googletagservices-cn.com",
+        "googletraveladservices-cn.com",
+        "googlevads-cn.com"
+      ],
+      "domain_suffix": [
+        ".2mdn-cn.net",
+        ".admob-cn.com",
+        ".app-measurement-cn.com",
+        ".doubleclick-cn.net",
+        ".doubleclick.cn",
+        ".google-analytics-cn.com",
+        ".googleads-cn.com",
+        ".googleadservices-cn.com",
+        ".googleadsserving.cn",
+        ".googleoptimize-cn.com",
+        ".googlesyndication-cn.com",
+        ".googletagmanager-cn.com",
+        ".googletagservices-cn.com",
+        ".googletraveladservices-cn.com",
+        ".googlevads-cn.com"
+      ]
+    }
+  ]
+}

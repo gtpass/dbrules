@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "lxdns.cn",
+        "qtlcdn.cn"
+      ],
+      "domain_suffix": [
+        ".lxdns.cn",
+        ".qtlcdn.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "askdiandian.com",
+        "diandianlife.top",
+        "xhscdn.com",
+        "xhscdn.net",
+        "xhslink.com",
+        "xiaohongshu.com"
+      ],
+      "domain_suffix": [
+        ".askdiandian.com",
+        ".diandianlife.top",
+        ".xhscdn.com",
+        ".xhscdn.net",
+        ".xhslink.com",
+        ".xiaohongshu.com"
+      ]
+    }
+  ]
+}

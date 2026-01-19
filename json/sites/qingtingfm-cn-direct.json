@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "qtfm.cn",
+      "domain_suffix": ".qtfm.cn"
+    }
+  ]
+}

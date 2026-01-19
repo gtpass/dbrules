@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "rainclassroom.com",
+      "domain_suffix": ".rainclassroom.com"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "xs.cn",
+        "xs8.cn"
+      ],
+      "domain_suffix": [
+        ".xs.cn",
+        ".xs8.cn"
+      ]
+    }
+  ]
+}

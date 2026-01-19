@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "doudou.com",
+        "mcbaas.work",
+        "mcdemo.show",
+        "mchost.guru",
+        "tcwqqdy.guru",
+        "trae.guru"
+      ],
+      "domain_suffix": [
+        ".doudou.com",
+        ".mcbaas.work",
+        ".mcdemo.show",
+        ".mchost.guru",
+        ".tcwqqdy.guru",
+        ".trae.guru"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "58.com.cn",
+        "58antenna.cn",
+        "58cdn.com.cn",
+        "58control.cn",
+        "58v5.cn",
+        "58xinghuo.cn",
+        "roomeet.cn",
+        "zhuanspirit.cn"
+      ],
+      "domain_suffix": [
+        ".58.com.cn",
+        ".58antenna.cn",
+        ".58cdn.com.cn",
+        ".58control.cn",
+        ".58v5.cn",
+        ".58xinghuo.cn",
+        ".roomeet.cn",
+        ".zhuanspirit.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "10099.com.cn",
+        "chn.cn",
+        "gcable.com.cn"
+      ],
+      "domain_suffix": [
+        ".10099.com.cn",
+        ".chn.cn",
+        ".gcable.com.cn"
+      ]
+    }
+  ]
+}

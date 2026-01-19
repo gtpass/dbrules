@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "zdnscloud.biz",
+        "zdnscloud.com",
+        "zdnscloud.info",
+        "zdnscloud.net"
+      ],
+      "domain_suffix": [
+        ".zdnscloud.biz",
+        ".zdnscloud.com",
+        ".zdnscloud.info",
+        ".zdnscloud.net"
+      ]
+    }
+  ]
+}

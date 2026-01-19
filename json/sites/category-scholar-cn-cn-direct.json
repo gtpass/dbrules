@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "airitilibrary.cn",
+        "ancientbooks.cn",
+        "ccf.org.cn",
+        "cidp.com.cn",
+        "drcnet.com.cn",
+        "hytung.cn",
+        "medalink.cn",
+        "noi.cn",
+        "nssd.cn",
+        "pishu.com.cn",
+        "sciencechina.cn",
+        "tokyotrial.cn",
+        "unihan.com.cn",
+        "wind.com.cn"
+      ],
+      "domain_suffix": [
+        ".airitilibrary.cn",
+        ".ancientbooks.cn",
+        ".ccf.org.cn",
+        ".cidp.com.cn",
+        ".drcnet.com.cn",
+        ".hytung.cn",
+        ".medalink.cn",
+        ".noi.cn",
+        ".nssd.cn",
+        ".pishu.com.cn",
+        ".sciencechina.cn",
+        ".tokyotrial.cn",
+        ".unihan.com.cn",
+        ".wind.com.cn"
+      ]
+    }
+  ]
+}

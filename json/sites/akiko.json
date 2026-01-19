@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "emoriko.com",
+      "domain_suffix": ".emoriko.com"
+    }
+  ]
+}

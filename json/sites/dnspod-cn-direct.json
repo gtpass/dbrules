@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dnsapi.cn",
+        "dnspod.cn",
+        "dnspod.com.cn"
+      ],
+      "domain_suffix": [
+        ".dnsapi.cn",
+        ".dnspod.cn",
+        ".dnspod.com.cn"
+      ]
+    }
+  ]
+}

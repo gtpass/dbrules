@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "oss-cn-hongkong.aliyuncs.com",
+      "domain_suffix": ".oss-cn-hongkong.aliyuncs.com"
+    }
+  ]
+}

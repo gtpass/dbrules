@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "bsclink.cn",
+      "domain_suffix": ".bsclink.cn"
+    }
+  ]
+}

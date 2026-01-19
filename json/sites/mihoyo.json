@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "genshinimpact.com",
+        "honkaiimpact3.com",
+        "honkaistarrail.com",
+        "hoyo.link",
+        "hoyolab.com",
+        "hoyoverse.com",
+        "log-upload-os.hoyoverse.com",
+        "log-upload.mihoyo.com",
+        "n0vadesktop.com",
+        "zenlesszonezero.com"
+      ],
+      "domain_suffix": [
+        ".genshinimpact.com",
+        ".honkaiimpact3.com",
+        ".honkaistarrail.com",
+        ".hoyo.link",
+        ".hoyolab.com",
+        ".hoyoverse.com",
+        ".log-upload-os.hoyoverse.com",
+        ".log-upload.mihoyo.com",
+        ".n0vadesktop.com",
+        ".zenlesszonezero.com"
+      ]
+    }
+  ]
+}

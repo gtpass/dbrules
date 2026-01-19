@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bilibiligame.co",
+        "bilibiligame.net",
+        "biligame.co",
+        "biligame.com",
+        "biligame.net"
+      ],
+      "domain_suffix": [
+        ".bilibiligame.co",
+        ".bilibiligame.net",
+        ".biligame.co",
+        ".biligame.com",
+        ".biligame.net"
+      ]
+    }
+  ]
+}

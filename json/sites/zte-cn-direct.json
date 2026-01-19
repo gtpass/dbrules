@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "nubia.cn",
+        "zte.com.cn"
+      ],
+      "domain_suffix": [
+        ".nubia.cn",
+        ".zte.com.cn"
+      ]
+    }
+  ]
+}

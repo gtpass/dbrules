@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "ddimg.cn",
+      "domain_suffix": ".ddimg.cn"
+    }
+  ]
+}

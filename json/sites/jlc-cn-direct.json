@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "jlc-3dp.cn",
+        "jlc-cnc.com",
+        "jlc3dp.cn",
+        "jlceda.cn",
+        "jlcgroup.cn",
+        "lceda.cn",
+        "szjlc.cn"
+      ],
+      "domain_suffix": [
+        ".jlc-3dp.cn",
+        ".jlc-cnc.com",
+        ".jlc3dp.cn",
+        ".jlceda.cn",
+        ".jlcgroup.cn",
+        ".lceda.cn",
+        ".szjlc.cn"
+      ]
+    }
+  ]
+}

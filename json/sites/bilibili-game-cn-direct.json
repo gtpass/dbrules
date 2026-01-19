@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "bilibiligame.cn",
+      "domain_suffix": ".bilibiligame.cn"
+    }
+  ]
+}

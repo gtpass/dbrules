@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "tigeek.net.cn",
+      "domain_suffix": ".tigeek.net.cn"
+    }
+  ]
+}

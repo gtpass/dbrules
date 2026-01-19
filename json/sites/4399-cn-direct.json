@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "4399.cn",
+        "4399sj.cn"
+      ],
+      "domain_suffix": [
+        ".4399.cn",
+        ".4399sj.cn"
+      ]
+    }
+  ]
+}

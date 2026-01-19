@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "1xhh.cn",
+        "debugmode.cn",
+        "maxadmin.cn",
+        "xiaoheihe.cn"
+      ],
+      "domain_suffix": [
+        ".1xhh.cn",
+        ".debugmode.cn",
+        ".maxadmin.cn",
+        ".xiaoheihe.cn"
+      ]
+    }
+  ]
+}

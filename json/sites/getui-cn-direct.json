@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "getui.cn",
+      "domain_suffix": ".getui.cn"
+    }
+  ]
+}

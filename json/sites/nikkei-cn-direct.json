@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "nikkei-cnbc.co.jp",
+      "domain_suffix": ".nikkei-cnbc.co.jp"
+    }
+  ]
+}

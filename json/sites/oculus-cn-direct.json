@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "oculus-china.com",
+      "domain_suffix": ".oculus-china.com"
+    }
+  ]
+}

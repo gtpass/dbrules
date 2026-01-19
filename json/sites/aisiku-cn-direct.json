@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "1tyy.cn",
+        "bbdc.cn",
+        "beingfine.cn",
+        "beingfine.com.cn",
+        "bubei.com.cn",
+        "is-cool.cn",
+        "is-cool.com.cn",
+        "langeasy.cn",
+        "langeasy.com.cn",
+        "learnywhere.cn",
+        "learnywhere.com.cn",
+        "qlisten.cn",
+        "qtyy.cn"
+      ],
+      "domain_suffix": [
+        ".1tyy.cn",
+        ".bbdc.cn",
+        ".beingfine.cn",
+        ".beingfine.com.cn",
+        ".bubei.com.cn",
+        ".is-cool.cn",
+        ".is-cool.com.cn",
+        ".langeasy.cn",
+        ".langeasy.com.cn",
+        ".learnywhere.cn",
+        ".learnywhere.com.cn",
+        ".qlisten.cn",
+        ".qtyy.cn"
+      ]
+    }
+  ]
+}

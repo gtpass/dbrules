@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dewuapp.cn",
+        "dewuhaowu.cn",
+        "dewuhd.cn",
+        "dewuhui.cn",
+        "dewus.cn",
+        "dewuyouhui.cn",
+        "dwhhd.cn",
+        "giftatdw.cn",
+        "growthsharebounce.cn",
+        "growthsharequestion.cn",
+        "growthsharetubular.cn",
+        "pengyoudewu.cn",
+        "theduapp.cn",
+        "theduapp.com.cn",
+        "wodehaodewu.cn",
+        "womendedw.cn"
+      ],
+      "domain_suffix": [
+        ".dewuapp.cn",
+        ".dewuhaowu.cn",
+        ".dewuhd.cn",
+        ".dewuhui.cn",
+        ".dewus.cn",
+        ".dewuyouhui.cn",
+        ".dwhhd.cn",
+        ".giftatdw.cn",
+        ".growthsharebounce.cn",
+        ".growthsharequestion.cn",
+        ".growthsharetubular.cn",
+        ".pengyoudewu.cn",
+        ".theduapp.cn",
+        ".theduapp.com.cn",
+        ".wodehaodewu.cn",
+        ".womendedw.cn"
+      ]
+    }
+  ]
+}

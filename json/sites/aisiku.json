@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "coolab.top",
+      "domain_suffix": ".coolab.top"
+    }
+  ]
+}

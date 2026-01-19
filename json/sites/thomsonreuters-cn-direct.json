@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "reutersagency.cn",
+        "thomsonreuters.cn"
+      ],
+      "domain_suffix": [
+        ".reutersagency.cn",
+        ".thomsonreuters.cn"
+      ]
+    }
+  ]
+}

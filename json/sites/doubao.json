@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "coze.site",
+        "doubao.com",
+        "doubaocdn.com",
+        "maoxiangai.com",
+        "myparallelstory.com",
+        "pixeldance.com"
+      ],
+      "domain_suffix": [
+        ".coze.site",
+        ".doubao.com",
+        ".doubaocdn.com",
+        ".maoxiangai.com",
+        ".myparallelstory.com",
+        ".pixeldance.com"
+      ]
+    }
+  ]
+}

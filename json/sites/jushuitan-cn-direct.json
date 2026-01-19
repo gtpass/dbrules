@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "doucang.cn",
+        "erp.cn",
+        "erp321.cn",
+        "jsterp.cn",
+        "jushuitan.cn",
+        "scm121.cn",
+        "shuiyaohuo.cn",
+        "surerp.cn",
+        "sursung.cn"
+      ],
+      "domain_suffix": [
+        ".doucang.cn",
+        ".erp.cn",
+        ".erp321.cn",
+        ".jsterp.cn",
+        ".jushuitan.cn",
+        ".scm121.cn",
+        ".shuiyaohuo.cn",
+        ".surerp.cn",
+        ".sursung.cn"
+      ]
+    }
+  ]
+}

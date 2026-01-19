@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "dangdang.com",
+      "domain_suffix": ".dangdang.com"
+    }
+  ]
+}

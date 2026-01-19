@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bank-of-china.com",
+        "boc.cn",
+        "boccfc.cn",
+        "bocichina.cn",
+        "bocichina.com.cn",
+        "bocifunds.cn",
+        "bocifunds.com.cn",
+        "bocservices.com.cn"
+      ],
+      "domain_suffix": [
+        ".bank-of-china.com",
+        ".boc.cn",
+        ".boccfc.cn",
+        ".bocichina.cn",
+        ".bocichina.com.cn",
+        ".bocifunds.cn",
+        ".bocifunds.com.cn",
+        ".bocservices.com.cn"
+      ]
+    }
+  ]
+}

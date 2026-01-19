@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ae-rus.net",
+        "aestatic.net",
+        "aliexpress.ru",
+        "alihealth.hk",
+        "alipay.hk",
+        "alipaymo.com",
+        "fliggy.hk",
+        "tmall.ru"
+      ],
+      "domain_suffix": [
+        ".ae-rus.net",
+        ".aestatic.net",
+        ".aliexpress.ru",
+        ".alihealth.hk",
+        ".alipay.hk",
+        ".alipaymo.com",
+        ".fliggy.hk",
+        ".tmall.ru"
+      ]
+    }
+  ]
+}

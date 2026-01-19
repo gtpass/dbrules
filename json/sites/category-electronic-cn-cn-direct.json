@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "arrow.cn",
+        "boe.com.cn",
+        "eda.cn",
+        "esp8266.cn",
+        "esp8266.com.cn",
+        "espressif.cn",
+        "espressif.com.cn",
+        "infineon.cn",
+        "quecmall.cn",
+        "quectel.com.cn",
+        "seeed.cn",
+        "seeed.com.cn",
+        "seeedstudio.com.cn",
+        "ti.com.cn",
+        "wch.cn"
+      ],
+      "domain_suffix": [
+        ".arrow.cn",
+        ".boe.com.cn",
+        ".eda.cn",
+        ".esp8266.cn",
+        ".esp8266.com.cn",
+        ".espressif.cn",
+        ".espressif.com.cn",
+        ".infineon.cn",
+        ".quecmall.cn",
+        ".quectel.com.cn",
+        ".seeed.cn",
+        ".seeed.com.cn",
+        ".seeedstudio.com.cn",
+        ".ti.com.cn",
+        ".wch.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "assets1.xboxlive.cn",
+        "assets2.xboxlive.cn",
+        "lv.queniujq.cn",
+        "trts.baishancdnx.cn",
+        "uplaypc-s-ubisoft.cdn.ubionline.com.cn"
+      ]
+    }
+  ]
+}

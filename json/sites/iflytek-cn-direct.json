@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "xfyun.cn",
+        "xunfei.cn"
+      ],
+      "domain_suffix": [
+        ".xfyun.cn",
+        ".xunfei.cn"
+      ]
+    }
+  ]
+}

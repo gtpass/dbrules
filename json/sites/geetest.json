@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "geetest.com",
+      "domain_suffix": ".geetest.com"
+    }
+  ]
+}

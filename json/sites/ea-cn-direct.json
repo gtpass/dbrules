@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dungeonkeeper.cn",
+        "dungeonkeeper.com.cn"
+      ],
+      "domain_suffix": [
+        ".dungeonkeeper.cn",
+        ".dungeonkeeper.com.cn"
+      ]
+    }
+  ]
+}

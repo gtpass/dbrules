@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "butterfly-static.cn",
+        "butterflyai.cn",
+        "coze.cn",
+        "cozebaas.cn",
+        "cozefn.cn",
+        "cozeide.cn",
+        "hi-butterfly.cn",
+        "picpic-ai.cn"
+      ],
+      "domain_suffix": [
+        ".butterfly-static.cn",
+        ".butterflyai.cn",
+        ".coze.cn",
+        ".cozebaas.cn",
+        ".cozefn.cn",
+        ".cozeide.cn",
+        ".hi-butterfly.cn",
+        ".picpic-ai.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "apipost.net",
+      "domain_suffix": ".apipost.net"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ads.service.kugou.com",
+        "adserviceretry.kugou.com"
+      ],
+      "domain_suffix": [
+        ".ads.service.kugou.com",
+        ".adserviceretry.kugou.com"
+      ]
+    }
+  ]
+}

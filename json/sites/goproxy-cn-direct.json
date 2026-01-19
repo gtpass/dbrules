@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "goproxy.cn",
+      "domain_suffix": ".goproxy.cn"
+    }
+  ]
+}

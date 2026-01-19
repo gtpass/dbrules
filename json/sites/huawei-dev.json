@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "devui.design",
+        "gneec.com",
+        "gneec3.com",
+        "gneec4.com",
+        "gneec7.com",
+        "harmonyos.com",
+        "hiascend.com",
+        "hiclc.com",
+        "hikunpeng.com",
+        "hikunpeng.net",
+        "hisilicon.com",
+        "huaweiapaas.com",
+        "owsgo.com",
+        "saasops.tech",
+        "teleows.com"
+      ],
+      "domain_suffix": [
+        ".devui.design",
+        ".gneec.com",
+        ".gneec3.com",
+        ".gneec4.com",
+        ".gneec7.com",
+        ".harmonyos.com",
+        ".hiascend.com",
+        ".hiclc.com",
+        ".hikunpeng.com",
+        ".hikunpeng.net",
+        ".hisilicon.com",
+        ".huaweiapaas.com",
+        ".owsgo.com",
+        ".saasops.tech",
+        ".teleows.com"
+      ]
+    }
+  ]
+}

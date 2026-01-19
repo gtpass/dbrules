@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cn.pool.ntp.org",
+        "time.amazonaws.cn",
+        "ntp.neu.edu.cn",
+        "ntp.ntsc.ac.cn",
+        "ntp.org.cn"
+      ],
+      "domain_suffix": [
+        ".cn.pool.ntp.org",
+        ".ntp.neu.edu.cn",
+        ".ntp.ntsc.ac.cn",
+        ".ntp.org.cn"
+      ]
+    }
+  ]
+}

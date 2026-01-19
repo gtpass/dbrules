@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "51changxie.com",
+        "91changxie.com",
+        "changxie.com",
+        "chinauos.com",
+        "deepin.com",
+        "linglong.space",
+        "uniontech.com"
+      ],
+      "domain_suffix": [
+        ".51changxie.com",
+        ".91changxie.com",
+        ".changxie.com",
+        ".chinauos.com",
+        ".deepin.com",
+        ".linglong.space",
+        ".uniontech.com"
+      ]
+    }
+  ]
+}

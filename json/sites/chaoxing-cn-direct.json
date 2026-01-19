@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "16q.cn",
+        "nihaorwanda.cn",
+        "ssreader.cn",
+        "ssreader.com.cn",
+        "ssvideo.cn",
+        "ssvideo.com.cn",
+        "study360.com.cn",
+        "xuexi365.com.cn",
+        "zaifan.com.cn"
+      ],
+      "domain_suffix": [
+        ".16q.cn",
+        ".nihaorwanda.cn",
+        ".ssreader.cn",
+        ".ssreader.com.cn",
+        ".ssvideo.cn",
+        ".ssvideo.com.cn",
+        ".study360.com.cn",
+        ".xuexi365.com.cn",
+        ".zaifan.com.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "ynet.com",
+      "domain_suffix": ".ynet.com"
+    }
+  ]
+}

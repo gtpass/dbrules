@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "139.com",
+        "andfx.net",
+        "chinamobile.com",
+        "chinamobileltd.com",
+        "cmicapm.com",
+        "cmpassport.com",
+        "cmread.com",
+        "fetion-portal.com",
+        "fetionpic.com",
+        "migucloud.com",
+        "migufun.com",
+        "miguvideo.com",
+        "mmarket.com",
+        "mmarket6.com"
+      ],
+      "domain_suffix": [
+        ".139.com",
+        ".andfx.net",
+        ".chinamobile.com",
+        ".chinamobileltd.com",
+        ".cmicapm.com",
+        ".cmpassport.com",
+        ".cmread.com",
+        ".fetion-portal.com",
+        ".fetionpic.com",
+        ".migucloud.com",
+        ".migufun.com",
+        ".miguvideo.com",
+        ".mmarket.com",
+        ".mmarket6.com"
+      ]
+    }
+  ]
+}

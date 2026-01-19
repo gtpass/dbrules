@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "bootcdn.cn",
+      "domain_suffix": ".bootcdn.cn"
+    }
+  ]
+}

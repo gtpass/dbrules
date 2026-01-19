@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "wol.tv",
+        "wolai.com"
+      ],
+      "domain_suffix": [
+        ".wol.tv",
+        ".wolai.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "dingtalk.cn",
+      "domain_suffix": ".dingtalk.cn"
+    }
+  ]
+}

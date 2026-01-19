@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "udalogistic.cn",
+        "ydsys.cn",
+        "yundaex.cn"
+      ],
+      "domain_suffix": [
+        ".udalogistic.cn",
+        ".ydsys.cn",
+        ".yundaex.cn"
+      ]
+    }
+  ]
+}

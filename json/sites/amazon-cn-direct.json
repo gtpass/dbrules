@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "aboutamazon.cn",
+        "alexafund.cn",
+        "alexafund.com.cn",
+        "amazon.cn",
+        "amazonbusiness.cn",
+        "amazonbusiness.com.cn",
+        "amazonchoice.cn",
+        "amazonchoice.com.cn",
+        "amazonchoices.cn",
+        "amazonchoices.com.cn",
+        "amazoninspire.cn",
+        "amazoninspire.com.cn",
+        "amazonlaunchpad.cn",
+        "amazonlaunchpad.com.cn",
+        "amazonlending.com.cn",
+        "amazonnow.cn",
+        "amazonnow.com.cn",
+        "assoc-amazon.cn",
+        "images-cn-8.ssl-images-amazon.com",
+        "images-cn.ssl-images-amazon.com",
+        "primeday.cn",
+        "primeday.com.cn",
+        "yamaxun.cn",
+        "z.cn"
+      ],
+      "domain_suffix": [
+        ".aboutamazon.cn",
+        ".alexafund.cn",
+        ".alexafund.com.cn",
+        ".amazon.cn",
+        ".amazonbusiness.cn",
+        ".amazonbusiness.com.cn",
+        ".amazonchoice.cn",
+        ".amazonchoice.com.cn",
+        ".amazonchoices.cn",
+        ".amazonchoices.com.cn",
+        ".amazoninspire.cn",
+        ".amazoninspire.com.cn",
+        ".amazonlaunchpad.cn",
+        ".amazonlaunchpad.com.cn",
+        ".amazonlending.com.cn",
+        ".amazonnow.cn",
+        ".amazonnow.com.cn",
+        ".assoc-amazon.cn",
+        ".primeday.cn",
+        ".primeday.com.cn",
+        ".yamaxun.cn",
+        ".z.cn"
+      ]
+    }
+  ]
+}

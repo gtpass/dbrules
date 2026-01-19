@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "clk1.cn",
+        "fshark.cn",
+        "globalrdp.cn",
+        "globalssh.cn",
+        "ucgslb.cn",
+        "ucloud.cn",
+        "ucloud.com.cn",
+        "ucloudnaming.cn",
+        "ucloudstack.cn",
+        "ucnaming.cn",
+        "ugslb.cn",
+        "unaming.cn",
+        "urtc.com.cn"
+      ],
+      "domain_suffix": [
+        ".clk1.cn",
+        ".fshark.cn",
+        ".globalrdp.cn",
+        ".globalssh.cn",
+        ".ucgslb.cn",
+        ".ucloud.cn",
+        ".ucloud.com.cn",
+        ".ucloudnaming.cn",
+        ".ucloudstack.cn",
+        ".ucnaming.cn",
+        ".ugslb.cn",
+        ".unaming.cn",
+        ".urtc.com.cn"
+      ]
+    }
+  ]
+}

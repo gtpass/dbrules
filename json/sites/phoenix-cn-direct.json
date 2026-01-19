@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "phoenixcenter.cn",
+      "domain_suffix": ".phoenixcenter.cn"
+    }
+  ]
+}

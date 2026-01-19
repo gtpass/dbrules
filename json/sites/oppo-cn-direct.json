@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ioppo.com.cn",
+        "nearme.com.cn",
+        "opdwz.cn",
+        "oppo.cn",
+        "oppodigital.com.cn",
+        "oppomobile.cn",
+        "opposhop.cn",
+        "shopoppo.cn",
+        "shopoppo.com.cn"
+      ],
+      "domain_suffix": [
+        ".ioppo.com.cn",
+        ".nearme.com.cn",
+        ".opdwz.cn",
+        ".oppo.cn",
+        ".oppodigital.com.cn",
+        ".oppomobile.cn",
+        ".opposhop.cn",
+        ".shopoppo.cn",
+        ".shopoppo.com.cn"
+      ]
+    }
+  ]
+}

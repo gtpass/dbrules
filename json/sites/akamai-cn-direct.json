@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "accdn.com.cn",
+        "akcdn.com.cn",
+        "skycdn.com.cn"
+      ],
+      "domain_suffix": [
+        ".accdn.com.cn",
+        ".akcdn.com.cn",
+        ".skycdn.com.cn"
+      ]
+    }
+  ]
+}

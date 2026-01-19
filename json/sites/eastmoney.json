@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dfcfw.com",
+        "eastmoney.com",
+        "eastmoneyfutures.com"
+      ],
+      "domain_suffix": [
+        ".dfcfw.com",
+        ".eastmoney.com",
+        ".eastmoneyfutures.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "drweb.cn",
+      "domain_suffix": ".drweb.cn"
+    }
+  ]
+}

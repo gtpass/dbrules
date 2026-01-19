@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "aitcfw.com",
+        "aizgtc.com",
+        "hangzhouyq.com",
+        "zgxytc.com",
+        "zgzsa.com",
+        "zhonshian.com",
+        "zjzsa.com"
+      ],
+      "domain_suffix": [
+        ".aitcfw.com",
+        ".aizgtc.com",
+        ".hangzhouyq.com",
+        ".zgxytc.com",
+        ".zgzsa.com",
+        ".zhonshian.com",
+        ".zjzsa.com"
+      ]
+    }
+  ]
+}

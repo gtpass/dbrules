@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "qingcdn.com",
+        "trpcdn.net"
+      ],
+      "domain_suffix": [
+        ".qingcdn.com",
+        ".trpcdn.net"
+      ]
+    }
+  ]
+}

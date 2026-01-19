@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ccspeed.cn",
+        "leigod.cn",
+        "qiyou.cn"
+      ],
+      "domain_suffix": [
+        ".ccspeed.cn",
+        ".leigod.cn",
+        ".qiyou.cn"
+      ]
+    }
+  ]
+}

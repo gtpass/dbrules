@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "51nod.com",
+        "acwing.com",
+        "hihocoder.com",
+        "jisuanke.com",
+        "kidsccshow.com",
+        "lingkou.com",
+        "lingkou.xyz",
+        "oi-wiki.com",
+        "uoj.ac",
+        "vijos.org"
+      ],
+      "domain_suffix": [
+        ".51nod.com",
+        ".acwing.com",
+        ".hihocoder.com",
+        ".jisuanke.com",
+        ".kidsccshow.com",
+        ".lingkou.com",
+        ".lingkou.xyz",
+        ".oi-wiki.com",
+        ".uoj.ac",
+        ".vijos.org"
+      ]
+    }
+  ]
+}

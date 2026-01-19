@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "agoraio.cn",
+      "domain_suffix": ".agoraio.cn"
+    }
+  ]
+}

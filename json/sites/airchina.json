@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "airchinacargo.com",
+      "domain_suffix": ".airchinacargo.com"
+    }
+  ]
+}

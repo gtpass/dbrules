@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "10010.com.cn",
+        "chinaunicom.cn",
+        "chinaunicom.com.cn",
+        "wo.cn",
+        "wo.com.cn",
+        "wocloud.com.cn",
+        "woread.com.cn",
+        "wosms.cn"
+      ],
+      "domain_suffix": [
+        ".10010.com.cn",
+        ".chinaunicom.cn",
+        ".chinaunicom.com.cn",
+        ".wo.cn",
+        ".wo.com.cn",
+        ".wocloud.com.cn",
+        ".woread.com.cn",
+        ".wosms.cn"
+      ]
+    }
+  ]
+}

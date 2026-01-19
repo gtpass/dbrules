@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "tencent-cloud.cn",
+      "domain_suffix": ".tencent-cloud.cn"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "c-ctrip.com",
+        "colinker.com",
+        "ctrip.com",
+        "ctripbiz.com",
+        "ctripgslb.com",
+        "ctripgslb.net",
+        "ctripteam.com",
+        "doticloud.com",
+        "easytrip.com",
+        "hhtravel.com",
+        "izuchebao.com",
+        "lvtds.com",
+        "qunar.com",
+        "qunarcdn.com",
+        "qunarzz.com",
+        "skysea.com",
+        "suanya.com",
+        "tieyou.com",
+        "toursbms.com",
+        "tripcdn.com",
+        "vipdlt.com"
+      ],
+      "domain_suffix": [
+        ".c-ctrip.com",
+        ".colinker.com",
+        ".ctrip.com",
+        ".ctripbiz.com",
+        ".ctripgslb.com",
+        ".ctripgslb.net",
+        ".ctripteam.com",
+        ".doticloud.com",
+        ".easytrip.com",
+        ".hhtravel.com",
+        ".izuchebao.com",
+        ".lvtds.com",
+        ".qunar.com",
+        ".qunarcdn.com",
+        ".qunarzz.com",
+        ".skysea.com",
+        ".suanya.com",
+        ".tieyou.com",
+        ".toursbms.com",
+        ".tripcdn.com",
+        ".vipdlt.com"
+      ]
+    }
+  ]
+}

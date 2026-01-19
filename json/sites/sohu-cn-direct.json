@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "focus-img.cn",
+        "focus.cn",
+        "itc.cn"
+      ],
+      "domain_suffix": [
+        ".focus-img.cn",
+        ".focus.cn",
+        ".itc.cn"
+      ]
+    }
+  ]
+}

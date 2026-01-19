@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "alibabacloud.com",
+        "alicloud.com"
+      ],
+      "domain_suffix": [
+        ".alibabacloud.com",
+        ".alicloud.com"
+      ]
+    }
+  ]
+}

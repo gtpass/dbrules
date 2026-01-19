@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "share.camoe.cn",
+        "torrents-nn.cn",
+        "tracker.dm258.cn",
+        "tracker.loligirl.cn",
+        "tracker.moeblog.cn",
+        "tracker.skyts.cn",
+        "tracker1.ctix.cn",
+        "tracker2.ctix.cn"
+      ]
+    }
+  ]
+}

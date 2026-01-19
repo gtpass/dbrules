@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "3.cn",
+        "360buy.cn",
+        "360buy.com.cn",
+        "chicalot.cn",
+        "chinabank.com.cn",
+        "duiou.com.cn",
+        "imdada.cn",
+        "jd-ex.cn",
+        "jd-ex.com.cn",
+        "jd.cn",
+        "jd.com.cn",
+        "jdl.cn",
+        "jdl.com.cn",
+        "jdlike.cn",
+        "paidaojia.cn",
+        "prestodb-china.com",
+        "prestodb.net.cn",
+        "wuliujie.cn"
+      ],
+      "domain_suffix": [
+        ".3.cn",
+        ".360buy.cn",
+        ".360buy.com.cn",
+        ".chicalot.cn",
+        ".chinabank.com.cn",
+        ".duiou.com.cn",
+        ".imdada.cn",
+        ".jd-ex.cn",
+        ".jd-ex.com.cn",
+        ".jd.cn",
+        ".jd.com.cn",
+        ".jdl.cn",
+        ".jdl.com.cn",
+        ".jdlike.cn",
+        ".paidaojia.cn",
+        ".prestodb-china.com",
+        ".prestodb.net.cn",
+        ".wuliujie.cn"
+      ]
+    }
+  ]
+}

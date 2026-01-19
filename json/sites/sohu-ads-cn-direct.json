@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "adv-sv-show.focus.cn",
+        "adv-sv-stat.focus.cn",
+        "bdu.focus.cn"
+      ],
+      "domain_suffix": [
+        ".adv-sv-show.focus.cn",
+        ".adv-sv-stat.focus.cn",
+        ".bdu.focus.cn"
+      ]
+    }
+  ]
+}

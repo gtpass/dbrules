@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "flyme.com",
+        "flymeauto.com",
+        "meizu.com",
+        "mzres.com"
+      ],
+      "domain_suffix": [
+        ".flyme.com",
+        ".flymeauto.com",
+        ".meizu.com",
+        ".mzres.com"
+      ]
+    }
+  ]
+}

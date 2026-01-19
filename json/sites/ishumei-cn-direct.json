@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fengkongcloud.cn",
+        "portal101.cn",
+        "portal102.cn",
+        "portal201.cn",
+        "portal301.cn",
+        "tebiefuza.cn"
+      ],
+      "domain_suffix": [
+        ".fengkongcloud.cn",
+        ".portal101.cn",
+        ".portal102.cn",
+        ".portal201.cn",
+        ".portal301.cn",
+        ".tebiefuza.cn"
+      ]
+    }
+  ]
+}

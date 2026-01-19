@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "baiying.cn",
+        "baiying.com.cn",
+        "cunchuhulian-ln.cn",
+        "idea123.cn",
+        "iprintworks.cn",
+        "jhwan.com.cn",
+        "juhuiwan.com.cn",
+        "lenovo.cn",
+        "lenovo.com.cn",
+        "lenovocare.com.cn",
+        "lenovocust.cn",
+        "lenovoimage.cn",
+        "lenovomm.cn",
+        "lenovoprinter.com.cn",
+        "lenovovip.com.cn",
+        "lxzjjt.cn",
+        "surepush.cn",
+        "thinkprinter.cn",
+        "thinkprinter.com.cn",
+        "zhiliaowenda.com.cn",
+        "zui.cn",
+        "zuk.cn",
+        "zuk.com.cn",
+        "zxsales.cn"
+      ],
+      "domain_suffix": [
+        ".baiying.cn",
+        ".baiying.com.cn",
+        ".cunchuhulian-ln.cn",
+        ".idea123.cn",
+        ".iprintworks.cn",
+        ".jhwan.com.cn",
+        ".juhuiwan.com.cn",
+        ".lenovo.cn",
+        ".lenovo.com.cn",
+        ".lenovocare.com.cn",
+        ".lenovocust.cn",
+        ".lenovoimage.cn",
+        ".lenovomm.cn",
+        ".lenovoprinter.com.cn",
+        ".lenovovip.com.cn",
+        ".lxzjjt.cn",
+        ".surepush.cn",
+        ".thinkprinter.cn",
+        ".thinkprinter.com.cn",
+        ".zhiliaowenda.com.cn",
+        ".zui.cn",
+        ".zuk.cn",
+        ".zuk.com.cn",
+        ".zxsales.cn"
+      ]
+    }
+  ]
+}

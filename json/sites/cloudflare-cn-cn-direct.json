@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cf-china.info",
+        "cftest5.cn",
+        "cftest6.cn",
+        "cloudflare-cn.com",
+        "cloudflarechina.cn",
+        "cloudflareinsights-cn.com"
+      ],
+      "domain_suffix": [
+        ".cf-china.info",
+        ".cftest5.cn",
+        ".cftest6.cn",
+        ".cloudflare-cn.com",
+        ".cloudflarechina.cn",
+        ".cloudflareinsights-cn.com"
+      ]
+    }
+  ]
+}

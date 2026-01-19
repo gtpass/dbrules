@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mafengwo.com",
+        "mafengwo.net"
+      ],
+      "domain_suffix": [
+        ".mafengwo.com",
+        ".mafengwo.net"
+      ]
+    }
+  ]
+}

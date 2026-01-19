@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "amemv.cn",
+        "betastar.cn",
+        "huoshanvideo.cn",
+        "huoshanxiaoshipin.cn",
+        "huoshanzhibo.cn",
+        "ieshuodong.cn",
+        "kolbuyer.cn",
+        "qishui.cn",
+        "qishui.com.cn",
+        "qishuimusic.cn",
+        "qishuimusic.com.cn"
+      ],
+      "domain_suffix": [
+        ".amemv.cn",
+        ".betastar.cn",
+        ".huoshanvideo.cn",
+        ".huoshanxiaoshipin.cn",
+        ".huoshanzhibo.cn",
+        ".ieshuodong.cn",
+        ".kolbuyer.cn",
+        ".qishui.cn",
+        ".qishui.com.cn",
+        ".qishuimusic.cn",
+        ".qishuimusic.com.cn"
+      ]
+    }
+  ]
+}

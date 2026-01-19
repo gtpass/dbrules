@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "eleme.cn",
+        "elemecdn.cn"
+      ],
+      "domain_suffix": [
+        ".eleme.cn",
+        ".elemecdn.cn"
+      ]
+    }
+  ]
+}

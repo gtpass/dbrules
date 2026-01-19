@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "adimg.uve.weibo.com",
+        "ads.sina.com",
+        "alitui.weibo.com",
+        "biz.weibo.com",
+        "click.uve.weibo.com"
+      ],
+      "domain_suffix": [
+        ".adimg.uve.weibo.com",
+        ".ads.sina.com",
+        ".alitui.weibo.com",
+        ".biz.weibo.com",
+        ".click.uve.weibo.com"
+      ]
+    }
+  ]
+}

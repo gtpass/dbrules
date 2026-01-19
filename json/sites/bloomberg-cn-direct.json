@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "bloomberg.cn",
+      "domain_suffix": ".bloomberg.cn"
+    }
+  ]
+}

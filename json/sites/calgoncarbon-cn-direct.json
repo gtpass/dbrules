@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "calgon.cn",
+        "calgoncarbon-china.com"
+      ],
+      "domain_suffix": [
+        ".calgon.cn",
+        ".calgoncarbon-china.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "a.alimama.cn",
+        "ads.uc.cn",
+        "adslot.uc.cn",
+        "adtrack.quark.cn",
+        "track.lc.quark.cn"
+      ],
+      "domain_suffix": [
+        ".a.alimama.cn",
+        ".ads.uc.cn",
+        ".adslot.uc.cn",
+        ".adtrack.quark.cn",
+        ".track.lc.quark.cn"
+      ]
+    }
+  ]
+}

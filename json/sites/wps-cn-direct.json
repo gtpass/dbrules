@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "kdocs.cn",
+        "qwps.cn",
+        "wps.cn",
+        "wpscdn.cn",
+        "wpspdf.cn"
+      ],
+      "domain_suffix": [
+        ".kdocs.cn",
+        ".qwps.cn",
+        ".wps.cn",
+        ".wpscdn.cn",
+        ".wpspdf.cn"
+      ]
+    }
+  ]
+}

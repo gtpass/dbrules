@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mechrevo.com",
+        "tongfangpc.com"
+      ],
+      "domain_suffix": [
+        ".mechrevo.com",
+        ".tongfangpc.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "chinaunionpay.com.cn",
+        "cup.com.cn",
+        "cup62.cn",
+        "unionpayintl.cn"
+      ],
+      "domain_suffix": [
+        ".chinaunionpay.com.cn",
+        ".cup.com.cn",
+        ".cup62.cn",
+        ".unionpayintl.cn"
+      ]
+    }
+  ]
+}

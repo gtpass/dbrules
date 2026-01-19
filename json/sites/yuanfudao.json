@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "banmaaike.com",
+        "fenbi.com",
+        "fenbike.com",
+        "fenbilantian.com",
+        "xiaoyuankousuan.com",
+        "ybccode.com",
+        "yuanfudao.com",
+        "yuansouti.com",
+        "yuantiku.com"
+      ],
+      "domain_suffix": [
+        ".banmaaike.com",
+        ".fenbi.com",
+        ".fenbike.com",
+        ".fenbilantian.com",
+        ".xiaoyuankousuan.com",
+        ".ybccode.com",
+        ".yuanfudao.com",
+        ".yuansouti.com",
+        ".yuantiku.com"
+      ]
+    }
+  ]
+}

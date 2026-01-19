@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "hewlett-packard.com.cn",
+      "domain_suffix": ".hewlett-packard.com.cn"
+    }
+  ]
+}

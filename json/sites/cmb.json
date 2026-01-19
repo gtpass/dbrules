@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "8008205555.com",
+        "cignacmb-ipmi.com",
+        "cignacmb.com",
+        "cignacmbamc.com",
+        "cmb-leasing.com",
+        "cmbchina.biz",
+        "cmbchina.com",
+        "cmbimg.com",
+        "cmbuat.com",
+        "cmf.biz",
+        "cmf.ltd",
+        "cmfchina.com",
+        "joying.com",
+        "test-cignacmb.com"
+      ],
+      "domain_suffix": [
+        ".8008205555.com",
+        ".cignacmb-ipmi.com",
+        ".cignacmb.com",
+        ".cignacmbamc.com",
+        ".cmb-leasing.com",
+        ".cmbchina.biz",
+        ".cmbchina.com",
+        ".cmbimg.com",
+        ".cmbuat.com",
+        ".cmf.biz",
+        ".cmf.ltd",
+        ".cmfchina.com",
+        ".joying.com",
+        ".test-cignacmb.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "msi.com",
+      "domain_suffix": ".msi.com"
+    }
+  ]
+}

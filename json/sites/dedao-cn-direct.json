@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "igetget.cn",
+        "sao.cn"
+      ],
+      "domain_suffix": [
+        ".igetget.cn",
+        ".sao.cn"
+      ]
+    }
+  ]
+}

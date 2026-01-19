@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "oss-cn-beijing.aliyuncs.com",
+        "oss-cn-chengdu.aliyuncs.com",
+        "oss-cn-guangzhou.aliyuncs.com",
+        "oss-cn-hangzhou.aliyuncs.com",
+        "oss-cn-heyuan.aliyuncs.com",
+        "oss-cn-huhehaote.aliyuncs.com",
+        "oss-cn-nanjing.aliyuncs.com",
+        "oss-cn-qingdao.aliyuncs.com",
+        "oss-cn-shanghai.aliyuncs.com",
+        "oss-cn-shenzhen.aliyuncs.com",
+        "oss-cn-wulanchabu.aliyuncs.com",
+        "oss-cn-zhangjiakou.aliyuncs.com"
+      ],
+      "domain_suffix": [
+        ".oss-cn-beijing.aliyuncs.com",
+        ".oss-cn-chengdu.aliyuncs.com",
+        ".oss-cn-guangzhou.aliyuncs.com",
+        ".oss-cn-hangzhou.aliyuncs.com",
+        ".oss-cn-heyuan.aliyuncs.com",
+        ".oss-cn-huhehaote.aliyuncs.com",
+        ".oss-cn-nanjing.aliyuncs.com",
+        ".oss-cn-qingdao.aliyuncs.com",
+        ".oss-cn-shanghai.aliyuncs.com",
+        ".oss-cn-shenzhen.aliyuncs.com",
+        ".oss-cn-wulanchabu.aliyuncs.com",
+        ".oss-cn-zhangjiakou.aliyuncs.com"
+      ]
+    }
+  ]
+}

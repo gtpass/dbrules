@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "meipian.cn",
+      "domain_suffix": ".meipian.cn"
+    }
+  ]
+}

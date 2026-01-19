@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "4thworkshop.cn",
+        "mryys.cn"
+      ],
+      "domain_suffix": [
+        ".4thworkshop.cn",
+        ".mryys.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "123pan.cn",
+        "cloud.189.cn",
+        "pan.quark.cn"
+      ],
+      "domain_suffix": [
+        ".123pan.cn",
+        ".cloud.189.cn",
+        ".pan.quark.cn"
+      ]
+    }
+  ]
+}

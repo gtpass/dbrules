@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "wanfangdata.com.cn",
+      "domain_suffix": ".wanfangdata.com.cn"
+    }
+  ]
+}

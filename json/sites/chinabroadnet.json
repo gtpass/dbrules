@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ahitv.com",
+        "cqccn.com",
+        "isxtv.com",
+        "sc96655.com",
+        "sdgdwljt.com"
+      ],
+      "domain_suffix": [
+        ".ahitv.com",
+        ".cqccn.com",
+        ".isxtv.com",
+        ".sc96655.com",
+        ".sdgdwljt.com"
+      ]
+    }
+  ]
+}

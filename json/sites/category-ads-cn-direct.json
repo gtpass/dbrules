@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ad.12306.cn",
+        "adservice.sigmob.cn",
+        "atrace.chelaile.net.cn",
+        "das-rpt-log.ucloud.cn",
+        "hubcloud.com.cn",
+        "iabchina.cn",
+        "ipinyou.com.cn",
+        "logs.chelaile.net.cn",
+        "reachmax.cn",
+        "sensors.umetrip.com.cn",
+        "shhs-ydd8x2.yjrmss.cn",
+        "shuzilm.cn",
+        "telecome.cn",
+        "wwads.cn",
+        "yfanads.cn",
+        "zxid-api.mobileservice.cn",
+        "zxid-m.mobileservice.cn"
+      ],
+      "domain_suffix": [
+        ".ad.12306.cn",
+        ".adservice.sigmob.cn",
+        ".atrace.chelaile.net.cn",
+        ".das-rpt-log.ucloud.cn",
+        ".hubcloud.com.cn",
+        ".iabchina.cn",
+        ".ipinyou.com.cn",
+        ".logs.chelaile.net.cn",
+        ".reachmax.cn",
+        ".sensors.umetrip.com.cn",
+        ".shhs-ydd8x2.yjrmss.cn",
+        ".shuzilm.cn",
+        ".telecome.cn",
+        ".wwads.cn",
+        ".yfanads.cn",
+        ".zxid-api.mobileservice.cn",
+        ".zxid-m.mobileservice.cn"
+      ]
+    }
+  ]
+}

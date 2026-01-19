@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "sto-express.com",
+        "stointl.com",
+        "stosolution.com"
+      ],
+      "domain_suffix": [
+        ".sto-express.com",
+        ".stointl.com",
+        ".stosolution.com"
+      ]
+    }
+  ]
+}

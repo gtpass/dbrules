@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "deppon.com.cn",
+      "domain_suffix": ".deppon.com.cn"
+    }
+  ]
+}

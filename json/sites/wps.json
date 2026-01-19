@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "51dzt.com",
+        "docer.com",
+        "iciba.com",
+        "kscord.com",
+        "papocket.com",
+        "wps.com",
+        "wpscdn.com",
+        "wpsmail.net"
+      ],
+      "domain_suffix": [
+        ".51dzt.com",
+        ".docer.com",
+        ".iciba.com",
+        ".kscord.com",
+        ".papocket.com",
+        ".wps.com",
+        ".wpscdn.com",
+        ".wpsmail.net"
+      ]
+    }
+  ]
+}

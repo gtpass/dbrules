@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mifile.cn",
+        "xiaomi.cn",
+        "xiaomidns.cn",
+        "xiaomidns.com.cn",
+        "xiaomiinc.cn",
+        "xiaomiinc.com.cn",
+        "xiaomisa.cn",
+        "youpin.cn",
+        "youpin.com.cn"
+      ],
+      "domain_suffix": [
+        ".mifile.cn",
+        ".xiaomi.cn",
+        ".xiaomidns.cn",
+        ".xiaomidns.com.cn",
+        ".xiaomiinc.cn",
+        ".xiaomiinc.com.cn",
+        ".xiaomisa.cn",
+        ".youpin.cn",
+        ".youpin.com.cn"
+      ]
+    }
+  ]
+}

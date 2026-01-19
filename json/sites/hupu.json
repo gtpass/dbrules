@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "hupu.com",
+        "hupucdn.com"
+      ],
+      "domain_suffix": [
+        ".hupu.com",
+        ".hupucdn.com"
+      ]
+    }
+  ]
+}

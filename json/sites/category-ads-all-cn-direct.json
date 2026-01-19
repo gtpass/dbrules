@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "adview.cn",
+      "domain_suffix": ".adview.cn"
+    }
+  ]
+}

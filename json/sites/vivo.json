@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "iqoo.com",
+        "vivo.com",
+        "vvstc.com"
+      ],
+      "domain_suffix": [
+        ".iqoo.com",
+        ".vivo.com",
+        ".vvstc.com"
+      ]
+    }
+  ]
+}

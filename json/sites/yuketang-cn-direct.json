@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "yuketang.cn",
+      "domain_suffix": ".yuketang.cn"
+    }
+  ]
+}

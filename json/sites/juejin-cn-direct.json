@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "juejin.cn",
+      "domain_suffix": ".juejin.cn"
+    }
+  ]
+}

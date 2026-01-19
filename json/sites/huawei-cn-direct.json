@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dbankcdn.cn",
+        "dbankcloud.cn",
+        "dbankedge.cn",
+        "huawei.cn",
+        "huawei.com.cn",
+        "huaweiief.cn",
+        "hwccpc.cn",
+        "hwht.cn"
+      ],
+      "domain_suffix": [
+        ".dbankcdn.cn",
+        ".dbankcloud.cn",
+        ".dbankedge.cn",
+        ".huawei.cn",
+        ".huawei.com.cn",
+        ".huaweiief.cn",
+        ".hwccpc.cn",
+        ".hwht.cn"
+      ]
+    }
+  ]
+}

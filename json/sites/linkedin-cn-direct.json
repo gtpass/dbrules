@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "licdn.cn.cdn20.com",
+        "licdn.cn",
+        "linkedin.cn"
+      ],
+      "domain_suffix": [
+        ".licdn.cn",
+        ".linkedin.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "800best.cn",
+        "800best.com.cn",
+        "800bestapi.cn",
+        "800bestapp.cn",
+        "bestincapi.cn",
+        "bestincapp.cn"
+      ],
+      "domain_suffix": [
+        ".800best.cn",
+        ".800best.com.cn",
+        ".800bestapi.cn",
+        ".800bestapp.cn",
+        ".bestincapi.cn",
+        ".bestincapp.cn"
+      ]
+    }
+  ]
+}

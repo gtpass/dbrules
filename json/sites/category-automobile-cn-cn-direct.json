@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "1hai.cn",
+        "autohome.com.cn",
+        "autoimg.cn",
+        "autoimg.com.cn",
+        "gwm.com.cn",
+        "gzurl.cn",
+        "nio.cn"
+      ],
+      "domain_suffix": [
+        ".1hai.cn",
+        ".autohome.com.cn",
+        ".autoimg.cn",
+        ".autoimg.com.cn",
+        ".gwm.com.cn",
+        ".gzurl.cn",
+        ".nio.cn"
+      ]
+    }
+  ]
+}

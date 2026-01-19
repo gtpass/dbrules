@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mucinex.cn",
+        "mucinex.com.cn"
+      ],
+      "domain_suffix": [
+        ".mucinex.cn",
+        ".mucinex.com.cn"
+      ]
+    }
+  ]
+}

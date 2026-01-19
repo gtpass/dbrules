@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "51jianxie.cn",
+        "deepin.cn",
+        "deepin.org.cn",
+        "linyaps.org.cn",
+        "sndu.cn",
+        "uniontech.cn"
+      ],
+      "domain_suffix": [
+        ".51jianxie.cn",
+        ".deepin.cn",
+        ".deepin.org.cn",
+        ".linyaps.org.cn",
+        ".sndu.cn",
+        ".uniontech.cn"
+      ]
+    }
+  ]
+}

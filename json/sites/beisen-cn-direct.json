@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "beisen.cn",
+        "bsurl.cn"
+      ],
+      "domain_suffix": [
+        ".beisen.cn",
+        ".bsurl.cn"
+      ]
+    }
+  ]
+}

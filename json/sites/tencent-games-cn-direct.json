@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "brawlstars.cn",
+        "goto-game.net.cn",
+        "haydaypop.cn",
+        "ihappystudio.cn",
+        "labycore.cn",
+        "ludosuperstar.cn",
+        "mahjongcup.cn",
+        "mszdld.cn",
+        "pubgno1.cn",
+        "roblox.cn",
+        "robloxdev.cn",
+        "sccreator.cn",
+        "sccreators.cn",
+        "scescdn.cn",
+        "scid.cn",
+        "scsentry.cn",
+        "skydweller.cn",
+        "supercellcommunity.cn",
+        "supercellsupport.cn",
+        "texasholdemcup.cn",
+        "wegame.com.cn",
+        "werepository.com.cn",
+        "xn--owtw8cc49ajfl.cn",
+        "yximg.cn"
+      ],
+      "domain_suffix": [
+        ".brawlstars.cn",
+        ".goto-game.net.cn",
+        ".haydaypop.cn",
+        ".ihappystudio.cn",
+        ".labycore.cn",
+        ".ludosuperstar.cn",
+        ".mahjongcup.cn",
+        ".mszdld.cn",
+        ".pubgno1.cn",
+        ".roblox.cn",
+        ".robloxdev.cn",
+        ".sccreator.cn",
+        ".sccreators.cn",
+        ".scescdn.cn",
+        ".scid.cn",
+        ".scsentry.cn",
+        ".skydweller.cn",
+        ".supercellcommunity.cn",
+        ".supercellsupport.cn",
+        ".texasholdemcup.cn",
+        ".wegame.com.cn",
+        ".werepository.com.cn",
+        ".xn--owtw8cc49ajfl.cn",
+        ".yximg.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bestvcdn.com",
+        "bestvcdn.net"
+      ],
+      "domain_suffix": [
+        ".bestvcdn.com",
+        ".bestvcdn.net"
+      ]
+    }
+  ]
+}

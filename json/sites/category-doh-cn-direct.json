@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "doh.18bit.cn",
+        "doh.360.cn"
+      ]
+    }
+  ]
+}

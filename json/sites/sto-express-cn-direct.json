@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "sto-express.cn",
+        "sto-express.com.cn",
+        "sto.cn"
+      ],
+      "domain_suffix": [
+        ".sto-express.cn",
+        ".sto-express.com.cn",
+        ".sto.cn"
+      ]
+    }
+  ]
+}

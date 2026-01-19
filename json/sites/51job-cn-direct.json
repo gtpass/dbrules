@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "zhiding.com.cn",
+      "domain_suffix": ".zhiding.com.cn"
+    }
+  ]
+}

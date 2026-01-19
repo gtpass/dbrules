@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "pinyin.cn",
+        "sg.cn",
+        "sogou.cn",
+        "sogou.com.cn",
+        "soso.com.cn",
+        "teemo.cn",
+        "xinyan.cn",
+        "yidianliulan.cn"
+      ],
+      "domain_suffix": [
+        ".pinyin.cn",
+        ".sg.cn",
+        ".sogou.cn",
+        ".sogou.com.cn",
+        ".soso.com.cn",
+        ".teemo.cn",
+        ".xinyan.cn",
+        ".yidianliulan.cn"
+      ]
+    }
+  ]
+}

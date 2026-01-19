@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "akikocorp.cn",
+        "sukasuka.cn"
+      ],
+      "domain_suffix": [
+        ".akikocorp.cn",
+        ".sukasuka.cn"
+      ]
+    }
+  ]
+}

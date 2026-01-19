@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "linakesi.cn",
+      "domain_suffix": ".linakesi.cn"
+    }
+  ]
+}

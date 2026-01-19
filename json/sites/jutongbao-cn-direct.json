@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "guanggaotongapp.cn",
+      "domain_suffix": ".guanggaotongapp.cn"
+    }
+  ]
+}

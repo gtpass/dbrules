@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "canon-cna.com",
+        "canon.cn",
+        "canon.com.cn"
+      ],
+      "domain_suffix": [
+        ".canon-cna.com",
+        ".canon.cn",
+        ".canon.com.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "csdn.net.cn",
+        "csdnimg.cn",
+        "datasea.cn",
+        "gitbook.cn",
+        "gitchat.cn",
+        "programmer.com.cn",
+        "programmer.net.cn"
+      ],
+      "domain_suffix": [
+        ".csdn.net.cn",
+        ".csdnimg.cn",
+        ".datasea.cn",
+        ".gitbook.cn",
+        ".gitchat.cn",
+        ".programmer.com.cn",
+        ".programmer.net.cn"
+      ]
+    }
+  ]
+}

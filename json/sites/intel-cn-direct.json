@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "intel.cn",
+        "intel.com.cn",
+        "intelrealsense.cn",
+        "xn--ztsq84g.cn"
+      ],
+      "domain_suffix": [
+        ".intel.cn",
+        ".intel.com.cn",
+        ".intelrealsense.cn",
+        ".xn--ztsq84g.cn"
+      ]
+    }
+  ]
+}

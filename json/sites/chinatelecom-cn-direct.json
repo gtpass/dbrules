@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "189.cn",
+        "chinatelecom.com.cn",
+        "vnet.cn"
+      ],
+      "domain_suffix": [
+        ".189.cn",
+        ".chinatelecom.com.cn",
+        ".vnet.cn"
+      ]
+    }
+  ]
+}

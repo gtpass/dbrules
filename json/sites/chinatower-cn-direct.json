@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "chinatowercom.cn",
+        "tower.com.cn",
+        "tower0788.cn"
+      ],
+      "domain_suffix": [
+        ".chinatowercom.cn",
+        ".tower.com.cn",
+        ".tower0788.cn"
+      ]
+    }
+  ]
+}

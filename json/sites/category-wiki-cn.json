@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fgo.wiki",
+        "huijistatic.com",
+        "huijiwiki.com",
+        "jikipedia.com",
+        "mbalib.com",
+        "moegirl.org",
+        "qiuwen.wiki",
+        "sec-wiki.com",
+        "shidianbaike.com"
+      ],
+      "domain_suffix": [
+        ".fgo.wiki",
+        ".huijistatic.com",
+        ".huijiwiki.com",
+        ".jikipedia.com",
+        ".mbalib.com",
+        ".moegirl.org",
+        ".qiuwen.wiki",
+        ".sec-wiki.com",
+        ".shidianbaike.com"
+      ]
+    }
+  ]
+}

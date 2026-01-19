@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "tcl.com.cn",
+      "domain_suffix": ".tcl.com.cn"
+    }
+  ]
+}

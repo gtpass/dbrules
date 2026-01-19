@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "97973.com",
+        "adimg.uve.weibo.com",
+        "ads.sina.com",
+        "alitui.weibo.com",
+        "biz.weibo.com",
+        "click.uve.weibo.com",
+        "sina.com",
+        "sina.net",
+        "sinaapp.com",
+        "sinaedge.com",
+        "sinaimg.com",
+        "sinajs.com",
+        "wbimg.com",
+        "weibo.com",
+        "weibocdn.com",
+        "xhaiwai.com"
+      ],
+      "domain_suffix": [
+        ".97973.com",
+        ".adimg.uve.weibo.com",
+        ".ads.sina.com",
+        ".alitui.weibo.com",
+        ".biz.weibo.com",
+        ".click.uve.weibo.com",
+        ".sina.com",
+        ".sina.net",
+        ".sinaapp.com",
+        ".sinaedge.com",
+        ".sinaimg.com",
+        ".sinajs.com",
+        ".wbimg.com",
+        ".weibo.com",
+        ".weibocdn.com",
+        ".xhaiwai.com"
+      ]
+    }
+  ]
+}

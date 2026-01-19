@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "izto.com.cn",
+        "mlzt.com.cn",
+        "zto.cn"
+      ],
+      "domain_suffix": [
+        ".izto.com.cn",
+        ".mlzt.com.cn",
+        ".zto.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "deppon.com",
+        "dpma.cc"
+      ],
+      "domain_suffix": [
+        ".deppon.com",
+        ".dpma.cc"
+      ]
+    }
+  ]
+}

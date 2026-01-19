@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "lark.cn",
+        "larkmeetings.cn",
+        "larkrooms.cn"
+      ],
+      "domain_suffix": [
+        ".lark.cn",
+        ".larkmeetings.cn",
+        ".larkrooms.cn"
+      ]
+    }
+  ]
+}

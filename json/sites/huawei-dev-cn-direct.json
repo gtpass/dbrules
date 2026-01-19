@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bisheng.cn",
+        "bishengcompiler.cn",
+        "gneec.com.cn",
+        "hiascend.cn",
+        "hikunpeng.cn",
+        "hikunpeng.com.cn",
+        "hisilicon.com.cn",
+        "mindspore.cn"
+      ],
+      "domain_suffix": [
+        ".bisheng.cn",
+        ".bishengcompiler.cn",
+        ".gneec.com.cn",
+        ".hiascend.cn",
+        ".hikunpeng.cn",
+        ".hikunpeng.com.cn",
+        ".hisilicon.com.cn",
+        ".mindspore.cn"
+      ]
+    }
+  ]
+}

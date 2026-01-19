@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "tjqonline.cn",
+      "domain_suffix": ".tjqonline.cn"
+    }
+  ]
+}

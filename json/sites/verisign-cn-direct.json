@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "verisign.com.cn",
+      "domain_suffix": ".verisign.com.cn"
+    }
+  ]
+}

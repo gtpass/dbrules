@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "chinatelecom-h.com",
+        "chntel.com"
+      ],
+      "domain_suffix": [
+        ".chinatelecom-h.com",
+        ".chntel.com"
+      ]
+    }
+  ]
+}

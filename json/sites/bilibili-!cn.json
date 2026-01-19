@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bilibili.tv",
+        "biliintl.com",
+        "dreamcast.hk"
+      ],
+      "domain_suffix": [
+        ".bilibili.tv",
+        ".biliintl.com",
+        ".dreamcast.hk"
+      ]
+    }
+  ]
+}

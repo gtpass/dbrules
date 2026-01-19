@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "95311.com",
+        "izto.com",
+        "tuxi.com",
+        "zt-express.com",
+        "zto.com",
+        "zto.net",
+        "ztoapp.com",
+        "ztoglobal.com",
+        "ztogroup.com",
+        "ztoyh.com"
+      ],
+      "domain_suffix": [
+        ".95311.com",
+        ".izto.com",
+        ".tuxi.com",
+        ".zt-express.com",
+        ".zto.com",
+        ".zto.net",
+        ".ztoapp.com",
+        ".ztoglobal.com",
+        ".ztogroup.com",
+        ".ztoyh.com"
+      ]
+    }
+  ]
+}

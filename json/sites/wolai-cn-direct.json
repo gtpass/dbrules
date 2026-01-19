@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "wostatic.cn",
+      "domain_suffix": ".wostatic.cn"
+    }
+  ]
+}

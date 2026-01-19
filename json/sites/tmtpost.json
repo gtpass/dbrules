@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "72whys.com",
+        "chaindd.com",
+        "checkzeit.com",
+        "tivitv.com",
+        "tmtpost.com",
+        "tmtsmartlife.com",
+        "tmtsmartrun.com"
+      ],
+      "domain_suffix": [
+        ".72whys.com",
+        ".chaindd.com",
+        ".checkzeit.com",
+        ".tivitv.com",
+        ".tmtpost.com",
+        ".tmtsmartlife.com",
+        ".tmtsmartrun.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "uc123.com",
+        "ucweb.com"
+      ],
+      "domain_suffix": [
+        ".uc123.com",
+        ".ucweb.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "ebf.com.cn",
+      "domain_suffix": ".ebf.com.cn"
+    }
+  ]
+}

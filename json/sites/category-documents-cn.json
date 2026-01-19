@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "doc88.com",
+        "docin.com"
+      ],
+      "domain_suffix": [
+        ".doc88.com",
+        ".docin.com"
+      ]
+    }
+  ]
+}

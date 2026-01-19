@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "pgdt.gtimg.cn",
+      "domain_suffix": ".pgdt.gtimg.cn"
+    }
+  ]
+}

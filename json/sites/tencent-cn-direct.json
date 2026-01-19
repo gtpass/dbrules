@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "acimg.cn",
+        "foxmail.com.cn",
+        "gtimg.cn",
+        "gtimg.com.cn",
+        "qlogo.cn",
+        "qpic.cn",
+        "qq.cn.com",
+        "qq.com.cn",
+        "rtx.com.cn",
+        "tdnsdl1.cn",
+        "tdnsdl1.com.cn",
+        "tdnsdl2.cn",
+        "tdnsdl2.com.cn",
+        "tdnsdl3.cn",
+        "tdnsdl3.com.cn",
+        "tdnsdl4.cn",
+        "tdnsdl4.com.cn",
+        "tdnsdl5.cn",
+        "tdnsdl5.com.cn",
+        "tencent.cn",
+        "tencent.com.cn",
+        "tencent.net.cn",
+        "wechatpay.cn"
+      ],
+      "domain_suffix": [
+        ".acimg.cn",
+        ".foxmail.com.cn",
+        ".gtimg.cn",
+        ".gtimg.com.cn",
+        ".qlogo.cn",
+        ".qpic.cn",
+        ".qq.cn.com",
+        ".qq.com.cn",
+        ".rtx.com.cn",
+        ".tdnsdl1.cn",
+        ".tdnsdl1.com.cn",
+        ".tdnsdl2.cn",
+        ".tdnsdl2.com.cn",
+        ".tdnsdl3.cn",
+        ".tdnsdl3.com.cn",
+        ".tdnsdl4.cn",
+        ".tdnsdl4.com.cn",
+        ".tdnsdl5.cn",
+        ".tdnsdl5.com.cn",
+        ".tencent.cn",
+        ".tencent.com.cn",
+        ".tencent.net.cn",
+        ".wechatpay.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "arphic.com.cn",
+      "domain_suffix": ".arphic.com.cn"
+    }
+  ]
+}

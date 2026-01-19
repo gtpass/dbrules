@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "2mdn-cn.net",
+        "admob-cn.com",
+        "app-measurement-cn.com",
+        "cn.widevine.com",
+        "dartsearch-cn.net",
+        "doubleclick-cn.net",
+        "google-analytics-cn.com",
+        "googleadservices-cn.com",
+        "googleapis-cn.com",
+        "googleapps-cn.com",
+        "googleflights-cn.net",
+        "googleoptimize-cn.com",
+        "googlesyndication-cn.com",
+        "googletagmanager-cn.com",
+        "googletagservices-cn.com",
+        "googletraveladservices-cn.com",
+        "googlevads-cn.com",
+        "gstatic-cn.com",
+        "qiao-cn.com",
+        "recaptcha-cn.net",
+        "g.cn",
+        "gkecnapps.cn",
+        "google.cn",
+        "googleapis.cn",
+        "googlecnapps.cn",
+        "gstatic.cn",
+        "gstaticcnapps.cn",
+        "gvt1-cn.com",
+        "gvt2-cn.com"
+      ],
+      "domain_suffix": [
+        ".g.cn",
+        ".gkecnapps.cn",
+        ".google.cn",
+        ".googleapis.cn",
+        ".googlecnapps.cn",
+        ".gstatic.cn",
+        ".gstaticcnapps.cn",
+        ".gvt1-cn.com",
+        ".gvt2-cn.com"
+      ]
+    }
+  ]
+}

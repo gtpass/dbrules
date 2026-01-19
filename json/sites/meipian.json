@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ivwen.com",
+        "meipian.me"
+      ],
+      "domain_suffix": [
+        ".ivwen.com",
+        ".meipian.me"
+      ]
+    }
+  ]
+}

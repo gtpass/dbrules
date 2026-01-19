@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "hpstore-china.com",
+        "hpstore.cn"
+      ],
+      "domain_suffix": [
+        ".hpstore-china.com",
+        ".hpstore.cn"
+      ]
+    }
+  ]
+}

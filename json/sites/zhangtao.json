@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dutils.com",
+        "hiaiabc.com",
+        "mob.com",
+        "mobsdks.com",
+        "yksdks.com"
+      ],
+      "domain_suffix": [
+        ".dutils.com",
+        ".hiaiabc.com",
+        ".mob.com",
+        ".mobsdks.com",
+        ".yksdks.com"
+      ]
+    }
+  ]
+}

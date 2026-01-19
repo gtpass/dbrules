@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "ifanr.cn",
+      "domain_suffix": ".ifanr.cn"
+    }
+  ]
+}

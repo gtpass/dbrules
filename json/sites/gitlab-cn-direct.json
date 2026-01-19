@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "gitlab-assets.oss-cn-hongkong.aliyuncs.com"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "shopee.cn",
+      "domain_suffix": ".shopee.cn"
+    }
+  ]
+}

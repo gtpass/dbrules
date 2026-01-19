@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "snodehome.com",
+        "szbdyd.com"
+      ],
+      "domain_suffix": [
+        ".snodehome.com",
+        ".szbdyd.com"
+      ]
+    }
+  ]
+}

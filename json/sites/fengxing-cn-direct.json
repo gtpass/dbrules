@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "jvcsmart.cn",
+        "jvcsmart.com.cn"
+      ],
+      "domain_suffix": [
+        ".jvcsmart.cn",
+        ".jvcsmart.com.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "sf-tech.com.cn",
+        "sf.cn",
+        "sffix.cn"
+      ],
+      "domain_suffix": [
+        ".sf-tech.com.cn",
+        ".sf.cn",
+        ".sffix.cn"
+      ]
+    }
+  ]
+}

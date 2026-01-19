@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "citic-prudential.com.cn",
+        "citicprufunds.com.cn"
+      ],
+      "domain_suffix": [
+        ".citic-prudential.com.cn",
+        ".citicprufunds.com.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "feidee.cn",
+      "domain_suffix": ".feidee.cn"
+    }
+  ]
+}

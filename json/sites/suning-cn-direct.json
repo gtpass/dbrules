@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "suning.cn",
+      "domain_suffix": ".suning.cn"
+    }
+  ]
+}

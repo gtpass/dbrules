@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "chinaso.com",
+      "domain_suffix": ".chinaso.com"
+    }
+  ]
+}

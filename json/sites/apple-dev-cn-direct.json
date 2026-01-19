@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "researchkit.cn",
+        "researchkit.com.cn"
+      ],
+      "domain_suffix": [
+        ".researchkit.cn",
+        ".researchkit.com.cn"
+      ]
+    }
+  ]
+}

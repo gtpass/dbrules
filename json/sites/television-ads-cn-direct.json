@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ad.hpplay.cn",
+        "adc.hpplay.cn",
+        "adeng.hpplay.cn"
+      ],
+      "domain_suffix": [
+        ".ad.hpplay.cn",
+        ".adc.hpplay.cn",
+        ".adeng.hpplay.cn"
+      ]
+    }
+  ]
+}

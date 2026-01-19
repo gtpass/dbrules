@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "vrzwk.cn",
+      "domain_suffix": ".vrzwk.cn"
+    }
+  ]
+}

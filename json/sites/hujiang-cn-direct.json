@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "hjfile.cn",
+      "domain_suffix": ".hjfile.cn"
+    }
+  ]
+}

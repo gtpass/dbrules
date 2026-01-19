@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fspcdn.com",
+        "fun.tv",
+        "funshion.com",
+        "funshion.net",
+        "ibidian.com"
+      ],
+      "domain_suffix": [
+        ".fspcdn.com",
+        ".fun.tv",
+        ".funshion.com",
+        ".funshion.net",
+        ".ibidian.com"
+      ]
+    }
+  ]
+}

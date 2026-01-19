@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "feidee.com",
+        "feidee.net",
+        "ssjlicai.com",
+        "sui.com"
+      ],
+      "domain_suffix": [
+        ".feidee.com",
+        ".feidee.net",
+        ".ssjlicai.com",
+        ".sui.com"
+      ]
+    }
+  ]
+}

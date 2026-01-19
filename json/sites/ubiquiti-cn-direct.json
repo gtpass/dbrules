@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "amplifi.com.cn",
+        "frontrow.com.cn",
+        "ubnt.com.cn",
+        "ui.com.cn",
+        "uum.com.cn"
+      ],
+      "domain_suffix": [
+        ".amplifi.com.cn",
+        ".frontrow.com.cn",
+        ".ubnt.com.cn",
+        ".ui.com.cn",
+        ".uum.com.cn"
+      ]
+    }
+  ]
+}

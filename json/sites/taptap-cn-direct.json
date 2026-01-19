@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "taptap.cn",
+      "domain_suffix": ".taptap.cn"
+    }
+  ]
+}

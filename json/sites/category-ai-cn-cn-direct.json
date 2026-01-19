@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bigmodel.cn",
+        "botvip.cn",
+        "chatglm.cn",
+        "cueme.cn",
+        "ai.zhaomi.cn",
+        "cueme-api.quark.cn",
+        "metaso.cn",
+        "moonshot.cn",
+        "n.cn",
+        "rwkv.cn",
+        "tiangong.cn",
+        "xinghuo.xfyun.cn",
+        "zhipuai.cn"
+      ],
+      "domain_suffix": [
+        ".bigmodel.cn",
+        ".botvip.cn",
+        ".chatglm.cn",
+        ".cueme.cn",
+        ".metaso.cn",
+        ".moonshot.cn",
+        ".n.cn",
+        ".rwkv.cn",
+        ".tiangong.cn",
+        ".xinghuo.xfyun.cn",
+        ".zhipuai.cn"
+      ]
+    }
+  ]
+}

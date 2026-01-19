@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "hanyi.com",
+        "hellowebfont.com"
+      ],
+      "domain_suffix": [
+        ".hanyi.com",
+        ".hellowebfont.com"
+      ]
+    }
+  ]
+}

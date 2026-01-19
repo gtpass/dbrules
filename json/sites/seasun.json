@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "cbjq.com",
+        "seasungames.com",
+        "xishanju.com",
+        "xoyo.com",
+        "xoyocdn.com"
+      ],
+      "domain_suffix": [
+        ".cbjq.com",
+        ".seasungames.com",
+        ".xishanju.com",
+        ".xoyo.com",
+        ".xoyocdn.com"
+      ]
+    }
+  ]
+}

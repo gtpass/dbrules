@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "airport-gov-cn.com",
+        "cnix-gov-cn.com"
+      ],
+      "domain_suffix": [
+        ".airport-gov-cn.com",
+        ".cnix-gov-cn.com"
+      ]
+    }
+  ]
+}

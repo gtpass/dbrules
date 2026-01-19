@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mucinex.ca",
+        "mucinex.co.nz",
+        "mucinex.com",
+        "mucinex.net",
+        "mucinex.tv",
+        "mucinexprofessional.com"
+      ],
+      "domain_suffix": [
+        ".mucinex.ca",
+        ".mucinex.co.nz",
+        ".mucinex.com",
+        ".mucinex.net",
+        ".mucinex.tv",
+        ".mucinexprofessional.com"
+      ]
+    }
+  ]
+}

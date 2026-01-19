@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bxexpress.com.cn",
+        "jnt-express.com.cn",
+        "jtexpress.cn",
+        "jtexpress.com.cn",
+        "jtfulfillment.cn",
+        "upfos.cn"
+      ],
+      "domain_suffix": [
+        ".bxexpress.com.cn",
+        ".jnt-express.com.cn",
+        ".jtexpress.cn",
+        ".jtexpress.com.cn",
+        ".jtfulfillment.cn",
+        ".upfos.cn"
+      ]
+    }
+  ]
+}

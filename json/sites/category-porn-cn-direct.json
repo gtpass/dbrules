@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "taoil-cn.sbs",
+      "domain_suffix": ".taoil-cn.sbs"
+    }
+  ]
+}

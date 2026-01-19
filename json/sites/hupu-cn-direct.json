@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "hoopchina.com.cn",
+        "shihuo.cn"
+      ],
+      "domain_suffix": [
+        ".hoopchina.com.cn",
+        ".shihuo.cn"
+      ]
+    }
+  ]
+}

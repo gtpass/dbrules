@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "douyucdn.cn",
+        "douyucdn2.cn"
+      ],
+      "domain_suffix": [
+        ".douyucdn.cn",
+        ".douyucdn2.cn"
+      ]
+    }
+  ]
+}

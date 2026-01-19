@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fbstatic.cn",
+        "fenbike.cn",
+        "fenbilantian.cn"
+      ],
+      "domain_suffix": [
+        ".fbstatic.cn",
+        ".fenbike.cn",
+        ".fenbilantian.cn"
+      ]
+    }
+  ]
+}

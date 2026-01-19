@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "liebao.cn",
+      "domain_suffix": ".liebao.cn"
+    }
+  ]
+}

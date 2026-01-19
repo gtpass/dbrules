@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "gpall.cn",
+        "mamayz.cn",
+        "nellit.cn",
+        "nellit.com.cn",
+        "nellit.net.cn",
+        "nellit.org.cn",
+        "sxgou.cn",
+        "tianxiajiameng.cn",
+        "yto.net.cn",
+        "yto56.com.cn",
+        "yto56.net.cn",
+        "ytocargo.com.cn",
+        "ytojg.com.cn",
+        "ytokj.cn",
+        "ytokj.com.cn",
+        "ytokj.net.cn",
+        "ytoluohan.cn",
+        "yuantongyizhan.cn"
+      ],
+      "domain_suffix": [
+        ".gpall.cn",
+        ".mamayz.cn",
+        ".nellit.cn",
+        ".nellit.com.cn",
+        ".nellit.net.cn",
+        ".nellit.org.cn",
+        ".sxgou.cn",
+        ".tianxiajiameng.cn",
+        ".yto.net.cn",
+        ".yto56.com.cn",
+        ".yto56.net.cn",
+        ".ytocargo.com.cn",
+        ".ytojg.com.cn",
+        ".ytokj.cn",
+        ".ytokj.com.cn",
+        ".ytokj.net.cn",
+        ".ytoluohan.cn",
+        ".yuantongyizhan.cn"
+      ]
+    }
+  ]
+}

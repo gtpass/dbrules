@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "wetv.qq.com",
+        "tencent.co.id",
+        "tencent.com.hk",
+        "wetv.vip",
+        "wetvinfo.com"
+      ],
+      "domain_suffix": [
+        ".tencent.co.id",
+        ".tencent.com.hk",
+        ".wetv.vip",
+        ".wetvinfo.com"
+      ]
+    }
+  ]
+}

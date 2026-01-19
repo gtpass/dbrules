@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "ctrip.cn",
+        "ctripgslb.cn",
+        "ctripgslb.com.cn",
+        "shuntu.cn",
+        "suanya.cn",
+        "toptown.cn",
+        "tripcdn.cn"
+      ],
+      "domain_suffix": [
+        ".ctrip.cn",
+        ".ctripgslb.cn",
+        ".ctripgslb.com.cn",
+        ".shuntu.cn",
+        ".suanya.cn",
+        ".toptown.cn",
+        ".tripcdn.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "codechina.net",
+        "csdn.com",
+        "csdn.net",
+        "csto.com",
+        "gitcode.com",
+        "gitcode.net",
+        "iteye.com",
+        "kaifayun.com"
+      ],
+      "domain_suffix": [
+        ".codechina.net",
+        ".csdn.com",
+        ".csdn.net",
+        ".csto.com",
+        ".gitcode.com",
+        ".gitcode.net",
+        ".iteye.com",
+        ".kaifayun.com"
+      ]
+    }
+  ]
+}

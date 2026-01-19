@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "jutongbao.online",
+        "jutongbao.top"
+      ],
+      "domain_suffix": [
+        ".jutongbao.online",
+        ".jutongbao.top"
+      ]
+    }
+  ]
+}

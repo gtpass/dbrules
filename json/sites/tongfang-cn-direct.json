@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "thtf.com.cn",
+      "domain_suffix": ".thtf.com.cn"
+    }
+  ]
+}

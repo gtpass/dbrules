@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "entrust.cn",
+        "www.entrust.cn"
+      ],
+      "domain_suffix": ".entrust.cn"
+    }
+  ]
+}

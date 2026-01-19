@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fuwai.com",
+        "smuszh.com",
+        "yctdyy.com"
+      ],
+      "domain_suffix": [
+        ".fuwai.com",
+        ".smuszh.com",
+        ".yctdyy.com"
+      ]
+    }
+  ]
+}

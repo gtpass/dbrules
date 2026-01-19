@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "accuratead.cn",
+        "sharesdk.cn"
+      ],
+      "domain_suffix": [
+        ".accuratead.cn",
+        ".sharesdk.cn"
+      ]
+    }
+  ]
+}

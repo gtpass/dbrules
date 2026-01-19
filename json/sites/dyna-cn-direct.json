@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "dynacw.com.cn",
+      "domain_suffix": ".dynacw.com.cn"
+    }
+  ]
+}

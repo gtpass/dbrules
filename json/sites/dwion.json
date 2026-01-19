@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "acadn.com",
+        "bbbcdns.com",
+        "dlgslb.net",
+        "dwion.com",
+        "fastcdn.com",
+        "flxdns.com",
+        "tlgslb.com"
+      ],
+      "domain_suffix": [
+        ".acadn.com",
+        ".bbbcdns.com",
+        ".dlgslb.net",
+        ".dwion.com",
+        ".fastcdn.com",
+        ".flxdns.com",
+        ".tlgslb.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "cainiao.com.cn",
+      "domain_suffix": ".cainiao.com.cn"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "laoban100.com",
+        "shengyi.ai",
+        "shengyizhuanjia.com",
+        "yuanbei.biz"
+      ],
+      "domain_suffix": [
+        ".laoban100.com",
+        ".shengyi.ai",
+        ".shengyizhuanjia.com",
+        ".yuanbei.biz"
+      ]
+    }
+  ]
+}

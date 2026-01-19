@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fengcx.com",
+        "fengedu.com",
+        "ifeng.com",
+        "ifengimg.com",
+        "ifengweekly.com"
+      ],
+      "domain_suffix": [
+        ".fengcx.com",
+        ".fengedu.com",
+        ".ifeng.com",
+        ".ifengimg.com",
+        ".ifengweekly.com"
+      ]
+    }
+  ]
+}

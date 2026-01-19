@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "nga.cn",
+      "domain_suffix": ".nga.cn"
+    }
+  ]
+}

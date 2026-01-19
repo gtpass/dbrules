@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "hzdtv.tv",
+        "hzman.net",
+        "wasu.tv"
+      ],
+      "domain_suffix": [
+        ".hzdtv.tv",
+        ".hzman.net",
+        ".wasu.tv"
+      ]
+    }
+  ]
+}

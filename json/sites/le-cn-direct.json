@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "leso.cn",
+      "domain_suffix": ".leso.cn"
+    }
+  ]
+}

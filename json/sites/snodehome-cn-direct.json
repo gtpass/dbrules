@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "snodehome.cn",
+      "domain_suffix": ".snodehome.cn"
+    }
+  ]
+}

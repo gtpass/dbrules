@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "dell.com.cn",
+        "dellemc.com.cn",
+        "dellmobile.cn",
+        "delltechnologies.com.cn"
+      ],
+      "domain_suffix": [
+        ".dell.com.cn",
+        ".dellemc.com.cn",
+        ".dellmobile.cn",
+        ".delltechnologies.com.cn"
+      ]
+    }
+  ]
+}

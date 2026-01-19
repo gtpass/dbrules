@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "gitv.tv",
+      "domain_suffix": ".gitv.tv"
+    }
+  ]
+}

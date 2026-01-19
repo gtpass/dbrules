@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "meadjohnson.com",
+        "meadjohnson.com.hk",
+        "meadjohnson.com.tw",
+        "meadjohnson.net"
+      ],
+      "domain_suffix": [
+        ".meadjohnson.com",
+        ".meadjohnson.com.hk",
+        ".meadjohnson.com.tw",
+        ".meadjohnson.net"
+      ]
+    }
+  ]
+}

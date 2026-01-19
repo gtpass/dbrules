@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "gree.com",
+        "greeyun.com",
+        "kinghomechina.com",
+        "zhlyen.com"
+      ],
+      "domain_suffix": [
+        ".gree.com",
+        ".greeyun.com",
+        ".kinghomechina.com",
+        ".zhlyen.com"
+      ]
+    }
+  ]
+}

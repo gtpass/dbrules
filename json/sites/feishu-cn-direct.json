@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fei-shu.cn",
+        "feishu-customer.cn",
+        "feishu-pre.cn",
+        "feishu-psc.cn",
+        "feishu-staging.cn",
+        "feishu.cn",
+        "feishuapp.cn",
+        "feishudoc.cn",
+        "feishuhuiyi.cn",
+        "feishumeetings.cn",
+        "feishuoffice.cn",
+        "feishustatus.cn",
+        "feishuvc.cn",
+        "getfeishu.cn",
+        "getsays.cn",
+        "lackvc.cn",
+        "securityfeishu.cn",
+        "securityfs.cn",
+        "statusfeishu.cn"
+      ],
+      "domain_suffix": [
+        ".fei-shu.cn",
+        ".feishu-customer.cn",
+        ".feishu-pre.cn",
+        ".feishu-psc.cn",
+        ".feishu-staging.cn",
+        ".feishu.cn",
+        ".feishuapp.cn",
+        ".feishudoc.cn",
+        ".feishuhuiyi.cn",
+        ".feishumeetings.cn",
+        ".feishuoffice.cn",
+        ".feishustatus.cn",
+        ".feishuvc.cn",
+        ".getfeishu.cn",
+        ".getsays.cn",
+        ".lackvc.cn",
+        ".securityfeishu.cn",
+        ".securityfs.cn",
+        ".statusfeishu.cn"
+      ]
+    }
+  ]
+}

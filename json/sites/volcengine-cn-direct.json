@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bytehouse.cn",
+        "byteinspire.cn",
+        "cloudendpoint.cn",
+        "feilian.cn",
+        "ifeilian.cn",
+        "inspirecloud.cn",
+        "qingfuwu.cn",
+        "qingfuwuapi.cn",
+        "veew-alb-cn1.com",
+        "veew-alb-cn2.com",
+        "volcca.cn",
+        "volccdn.cn",
+        "volcdlspace.cn",
+        "volcengine.cn",
+        "volcimagex.cn",
+        "ytxptd.cn",
+        "ytxptz.cn",
+        "zjytxd.cn",
+        "zjytxp.cn",
+        "zvip.cn"
+      ],
+      "domain_suffix": [
+        ".bytehouse.cn",
+        ".byteinspire.cn",
+        ".cloudendpoint.cn",
+        ".feilian.cn",
+        ".ifeilian.cn",
+        ".inspirecloud.cn",
+        ".qingfuwu.cn",
+        ".qingfuwuapi.cn",
+        ".veew-alb-cn1.com",
+        ".veew-alb-cn2.com",
+        ".volcca.cn",
+        ".volccdn.cn",
+        ".volcdlspace.cn",
+        ".volcengine.cn",
+        ".volcimagex.cn",
+        ".ytxptd.cn",
+        ".ytxptz.cn",
+        ".zjytxd.cn",
+        ".zjytxp.cn",
+        ".zvip.cn"
+      ]
+    }
+  ]
+}

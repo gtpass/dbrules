@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "airchina.com.cn",
+      "domain_suffix": ".airchina.com.cn"
+    }
+  ]
+}

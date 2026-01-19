@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "gepush.com",
+        "getui.com",
+        "getui.net",
+        "igehuo.com",
+        "igetui.com",
+        "igexin.com"
+      ],
+      "domain_suffix": [
+        ".gepush.com",
+        ".getui.com",
+        ".getui.net",
+        ".igehuo.com",
+        ".igetui.com",
+        ".igexin.com"
+      ]
+    }
+  ]
+}

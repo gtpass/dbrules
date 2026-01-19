@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "fengkongbao.com",
+        "fengkongcloud.com",
+        "ishumei.com",
+        "tebiefuza.cloud"
+      ],
+      "domain_suffix": [
+        ".fengkongbao.com",
+        ".fengkongcloud.com",
+        ".ishumei.com",
+        ".tebiefuza.cloud"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "pplive.com",
+        "pptv.com"
+      ],
+      "domain_suffix": [
+        ".pplive.com",
+        ".pptv.com"
+      ]
+    }
+  ]
+}

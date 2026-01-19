@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "bitpt.cn",
+        "bt.byr.cn",
+        "hudbt.hust.edu.cn",
+        "neu6.edu.cn",
+        "pt.nwsuaf6.edu.cn",
+        "pt.sjtu.edu.cn",
+        "pt.xauat.edu.cn"
+      ],
+      "domain_suffix": [
+        ".bitpt.cn",
+        ".bt.byr.cn",
+        ".hudbt.hust.edu.cn",
+        ".neu6.edu.cn",
+        ".pt.nwsuaf6.edu.cn",
+        ".pt.sjtu.edu.cn",
+        ".pt.xauat.edu.cn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "mdcdn.cn",
+        "midea.cn",
+        "midea.com.cn",
+        "msmartlife.cn"
+      ],
+      "domain_suffix": [
+        ".mdcdn.cn",
+        ".midea.cn",
+        ".midea.com.cn",
+        ".msmartlife.cn"
+      ]
+    }
+  ]
+}

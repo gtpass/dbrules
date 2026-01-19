@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "oemssl.cn",
+        "oemssl.cn.cdn.cloudflare.net",
+        "trust-provider.cn"
+      ],
+      "domain_suffix": [
+        ".oemssl.cn",
+        ".oemssl.cn.cdn.cloudflare.net",
+        ".trust-provider.cn"
+      ]
+    }
+  ]
+}

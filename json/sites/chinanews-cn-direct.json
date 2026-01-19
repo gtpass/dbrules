@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "chinanews.com.cn",
+        "cns.com.cn",
+        "ecns.cn",
+        "inewsweek.cn"
+      ],
+      "domain_suffix": [
+        ".chinanews.com.cn",
+        ".cns.com.cn",
+        ".ecns.cn",
+        ".inewsweek.cn"
+      ]
+    }
+  ]
+}

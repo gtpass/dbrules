@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "benghuai.com",
+        "bh3.com",
+        "bhsr.com",
+        "juequling.com",
+        "mhystatic.com",
+        "mihayo.com",
+        "mihayou.com",
+        "mihoyo.com",
+        "mihoyocg.com",
+        "mihoyogift.com",
+        "mihoyomall.com",
+        "miyoushe.com",
+        "phira.cn",
+        "themisweeps.com",
+        "wmsj.cn",
+        "yuanshen.com"
+      ],
+      "domain_suffix": [
+        ".benghuai.com",
+        ".bh3.com",
+        ".bhsr.com",
+        ".juequling.com",
+        ".mhystatic.com",
+        ".mihayo.com",
+        ".mihayou.com",
+        ".mihoyo.com",
+        ".mihoyocg.com",
+        ".mihoyogift.com",
+        ".mihoyomall.com",
+        ".miyoushe.com",
+        ".phira.cn",
+        ".themisweeps.com",
+        ".wmsj.cn",
+        ".yuanshen.com"
+      ],
+      "domain_regex": "^.+-mihayo\\.akamaized\\.net$"
+    }
+  ]
+}

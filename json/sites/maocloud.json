@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "maoyun.com",
+        "maoyuncloud.com"
+      ],
+      "domain_suffix": [
+        ".maoyun.com",
+        ".maoyuncloud.com"
+      ]
+    }
+  ]
+}

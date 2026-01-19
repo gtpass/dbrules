@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": "douding.cn",
+      "domain_suffix": ".douding.cn"
+    }
+  ]
+}
